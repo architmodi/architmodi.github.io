@@ -1,0 +1,1439 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Popular Linux Interview Questions" />
+<meta property="og:url" content="https://codejammies.wordpress.com/2020/03/03/popular-linux-interview-questions/" />
+<meta property="og:description" content="Hello there! Linux is one of the most desirable skills in the job market today and after giving over 20 interviews I have come up with a cheat sheet which I personally use and may come in handy for…" />
+<meta property="article:published_time" content="2020-03-03T23:28:04+00:00" />
+<meta property="article:modified_time" content="2020-04-02T22:45:11+00:00" />
+<meta property="og:site_name" content="Codejammies" />
+<meta property="og:image" content="https://codejammies.files.wordpress.com/2020/04/3df6589052e8fe76bd7180f4cecd45a0.draft_.96dpi.png?w=675" />
+<meta property="og:image:width" content="675" />
+<meta property="og:image:height" content="1200" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:creator" content="@codejammies" />
+<meta name="twitter:site" content="@codejammies" />
+<meta name="twitter:text:title" content="Popular Linux Interview Questions" />
+<meta name="twitter:image" content="https://codejammies.files.wordpress.com/2020/04/3df6589052e8fe76bd7180f4cecd45a0.draft_.96dpi.png?w=640" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+
+	<title>Popular Linux Interview Questions &#8211; Codejammies</title>
+		<link rel="canonical" href="../index.html" />
+	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+<script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-geo-0.1.js' async custom-element="amp-geo"></script>
+<script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-consent-0.1.js' async custom-element="amp-consent"></script>
+<script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-ad-0.1.js' async custom-element="amp-ad"></script>
+<script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-social-share-0.1.js' async custom-element="amp-social-share"></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"Codejammies","logo":"https:\/\/codejammies.files.wordpress.com\/2020\/02\/cropped-cbc0d1ea-f44e-4390-8519-845d9ce3d6f2.jpeg?w=60"},"@type":"BlogPosting","mainEntityOfPage":"https:\/\/codejammies.wordpress.com\/2020\/03\/03\/popular-linux-interview-questions\/","headline":"Popular Linux Interview Questions","datePublished":"2020-03-03T23:28:04-05:00","dateModified":"2020-04-02T22:45:11-04:00","author":{"@type":"Person","name":"Sayali"},"image":"https:\/\/codejammies.files.wordpress.com\/2020\/04\/3df6589052e8fe76bd7180f4cecd45a0.draft_.96dpi.png"}</script>
+	<meta name="generator" content="AMP Plugin v1.4.2; mode=reader; experiences=website"><meta name="generator" content="WordPress.com" />
+	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+/*
+ * Prevent cases of amp-img converted from img to appear with stretching by using object-fit to scale.
+ * See <https://github.com/ampproject/amphtml/issues/21371#issuecomment-475443219>.
+ * Also use object-fit:contain in worst case scenario when we can't figure out dimensions for an image.
+ * Additionally, in side of \AMP_Img_Sanitizer::determine_dimensions() it could $amp_img->setAttribute( 'object-fit', 'contain' )
+ * so that the following rules wouldn't be needed.
+ */
+amp-img.amp-wp-enforced-sizes[layout="intrinsic"] > img,
+amp-anim.amp-wp-enforced-sizes[layout="intrinsic"] > img {
+	object-fit: contain;
+}
+
+amp-fit-text blockquote,
+amp-fit-text h1,
+amp-fit-text h2,
+amp-fit-text h3,
+amp-fit-text h4,
+amp-fit-text h5,
+amp-fit-text h6 {
+	font-size: inherit;
+}
+
+/**
+ * Override a style rule in Twenty Sixteen and Twenty Seventeen.
+ * It set display:none for audio elements.
+ * This selector is the same, though it adds body and uses amp-audio instead of audio.
+ */
+body amp-audio:not([controls]) {
+	display: inline-block;
+	height: auto;
+}
+
+/*
+ * Style the default template messages for submit-success, submit-error, and submitting. These elements are inserted
+ * by the form sanitizer when a POST form lacks the action-xhr attribute.
+ */
+.amp-wp-default-form-message > p {
+	margin: 1em 0;
+	padding: 0.5em;
+}
+
+.amp-wp-default-form-message[submitting] > p,
+.amp-wp-default-form-message[submit-success] > p.amp-wp-form-redirecting {
+	font-style: italic;
+}
+
+.amp-wp-default-form-message[submit-success] > p:not(.amp-wp-form-redirecting) {
+	border: solid 1px #008000;
+	background-color: #90ee90;
+	color: #000;
+}
+
+.amp-wp-default-form-message[submit-error] > p {
+	border: solid 1px #f00;
+	background-color: #ffb6c1;
+	color: #000;
+}
+
+/* Prevent showing empty success message in the case of an AMP-Redirect-To response header. */
+.amp-wp-default-form-message[submit-success] > p:empty {
+	display: none;
+}
+
+amp-carousel .amp-wp-gallery-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	padding: 1rem;
+}
+
+.wp-block-gallery[data-amp-carousel="true"] {
+	display: block;
+	flex-wrap: unset;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 1000px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+.alignwide,
+.alignfull {
+	clear: both;
+}
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( https://s2.wp.com/wp-content/plugins/amp-1.4/assets/images/placeholder-icon.png ) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+				/* WordAds */
+		.wpcnt {
+			text-align: center;
+			line-height: 0;
+			display: block;
+			clear: both;
+			margin: 1em 0;
+		}
+
+		.rtl .wpcnt {
+			direction: ltr;
+		}
+
+		.wpa {
+			position: relative;
+			display: inline-block;
+			max-width: 100%;
+			text-align: left;
+			padding: 10px 0 0;
+			min-width: 300px;
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+		}
+
+		.wpa-about {
+			position: absolute;
+			top: 5px;
+			left: 0;
+			right: 0;
+			display: block;
+			min-width: 160px;
+			border-bottom: none;
+			font: 10px/1 "Open Sans", Arial, sans-serif;
+			text-align: left;
+			text-decoration: none;
+			opacity: 0.85;
+		}
+
+		.wpa .u>div, .wpadvert>div>* {
+			display: block;
+			margin-top: 5px;
+			margin-bottom: 1em;
+		}
+
+		div.wpa>div {
+			margin-top: 10px;
+		}
+
+		amp-consent {
+			background: hsla(0,0%,100%,0);
+		}
+
+		.lightbox {
+			height: 100vh;
+			width: 100vw;
+			padding: 5% 0;
+		}
+
+		.lightbox-content {
+			margin: 0 auto;
+			padding: 0 1rem 1rem 1rem;
+			background: #eee;
+			border-radius: 5px;
+			max-width: 700px;
+			width: 95%;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			position: fixed;
+			bottom: 0;
+		}
+
+		.message {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.message > * {
+			min-width: 200px;
+			text-align: center;
+		}
+
+		.dismiss-button {
+			position: absolute;
+			right: 1.5rem;
+			top: 1rem;
+			cursor: pointer;
+		}
+
+		#post-consent-ui {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 1rem;
+		}
+/**
+ * Jetpack related posts
+ */
+
+/**
+ * The Gutenberg block
+ */
+
+.jp-related-posts-i2__row {
+	display: flex;
+	margin-top: 1.5rem;
+}
+
+.jp-related-posts-i2__row:first-child {
+	margin-top: 0;
+}
+
+.jp-related-posts-i2__post {
+	flex-grow: 1;
+	flex-basis: 0;
+	margin: 0 10px;
+	display: flex;
+	flex-direction: column;
+	padding-left: 0;
+}
+
+.jp-related-posts-i2__row[data-post-count="3"] .jp-related-posts-i2__post {
+	max-width: calc(33% - 20px);
+}
+
+.jp-related-posts-i2__row[data-post-count="2"] .jp-related-posts-i2__post,
+.jp-related-posts-i2__row[data-post-count="1"] .jp-related-posts-i2__post {
+	max-width: calc(50% - 20px);
+}
+
+.jp-related-posts-i2__post-heading, .jp-related-posts-i2__post-img-link,
+.jp-related-posts-i2__post-date, .jp-related-posts-i2__post-context {
+	flex-direction: row;
+	display: block;
+}
+
+.jp-related-posts-i2__post-heading {
+	margin: 0.5rem 0;
+	font-size: 1rem;
+	line-height: 1.2em;
+}
+
+.jp-related-posts-i2__post-link {
+	display: block;
+	width: 100%;
+	line-height: 1.2em;
+}
+
+.jp-related-posts-i2__post-img-link {
+	order: -1;
+}
+
+.jp-related-posts-i2__post-img-link img {
+	width: 100%;
+}
+
+/* List view */
+
+.jp-relatedposts-i2[data-layout="list"] .jp-related-posts-i2__row{
+	margin-top: 0;
+	display: block;
+}
+
+.jp-relatedposts-i2[data-layout="list"] .jp-related-posts-i2__post {
+	max-width: none;
+	margin: 0;
+}
+
+.jp-relatedposts-i2[data-layout="list"].jp-related-posts-i2__post-img-link {
+	margin-top: 1rem;
+}
+
+/* Breakpoints */
+@media only screen and (max-width: 640px) {
+	.jp-related-posts-i2__row {
+		margin-top: 0;
+		display: block;
+	}
+	.jp-related-posts-i2__row[data-post-count] .jp-related-posts-i2__post {
+		max-width: none;
+		margin: 0;
+		margin-top: 1rem;
+	}
+	.jp-related-posts-i2__post-img-link {
+		margin-top: 1rem;
+	}
+	.jp-related-posts-i2__post-img-link img {
+		width: 350px;
+	}
+}
+
+/* Container */
+
+#jp-relatedposts {
+	display: none;
+	padding-top: 1em;
+	margin: 1em 0;
+	position: relative;
+	clear: both;
+}
+
+.jp-relatedposts:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* Headline above related posts section, labeled "Related" */
+
+#jp-relatedposts h3.jp-relatedposts-headline {
+	margin: 0 0 1em 0;
+	display: inline-block;
+	float: left;
+	font-size: 9pt;
+	font-weight: bold;
+	font-family: inherit;
+}
+
+#jp-relatedposts h3.jp-relatedposts-headline em:before {
+	content: "";
+	display: block;
+	width: 100%;
+	min-width: 30px;
+	border-top: 1px solid #ddd;
+	border-top: 1px solid rgba(0,0,0,.2);
+	margin-bottom: 1em;
+}
+
+#jp-relatedposts h3.jp-relatedposts-headline em {
+	font-style: normal;
+	font-weight: bold;
+}
+
+/* Related posts items (wrapping items) */
+
+#jp-relatedposts .jp-relatedposts-items {
+	clear: left;
+}
+
+#jp-relatedposts .jp-relatedposts-items-visual {
+	margin-right: -20px;
+}
+
+/* Related posts item */
+
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post {
+	float: left;
+	width: 33%;
+	margin: 0 0 1em; /* Needs to be same as the main outer wrapper for Related Posts */
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#jp-relatedposts .jp-relatedposts-items-visual .jp-relatedposts-post {
+	padding-right: 20px;
+	filter: alpha(opacity=80);
+	-moz-opacity: .8;
+	opacity: .8;
+}
+
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post:nth-child(3n+4),
+#jp-relatedposts .jp-relatedposts-items-visual .jp-relatedposts-post:nth-child(3n+4) {
+	clear: both;
+}
+
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post:hover .jp-relatedposts-post-title a {
+	text-decoration: underline;
+}
+
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post:hover {
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	opacity: 1;
+}
+
+/* Related posts item content */
+
+#jp-relatedposts .jp-relatedposts-items-visual h4.jp-relatedposts-post-title,
+#jp-relatedposts .jp-relatedposts-items p {
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0;
+}
+#jp-relatedposts .jp-relatedposts-items-visual .jp-relatedposts-post-nothumbs {
+	position:relative;
+}
+#jp-relatedposts .jp-relatedposts-items-visual .jp-relatedposts-post-nothumbs a.jp-relatedposts-post-aoverlay {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	display:block;
+	border-bottom: 0;
+}
+
+#jp-relatedposts .jp-relatedposts-items p {
+	margin-bottom: 0;
+}
+
+#jp-relatedposts .jp-relatedposts-items-visual h4.jp-relatedposts-post-title {
+	text-transform: none;
+	margin: 0;
+	font-family: inherit;
+	display: block;
+	max-width: 100%;
+}
+
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a {
+	font-size: inherit;
+	font-weight: normal;
+	text-decoration: none;
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	opacity: 1;
+}
+
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a:hover {
+	text-decoration: underline;
+}
+
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post img.jp-relatedposts-post-img,
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post span {
+	display: block;
+	max-width: 90%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#jp-relatedposts .jp-relatedposts-items-visual .jp-relatedposts-post img.jp-relatedposts-post-img,
+#jp-relatedposts .jp-relatedposts-items-visual .jp-relatedposts-post span {
+	max-width: 100%;
+}
+
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-date,
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-context {
+	opacity: .6;
+}
+
+/* Hide the date by default, but leave the element there if a theme wants to use css to make it visible. */
+.jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-date {
+	display: none;
+}
+
+/* Behavior when there are thumbnails in visual mode */
+#jp-relatedposts .jp-relatedposts-items-visual div.jp-relatedposts-post-thumbs p.jp-relatedposts-post-excerpt {
+	display: none;
+}
+
+/* Behavior when there are no thumbnails in visual mode */
+#jp-relatedposts .jp-relatedposts-items-visual .jp-relatedposts-post-nothumbs p.jp-relatedposts-post-excerpt {
+	overflow: hidden;
+}
+#jp-relatedposts .jp-relatedposts-items-visual .jp-relatedposts-post-nothumbs span {
+	margin-bottom: 1em;
+}
+
+/* List Layout */
+#jp-relatedposts .jp-relatedposts-list .jp-relatedposts-post {
+	clear: both;
+	width: 100%;
+}
+
+#jp-relatedposts .jp-relatedposts-list .jp-relatedposts-post img.jp-relatedposts-post-img {
+	float: left;
+	overflow: hidden;
+	max-width: 33%;
+	margin-right: 3%;
+}
+
+#jp-relatedposts .jp-relatedposts-list h4.jp-relatedposts-post-title {
+	display: inline-block;
+	max-width: 63%;
+}
+
+/*
+ * Responsive
+ */
+
+@media only screen and (max-width: 640px) {
+
+	#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post {
+		width: 50%;
+	}
+
+	#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post:nth-child(3n) {
+		clear: left;
+	}
+
+	#jp-relatedposts .jp-relatedposts-items-visual {
+		margin-right: 20px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+
+	#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post {
+		width: 100%;
+		clear: both;
+		margin: 0 0 1em;
+	}
+
+	#jp-relatedposts .jp-relatedposts-list .jp-relatedposts-post img.jp-relatedposts-post-img,
+	#jp-relatedposts .jp-relatedposts-list h4.jp-relatedposts-post-title {
+		float: none;
+		max-width: 100%;
+		margin-right: 0;
+	}
+}
+.wp-block-jetpack-rating-star span { display: none; }.wp-block-jetpack-rating-spiciness span, .wp-block-jetpack-rating-priciness span { display: none; }	</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="../../../../../index.html">
+										<amp-img src="https://codejammies.files.wordpress.com/2020/02/cropped-cbc0d1ea-f44e-4390-8519-845d9ce3d6f2.jpeg?w=32" width="32" height="32" class="amp-wp-site-icon"></amp-img>
+						<span class="amp-site-title">
+				Codejammies			</span>
+		</a>
+
+					</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">Popular Linux Interview Questions</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/468c69236f7033e81699bb8d773c5783?s=24&#038;d=identicon&#038;r=g" alt="Sayali" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Sayali</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2020-03-03T19:28:04+00:00">
+		1 month ago	</time>
+</div>
+	</header>
+
+	<figure class="amp-wp-article-featured-image wp-caption">
+	<amp-img width="576" height="1024" src="https://codejammies.files.wordpress.com/2020/04/3df6589052e8fe76bd7180f4cecd45a0.draft_.96dpi.png?w=576" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="https://codejammies.files.wordpress.com/2020/04/3df6589052e8fe76bd7180f4cecd45a0.draft_.96dpi.png?w=576 576w, https://codejammies.files.wordpress.com/2020/04/3df6589052e8fe76bd7180f4cecd45a0.draft_.96dpi.png?w=84 84w, https://codejammies.files.wordpress.com/2020/04/3df6589052e8fe76bd7180f4cecd45a0.draft_.96dpi.png?w=169 169w, https://codejammies.files.wordpress.com/2020/04/3df6589052e8fe76bd7180f4cecd45a0.draft_.96dpi.png?w=768 768w, https://codejammies.files.wordpress.com/2020/04/3df6589052e8fe76bd7180f4cecd45a0.draft_.96dpi.png 1080w" layout="intrinsic"><noscript><img width="576" height="1024" src="https://codejammies.files.wordpress.com/2020/04/3df6589052e8fe76bd7180f4cecd45a0.draft_.96dpi.png?w=576" class="attachment-large size-large wp-post-image" alt="" srcset="https://codejammies.files.wordpress.com/2020/04/3df6589052e8fe76bd7180f4cecd45a0.draft_.96dpi.png?w=576 576w, https://codejammies.files.wordpress.com/2020/04/3df6589052e8fe76bd7180f4cecd45a0.draft_.96dpi.png?w=84 84w, https://codejammies.files.wordpress.com/2020/04/3df6589052e8fe76bd7180f4cecd45a0.draft_.96dpi.png?w=169 169w, https://codejammies.files.wordpress.com/2020/04/3df6589052e8fe76bd7180f4cecd45a0.draft_.96dpi.png?w=768 768w, https://codejammies.files.wordpress.com/2020/04/3df6589052e8fe76bd7180f4cecd45a0.draft_.96dpi.png 1080w" sizes="(max-width: 576px) 100vw, 576px"></noscript></amp-img>	</figure>
+
+	<div class="amp-wp-article-content">
+				<amp-geo layout="nodisplay"><script type="application/json">
+			{
+				"ISOCountryGroups": {
+					"gdpr": [ "preset-eea" ]
+				}
+			}
+			</script></amp-geo><amp-consent id="pubmine-consent" layout="nodisplay"><script type="application/json">
+			{
+				"consentInstanceId": "world-wide-consent",
+				"consentRequired": false,
+				"geoOverride": {
+					"gdpr": {
+						"promptUI": "gdpr-cookie-banner",
+						"consentRequired": true
+					}
+				},
+				"postPromptUI": "post-consent-ui"
+			}
+			</script><div id="gdpr-cookie-banner" class="lightbox">
+				<div class="lightbox-content">
+					<div class="dismiss-button" role="button" tabindex="0" on="tap:pubmine-consent.dismiss">X</div>
+					<div>
+						<h3>Privacy &amp; Cookies</h3>
+						<p>This site uses cookies. By continuing, you agree to their use. <a target="_blank" href="https://automattic.com/cookies/">Learn more</a>, including how to control cookies.</p>
+						<div class="message">
+							<button type="button" on="tap:pubmine-consent.accept">Got It!</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="post-consent-ui">
+			</div>
+		</amp-consent><div class="wpcnt">
+			<div class="wpa wpmrec">
+				<span class="wpa-about">Advertisements</span>
+				<div class="u">
+					<amp-ad width="300" height="265" data-block-on-consent="_auto_reject" type="pubmine" data-section="2" data-pt="1" data-ht="0" data-siteid="8982"><div placeholder class="amp-wp-iframe-placeholder"></div>
+					</amp-ad></div>
+			</div>
+		</div>
+<p>Hello there! Linux is one of the most desirable skills in the job market today and after giving over 20 interviews I have come up with a cheat sheet which I personally use and may come in handy for your test or interview. Recruiters are interested in understanding the depth of your knowledge so I have tried to cover important topics like inodes, hard/soft links, LVM to name a few in this article. And now without any further ado, ladies and gentlemen I present Popular Linux Interview Questions! *pff*</p>
+
+
+
+<p>🍕Explain sticky bit in linux</p>
+
+
+
+<p>Sticky bit is a permission bit that is set on a file or a directory such that only the owner of the file/directory and the root user can rename or delete the file/directory. Details about the sticky bits can be found under the /temp folder.</p>
+
+
+
+<p>Enable sticky bit- chmod +t file_name/directory_name</p>
+
+
+
+<p>Disable sticky bit- chmod -t file_name/directory_name</p>
+
+
+
+<p></p>
+
+
+
+<p>🍕What are inodes?</p>
+
+
+
+<p>Inode is a data structure that describes a file/directory in linux system by storing metadata about the files. Inodes store information like size of the file, device id, UID, GID, mode (ie permissions), timestamps and pointer to the actual data. In short, inodes store every information about the file except the actual data and the name of the file.</p>
+
+
+
+<p>The name of the file is stored separately along with the inode number, this way it can be linked to the metadata representing the file.</p>
+
+
+
+<p>By default, inodes per filesystem = 1 inode per 16,384 bytes of filesystem..</p>
+
+
+
+<p>Inode related commands-</p>
+
+
+
+<p>df -i     …gives information about inodes</p>
+
+
+
+<p>stat file_name …can be used to view full information about inodes</p>
+
+
+
+<p>find . -inum 100056 …can be used to find a file associated with a particular inode in the current directory (note: 100056 is an example, substitute it with the desired inode number)</p>
+
+
+
+<p>ln file_A file_B …can be used to link file A to file B, therefore both files will have same inode number</p>
+
+
+
+<p></p>
+
+
+
+<p>🍕What are hard links?</p>
+
+
+
+<p>Hard links are nothing but copies of the actual file with same inode number. In case the user decides to delete a particular file, they will have to delete all hard links associated with it.</p>
+
+
+
+<p>Following command can be used to create hard links-</p>
+
+
+
+<p>ln actual_filename tobe_hardlink_filename</p>
+
+
+
+<p></p>
+
+
+
+<p>🍕What are soft links?</p>
+
+
+
+<p>Soft links, also known as symbolic links act as a pointer to the actual file. You can imagine soft links as shortcuts in Windows system.</p>
+
+
+
+<p>Following command can be used to create soft links-</p>
+
+
+
+<p>ln -s actual_filepath tobe_softlink_filename</p>
+
+
+
+<p>Interestingly, hard links can be converted into soft links by using the following command-</p>
+
+
+
+<p>ln -P filename hardlink_of_actualfile</p>
+
+
+
+<p></p>
+
+
+
+<p>🍕Where can the information about cron and anacron files be found in linux?</p>
+
+
+
+<p>Cron/anacron file for the system can be found under /etc/cron.d</p>
+
+
+
+<p>Cron/anacron file for the user can be found under /var/spool/cron/crontab</p>
+
+
+
+<p></p>
+
+
+
+<p>🍕How to view CPU information?</p>
+
+
+
+<p>CPU information like architecture, model, threads, cache can be viewed under /proc/cpu/info or by using the command lscpu</p>
+
+
+
+<p></p>
+
+
+
+<p>🍕How to view open processes in linux?</p>
+
+
+
+<p>Open processes in linux can be viewed under /proc directory or by using the following commands-</p>
+
+
+
+<p>ps -ef</p>
+
+
+
+<p>top</p>
+
+
+
+<p>htop</p>
+
+
+
+<p>atop</p>
+
+
+
+<p>pgrep</p>
+
+
+
+<p>pstree</p>
+
+
+
+<p></p>
+
+
+
+<p>🍕How to use the SCP command?</p>
+
+
+
+<p>Secure copy, commonly known as SCP is used for securely copying files from local host to remote host and vice versa.</p>
+
+
+
+<p>Copy files from local to remote host- scp file.txt username@host-ip: /remote/directory/</p>
+
+
+
+<p>Copy files from remote to local host- scp -r username@host-ip: /remote/directory /local/directory</p>
+
+
+
+<p></p>
+
+
+
+<p>🍕What is the default permission of a new file?</p>
+
+
+
+<p>By default the permission for a new file is set to 644, meaning, user will have read as well as write access whereas group and other will only have read permission. Linux will try to set 666 as the default permission for any newly created file but will end up setting it to 644 as the umask value is 0022 (Therefore, 666 – 022 = 644)</p>
+
+
+
+<p></p>
+
+
+
+<p>🍕How to check memory information in linux?</p>
+
+
+
+<p>Memory information can be found under the /proc/meminfo directory and by using the following commands-</p>
+
+
+
+<p>free -m</p>
+
+
+
+<p>vmstat</p>
+
+
+
+<p>top</p>
+
+
+
+<p>htop</p>
+
+
+
+<p></p>
+
+
+
+<p>🍕How to reboot a linux system?</p>
+
+
+
+<p>Linux systems can be rebooted by CTRL-ALT-DEL or by using simple commands such as-</p>
+
+
+
+<p>reboot</p>
+
+
+
+<p>reboot -f</p>
+
+
+
+<p>restart</p>
+
+
+
+<p>shutdown -r</p>
+
+
+
+<p></p>
+
+
+
+<p>🍕How to detect a hidden file?</p>
+
+
+
+<p>The commands ls or ls -l can be used for listing files/directories in a linux system. But to list all files/directories along with the hidden files, use command ls -a. Also, hidden files are preceded by a dot.</p>
+
+
+
+<p>Example- .codejammies</p>
+
+
+
+<p></p>
+
+
+
+<p>🍕How to find disk space taken by a particular folder?</p>
+
+
+
+<p>This can be found by checking disk utilization, du -sh</p>
+
+
+
+<p></p>
+
+
+
+<p>🍕How to append file_A to file_B?</p>
+
+
+
+<p>file_A can be appended to file_B by using two output redirection symbols. Example- cat file_A &gt;&gt; file_B</p>
+
+
+
+<p></p>
+
+
+
+<p>🍕Find the file named codejammies in your linux system</p>
+
+
+
+<p>sudo find / -name codejammies -type f</p>
+
+
+
+<p>Here / represents root directory and f represents file. If you are looking for a directory, use d instead of f.</p>
+
+
+
+<p></p>
+
+
+
+<p>🍕What is nohup?</p>
+
+
+
+<p>nohup is command used for ignoring any hang ups, upon using this command system will not stop the process irrespective of errors or interruptions.</p>
+
+
+
+<p>Example- nohup command OR nohup command &amp;</p>
+
+
+
+<p>The &amp; let the process to run in the background.</p>
+
+
+
+<p></p>
+
+
+
+<p>🍕What is the ideal swap partition size?</p>
+
+
+
+<p>In linux, ideally the swap partition size is twice the amount of physical memory present on the system. In cases where this is not possible, the minimum size of swap partition should be equivalent to the amount of physical memory on the system.</p>
+
+
+
+<p></p>
+
+
+
+<p>🍕Display physical volumes- pvs OR pvdisplay</p>
+
+
+
+<p>🍕Display volume groups- vgs OR vgdisplay group_name</p>
+
+
+
+<p>🍕Display logical volume (LVM) information- lvs OR lvsdisplay lv_name</p>
+
+
+
+<p>🍕List partition types on a linux system- lsblk</p>
+
+
+
+<p>🍕List partitions on a linux system- fdisk -l /dev/sda OR fdisk -l | grep /dev/sd</p>
+
+
+
+<p>🍕Create a physical volume- pvcreate /dev/sdc</p>
+
+
+
+<p>🍕Remove a physical volume- pvremove /dev/sdc</p>
+
+
+
+<p>🍕Create a new volume group- vgcreate codejammies /dev/sdc</p>
+
+
+
+<p>🍕Rename a volume group- vgrename codejammies codejammy</p>
+
+
+
+<p>🍕Remove a volume group- vgremove codejammy</p>
+
+
+
+<p>🍕Extend a volume group- vgextend codejammies /dev/sdc</p>
+
+
+
+<p>🍕Remove a physical volume from the volume group- vgreduce codejammies /dev/sdc</p>
+
+
+
+<p>🍕Create a logical volume- lvcreate -n lv_codejammies</p>
+
+
+
+<p>🍕Create a logical volume of a specific size- lvcreate -n lv_codejammies -L4G vg_codejammies</p>
+
+
+
+<p>🍕Add space to a filesystem- lvextend /dev/vg_codejammies/lv_codejammies -L+1000M -r</p>
+
+
+
+<p>🍕Reduce size of filesystem- lvreduce /dev/vg_codejammies/lv_codejammies -L1000M -r</p>
+
+
+
+<p></p>
+
+
+
+<p>Linux articles are incomplete without kill signals, so I will be doing a separate article on the same. Hope you enjoyed the read, take it easy!🍹</p>
+		<div class="wpcnt">
+			<div class="wpa wpmrec">
+				<span class="wpa-about">Advertisements</span>
+				<div class="u">
+					<amp-ad width="300" height="265" data-block-on-consent="_auto_reject" type="pubmine" data-section="0" data-pt="1" data-ht="0" data-siteid="8982"><div placeholder class="amp-wp-iframe-placeholder"></div>
+					</amp-ad></div>
+			</div>
+		</div><div id="jp-post-flair" class="sharedaddy"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><amp-social-share type="twitter"></amp-social-share><amp-social-share type="facebook" data-param-app_id="249643311490"></amp-social-share><!-- not supported: print --><amp-social-share type="linkedin"></amp-social-share><!-- not supported: reddit --><amp-social-share type="tumblr"></amp-social-share><amp-social-share type="pinterest"></amp-social-share><!-- not supported: pocket --><!-- not supported: telegram --><!-- not supported: jetpack-whatsapp --><!-- not supported: skype --><!-- not supported: email --></div></div></div>
+<nav class="jp-relatedposts-i2" data-layout="grid"><div class="jp-related-posts-i2__row" data-post-count="3"><ul id="related-posts-item-5e9a1109be74d" aria-labelledby="related-posts-item-5e9a1109be74d-label" class="jp-related-posts-i2__post" role="menuitem"><li class="jp-related-posts-i2__post-link"><a id="related-posts-item-5e9a1109be74d-label" href="../../../27/30-seconds-read-linux-boot-process/index.html">30 Seconds Read: Linux Boot Process And Runlevels</a></li><li class="jp-related-posts-i2__post-date">27 Mar 2020</li><li class="jp-related-posts-i2__post-context">In "30 seconds read"</li></ul><ul id="related-posts-item-5e9a1109be763" aria-labelledby="related-posts-item-5e9a1109be763-label" class="jp-related-posts-i2__post" role="menuitem"><li class="jp-related-posts-i2__post-link"><a id="related-posts-item-5e9a1109be763-label" href="../../../../../2019/07/19/how-to-update-bios/index.html">How to update System BIOS</a></li><li class="jp-related-posts-i2__post-date">19 Jul 2019</li><li class="jp-related-posts-i2__post-context">In "Technical Articles"</li></ul><ul id="related-posts-item-5e9a1109be76f" aria-labelledby="related-posts-item-5e9a1109be76f-label" class="jp-related-posts-i2__post" role="menuitem"><li class="jp-related-posts-i2__post-link"><a id="related-posts-item-5e9a1109be76f-label" href="../../../20/30-seconds-read-udp/index.html">30 Seconds Read: UDP</a></li><li class="jp-related-posts-i2__post-date">20 Mar 2020</li><li class="jp-related-posts-i2__post-context">In "30 seconds read"</li></ul></div></nav></div>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="../../../../../category/technical-articles/index.html" rel="category tag">Technical Articles</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="../../../../../tag/cpu/index.html" rel="tag">cpu</a>, <a href="../../../../../tag/cron/index.html" rel="tag">cron</a>, <a href="../../../../../tag/engineer/index.html" rel="tag">engineer</a>, <a href="../../../../../tag/engineering/index.html" rel="tag">engineering</a>, <a href="../../../../../tag/google/index.html" rel="tag">google</a>, <a href="../../../../../tag/hard-links/index.html" rel="tag">hard links</a>, <a href="../../../../../tag/inode/index.html" rel="tag">inode</a>, <a href="../../../../../tag/interview/index.html" rel="tag">interview</a>, <a href="../../../../../tag/linux/index.html" rel="tag">linux</a>, <a href="../../../../../tag/operating-system/index.html" rel="tag">operating system</a>, <a href="../../../../../tag/popular/index.html" rel="tag">popular</a>, <a href="../../../../../tag/questions/index.html" rel="tag">questions</a>, <a href="../../../../../tag/soft-links/index.html" rel="tag">soft links</a>, <a href="../../../../../tag/stem/index.html" rel="tag">stem</a>, <a href="../../../../../tag/sticky-bit/index.html" rel="tag">sticky bit</a>, <a href="../../../../../tag/women/index.html" rel="tag">women</a>, <a href="../../../../../tag/women-in-tech/index.html" rel="tag">women in tech</a>	</div>
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="../index.html#comments">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>Codejammies</h2>
+		<a href="index.html#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+	<amp-pixel src="https://pixel.wp.com/b.gif?rand=RANDOM&#038;host=codejammies.wordpress.com&#038;ref=DOCUMENT_REFERRER&#038;amp=1&#038;blog=164396964&#038;v=wpcom&#038;tz=-4&#038;user_id=0&#038;post=197&#038;subd=codejammies"></amp-pixel>
+	<amp-pixel src="https://pixel.wp.com/b.gif?rand=RANDOM&#038;v=wpcom-no-pv&#038;crypt=UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdWFnNncxc1tjZG9XVXhRREQ%2FV0xPZ1hKXy8rZ2tpQ1MrVi9bRFtVLFR3QS5NeUtRTzd%2BUl9hM0h3VnxmSUQ%2Fc0RmUTdFcUxBPzZXPU9nbGR0UWJ5eiZdV1FqfGhMYWNqaUt4OEU4OGk4c2FwemprT0JVSS84VCxBak90SzhydnFTfjYlV11vfnw5cVpzJWFLbk5aZE9vZz09S1hIW10uRy1CVFRVZ08xJnNdSForZg%3D%3D"></amp-pixel>
+	<p>		<div class="wpcnt">
+			<div class="wpa wpmrec">
+				<span class="wpa-about">Advertisements</span>
+				<div class="u">
+					<amp-ad width=300 height=265
+						data-block-on-consent="_auto_reject"
+						type="pubmine"
+						data-section="8"
+						data-pt="1"
+						data-ht="0"
+						data-siteid="8982">
+						<div placeholder class="amp-wp-iframe-placeholder"></div>
+					</amp-ad>
+				</div>
+			</div>
+		</div><br/></p>
+</body>
+</html>
