@@ -3,10 +3,10 @@
 	<ShortName>Codejammies</ShortName>
 	<Description>Search Codejammies - Lessons between dummies</Description>
 	<Contact>help@wordpress.com</Contact>
-	<Url type="application/atom+xml" template="https://codejammies.wordpress.com/?s={searchTerms}&amp;feed=atom" />
-	<Url type="rss+xml" template="https://codejammies.wordpress.com/?s={searchTerms}&amp;feed=rss2" />
-	<Url type="text/html" template="https://codejammies.wordpress.com/?s={searchTerms}" method="GET" />
-	<Url type="application/opensearchdescription+xml" rel="self" template="https://codejammies.wordpress.com/osd.xml" />
+	<Url type="application/atom+xml" template="https://architmodi.github.io/?s={searchTerms}&amp;feed=atom" />
+	<Url type="rss+xml" template="https://architmodi.github.io/?s={searchTerms}&amp;feed=rss2" />
+	<Url type="text/html" template="https://architmodi.github.io/?s={searchTerms}" method="GET" />
+	<Url type="application/opensearchdescription+xml" rel="self" template="https://architmodi.github.io/osd.xml" />
 	<LongName>Codejammies</LongName>
 	<Image height="16" width="16" type="image/vnd.microsoft.icon">https://codejammies.files.wordpress.com/2020/02/cropped-cbc0d1ea-f44e-4390-8519-845d9ce3d6f2.jpeg?w=16</Image>
 	<Image height="64" width="64" type="image/jpeg">https://codejammies.files.wordpress.com/2020/02/cropped-cbc0d1ea-f44e-4390-8519-845d9ce3d6f2.jpeg?w=64</Image>
@@ -18,5 +18,5 @@
 	<Language>en</Language>
 	<OutputEncoding>UTF-8</OutputEncoding>
 	<InputEncoding>UTF-8</InputEncoding>
-	<moz:SearchForm>https://codejammies.wordpress.com</moz:SearchForm>
+	<moz:SearchForm>https://architmodi.github.io</moz:SearchForm>
 </OpenSearchDescription>
