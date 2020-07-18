@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:media="http://search.yahoo.com/mrss/"
+	>
+
+<channel>
+	<title>network engineering &#8211; Codejammies</title>
+	<atom:link href="https://architmodi.github.io/tag/network-engineering/feed/" rel="self" type="application/rss+xml" />
+	<link>https://architmodi.github.io</link>
+	<description>Lessons Between Dummies</description>
+	<lastBuildDate>Thu, 25 Jun 2020 20:17:36 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>http://wordpress.com/</generator>
+
+<image>
+	<url>https://codejammies.files.wordpress.com/2020/04/image-6-2.jpg?w=32</url>
+	<title>network engineering &#8211; Codejammies</title>
+	<link>https://architmodi.github.io</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<cloud domain='codejammies.wordpress.com' port='80' path='/?rsscloud=notify' registerProcedure='' protocol='http-post' />
+<atom:link rel="search" type="application/opensearchdescription+xml" href="https://architmodi.github.io/osd.xml" title="Codejammies" />
+	<atom:link rel='hub' href='https://architmodi.github.io/?pushpress=hub'/>
+	<item>
+		<title>30 Seconds Read: BGP (Part 1)</title>
+		<link>https://architmodi.github.io/2020/06/25/30-seconds-read-bgp-part-1/</link>
+					<comments>https://architmodi.github.io/2020/06/25/30-seconds-read-bgp-part-1/#respond</comments>
+		
+		<dc:creator><![CDATA[Sayali]]></dc:creator>
+		<pubDate>Thu, 25 Jun 2020 20:14:46 +0000</pubDate>
+				<category><![CDATA[30 seconds read]]></category>
+		<category><![CDATA[bgp]]></category>
+		<category><![CDATA[engineer]]></category>
+		<category><![CDATA[internet]]></category>
+		<category><![CDATA[network engineering]]></category>
+		<category><![CDATA[routing protocols]]></category>
+		<category><![CDATA[stem]]></category>
+		<guid isPermaLink="false">http://codejammies.wordpress.com/2020/06/25/30-seconds-read-bgp-part-1/</guid>
+
+					<description><![CDATA[Hola! Anyone who is studying Networking would know that BGP is a wide topic in itself. So I have planned to post byte-sized information on it. Today I am posting about BGP introduction, BGP message types, and BGP states. So read up and stay tuned for part 2!]]></description>
+										<content:encoded><![CDATA[
+<p>Hola! Anyone who is studying Networking would know that BGP is a wide topic in itself. So I have planned to post byte-sized information on it. Today I am posting about BGP introduction, BGP message types, and BGP states. So read up and stay tuned for part 2!</p>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="794" data-permalink="https://architmodi.github.io/2020/06/25/30-seconds-read-bgp-part-1/image-2-12/" data-orig-file="https://codejammies.files.wordpress.com/2020/06/image-2.jpg" data-orig-size="1080,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-2" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/06/image-2.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/06/image-2.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/06/image-2.jpg?w=1024" alt="" class="wp-image-794" srcset="https://codejammies.files.wordpress.com/2020/06/image-2.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/06/image-2.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/06/image-2.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/06/image-2.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/06/image-2.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="793" data-permalink="https://architmodi.github.io/2020/06/25/30-seconds-read-bgp-part-1/image-1-12/" data-orig-file="https://codejammies.files.wordpress.com/2020/06/image-1-1.jpg" data-orig-size="766,766" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-1" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/06/image-1-1.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/06/image-1-1.jpg?w=766" src="https://codejammies.files.wordpress.com/2020/06/image-1-1.jpg?w=766" alt="" class="wp-image-793" srcset="https://codejammies.files.wordpress.com/2020/06/image-1-1.jpg 766w, https://codejammies.files.wordpress.com/2020/06/image-1-1.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/06/image-1-1.jpg?w=300 300w" sizes="(max-width: 766px) 100vw, 766px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="792" data-permalink="https://architmodi.github.io/2020/06/25/30-seconds-read-bgp-part-1/image-32/" data-orig-file="https://codejammies.files.wordpress.com/2020/06/image-1.jpg" data-orig-size="1080,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/06/image-1.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/06/image-1.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/06/image-1.jpg?w=1024" alt="" class="wp-image-792" srcset="https://codejammies.files.wordpress.com/2020/06/image-1.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/06/image-1.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/06/image-1.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/06/image-1.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/06/image-1.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="795" data-permalink="https://architmodi.github.io/2020/06/25/30-seconds-read-bgp-part-1/image-3-12/" data-orig-file="https://codejammies.files.wordpress.com/2020/06/image-3.jpg" data-orig-size="1080,1511" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-3" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/06/image-3.jpg?w=214" data-large-file="https://codejammies.files.wordpress.com/2020/06/image-3.jpg?w=732" src="https://codejammies.files.wordpress.com/2020/06/image-3.jpg?w=732" alt="" class="wp-image-795" srcset="https://codejammies.files.wordpress.com/2020/06/image-3.jpg?w=732 732w, https://codejammies.files.wordpress.com/2020/06/image-3.jpg?w=107 107w, https://codejammies.files.wordpress.com/2020/06/image-3.jpg?w=214 214w, https://codejammies.files.wordpress.com/2020/06/image-3.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/06/image-3.jpg 1080w" sizes="(max-width: 732px) 100vw, 732px" /></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://architmodi.github.io/2020/06/25/30-seconds-read-bgp-part-1/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		
+		<media:thumbnail url="https://codejammies.files.wordpress.com/2020/06/48682b30f7267fdd1c7315efe6ba5380.draft_.96dpi.jpg" />
+		<media:content url="https://codejammies.files.wordpress.com/2020/06/48682b30f7267fdd1c7315efe6ba5380.draft_.96dpi.jpg" medium="image">
+			<media:title type="html">48682b30f7267fdd1c7315efe6ba5380.draft.96dpi</media:title>
+		</media:content>
+
+		<media:content url="https://2.gravatar.com/avatar/5c0d3989b094b21d3861dbd4e11f55fa?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">codejammies</media:title>
+		</media:content>
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/06/image-2.jpg?w=1024" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/06/image-1-1.jpg?w=766" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/06/image-1.jpg?w=1024" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/06/image-3.jpg?w=732" medium="image" />
+	</item>
+		<item>
+		<title>30 Seconds Read: Network Switches (Layer 2 &#124; Layer 3 &#124; Layer 4)</title>
+		<link>https://architmodi.github.io/2020/06/10/30-seconds-read-network-switches-layer-2-layer-3-layer-4/</link>
+					<comments>https://architmodi.github.io/2020/06/10/30-seconds-read-network-switches-layer-2-layer-3-layer-4/#respond</comments>
+		
+		<dc:creator><![CDATA[Sayali]]></dc:creator>
+		<pubDate>Thu, 11 Jun 2020 01:18:48 +0000</pubDate>
+				<category><![CDATA[30 seconds read]]></category>
+		<category><![CDATA[engineer]]></category>
+		<category><![CDATA[network engineering]]></category>
+		<category><![CDATA[network switch]]></category>
+		<category><![CDATA[stem]]></category>
+		<category><![CDATA[women in tech]]></category>
+		<guid isPermaLink="false">http://codejammies.wordpress.com/2020/06/10/30-seconds-read-network-switches-layer-2-layer-3-layer-4/</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img data-attachment-id="685" data-permalink="https://architmodi.github.io/2020/06/10/30-seconds-read-network-switches-layer-2-layer-3-layer-4/b867069daebf02e33e27356caf57df41-draft-96dpi/" data-orig-file="https://codejammies.files.wordpress.com/2020/06/b867069daebf02e33e27356caf57df41.draft_.96dpi.png" data-orig-size="1080,1920" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="b867069daebf02e33e27356caf57df41.draft.96dpi" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/06/b867069daebf02e33e27356caf57df41.draft_.96dpi.png?w=169" data-large-file="https://codejammies.files.wordpress.com/2020/06/b867069daebf02e33e27356caf57df41.draft_.96dpi.png?w=576" src="https://codejammies.files.wordpress.com/2020/06/b867069daebf02e33e27356caf57df41.draft_.96dpi.png?w=576" alt="" class="wp-image-685" srcset="https://codejammies.files.wordpress.com/2020/06/b867069daebf02e33e27356caf57df41.draft_.96dpi.png?w=576 576w, https://codejammies.files.wordpress.com/2020/06/b867069daebf02e33e27356caf57df41.draft_.96dpi.png?w=84 84w, https://codejammies.files.wordpress.com/2020/06/b867069daebf02e33e27356caf57df41.draft_.96dpi.png?w=169 169w, https://codejammies.files.wordpress.com/2020/06/b867069daebf02e33e27356caf57df41.draft_.96dpi.png?w=768 768w, https://codejammies.files.wordpress.com/2020/06/b867069daebf02e33e27356caf57df41.draft_.96dpi.png 1080w" sizes="(max-width: 576px) 100vw, 576px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="686" data-permalink="https://architmodi.github.io/2020/06/10/30-seconds-read-network-switches-layer-2-layer-3-layer-4/db87ba0df7cbd98157c85bec0a234bc5-draft-96dpi/" data-orig-file="https://codejammies.files.wordpress.com/2020/06/db87ba0df7cbd98157c85bec0a234bc5.draft_.96dpi.png" data-orig-size="1080,1920" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="db87ba0df7cbd98157c85bec0a234bc5.draft.96dpi" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/06/db87ba0df7cbd98157c85bec0a234bc5.draft_.96dpi.png?w=169" data-large-file="https://codejammies.files.wordpress.com/2020/06/db87ba0df7cbd98157c85bec0a234bc5.draft_.96dpi.png?w=576" src="https://codejammies.files.wordpress.com/2020/06/db87ba0df7cbd98157c85bec0a234bc5.draft_.96dpi.png?w=576" alt="" class="wp-image-686" srcset="https://codejammies.files.wordpress.com/2020/06/db87ba0df7cbd98157c85bec0a234bc5.draft_.96dpi.png?w=576 576w, https://codejammies.files.wordpress.com/2020/06/db87ba0df7cbd98157c85bec0a234bc5.draft_.96dpi.png?w=84 84w, https://codejammies.files.wordpress.com/2020/06/db87ba0df7cbd98157c85bec0a234bc5.draft_.96dpi.png?w=169 169w, https://codejammies.files.wordpress.com/2020/06/db87ba0df7cbd98157c85bec0a234bc5.draft_.96dpi.png?w=768 768w, https://codejammies.files.wordpress.com/2020/06/db87ba0df7cbd98157c85bec0a234bc5.draft_.96dpi.png 1080w" sizes="(max-width: 576px) 100vw, 576px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="687" data-permalink="https://architmodi.github.io/2020/06/10/30-seconds-read-network-switches-layer-2-layer-3-layer-4/577741b87a6d26cf98bc2b6bcf8d5710-draft-96dpi/" data-orig-file="https://codejammies.files.wordpress.com/2020/06/577741b87a6d26cf98bc2b6bcf8d5710.draft_.96dpi.png" data-orig-size="1080,1920" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="577741b87a6d26cf98bc2b6bcf8d5710.draft.96dpi" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/06/577741b87a6d26cf98bc2b6bcf8d5710.draft_.96dpi.png?w=169" data-large-file="https://codejammies.files.wordpress.com/2020/06/577741b87a6d26cf98bc2b6bcf8d5710.draft_.96dpi.png?w=576" src="https://codejammies.files.wordpress.com/2020/06/577741b87a6d26cf98bc2b6bcf8d5710.draft_.96dpi.png?w=576" alt="" class="wp-image-687" srcset="https://codejammies.files.wordpress.com/2020/06/577741b87a6d26cf98bc2b6bcf8d5710.draft_.96dpi.png?w=576 576w, https://codejammies.files.wordpress.com/2020/06/577741b87a6d26cf98bc2b6bcf8d5710.draft_.96dpi.png?w=84 84w, https://codejammies.files.wordpress.com/2020/06/577741b87a6d26cf98bc2b6bcf8d5710.draft_.96dpi.png?w=169 169w, https://codejammies.files.wordpress.com/2020/06/577741b87a6d26cf98bc2b6bcf8d5710.draft_.96dpi.png?w=768 768w, https://codejammies.files.wordpress.com/2020/06/577741b87a6d26cf98bc2b6bcf8d5710.draft_.96dpi.png 1080w" sizes="(max-width: 576px) 100vw, 576px" /></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://architmodi.github.io/2020/06/10/30-seconds-read-network-switches-layer-2-layer-3-layer-4/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		
+		<media:thumbnail url="https://codejammies.files.wordpress.com/2020/06/8631dc2a55f4af32eee04f6af12d6e1b.draft_.96dpi.png" />
+		<media:content url="https://codejammies.files.wordpress.com/2020/06/8631dc2a55f4af32eee04f6af12d6e1b.draft_.96dpi.png" medium="image">
+			<media:title type="html">8631dc2a55f4af32eee04f6af12d6e1b.draft.96dpi</media:title>
+		</media:content>
+
+		<media:content url="https://2.gravatar.com/avatar/5c0d3989b094b21d3861dbd4e11f55fa?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">codejammies</media:title>
+		</media:content>
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/06/b867069daebf02e33e27356caf57df41.draft_.96dpi.png?w=576" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/06/db87ba0df7cbd98157c85bec0a234bc5.draft_.96dpi.png?w=576" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/06/577741b87a6d26cf98bc2b6bcf8d5710.draft_.96dpi.png?w=576" medium="image" />
+	</item>
+		<item>
+		<title>30 Seconds Read: WiFi Versions</title>
+		<link>https://architmodi.github.io/2020/06/07/30-seconds-read-wifi-versions/</link>
+					<comments>https://architmodi.github.io/2020/06/07/30-seconds-read-wifi-versions/#respond</comments>
+		
+		<dc:creator><![CDATA[Sayali]]></dc:creator>
+		<pubDate>Sun, 07 Jun 2020 22:25:33 +0000</pubDate>
+				<category><![CDATA[30 seconds read]]></category>
+		<category><![CDATA[network engineering]]></category>
+		<category><![CDATA[stem]]></category>
+		<category><![CDATA[technology]]></category>
+		<category><![CDATA[wifi]]></category>
+		<guid isPermaLink="false">http://codejammies.wordpress.com/?p=678</guid>
+
+					<description><![CDATA[Happy Sunday! Fact check- Did you know the explication for WiFi is Wireless Fidelity? That’s correct, not wireless network, but wireless fidelity. Well, seems like name is not the only confusing thing about WiFi, which brings me to my next point “WiFi Versions”. IEEE released the first version of 802.11 standard in 1997- now obsolete.... <div class="link-more"><a href="https://architmodi.github.io/2020/06/07/30-seconds-read-wifi-versions/">Read More</a></div>]]></description>
+										<content:encoded><![CDATA[
+<p>Happy Sunday! Fact check- Did you know the explication for WiFi is Wireless Fidelity? That’s correct, not wireless network, but wireless fidelity. Well, seems like name is not the only confusing thing about WiFi, which brings me to my next point “WiFi Versions”.</p>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="680" data-permalink="https://architmodi.github.io/2020/06/07/30-seconds-read-wifi-versions/image-31/" data-orig-file="https://codejammies.files.wordpress.com/2020/06/image.jpg" data-orig-size="1080,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/06/image.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/06/image.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/06/image.jpg?w=1024" alt="" class="wp-image-680" srcset="https://codejammies.files.wordpress.com/2020/06/image.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/06/image.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/06/image.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/06/image.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/06/image.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p><br />IEEE released the first version of 802.11 standard in 1997- now obsolete. Thank goodness because it offered terrible speed! But as any invention things started to get better with every new release. Before we move further, note that the frequency bandwidth of 5GHz offer high speed but low coverage and 2.4GHz offers low speed but high coverage, meaning every version has it’s pros and cons-<br /><br /><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f4cc.png" alt="📌" class="wp-smiley" style="height: 1em; max-height: 1em;" />802.11b (WiFi 1)- Offered data speed of 11Mbps in 2.4GHz frequency band.<br /><br /><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f4cc.png" alt="📌" class="wp-smiley" style="height: 1em; max-height: 1em;" />802.11a (WiFi 2)- Offered data speed of 54Mbps in 5GHz frequency band.<br /><br /><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f4cc.png" alt="📌" class="wp-smiley" style="height: 1em; max-height: 1em;" />802.11g (WiFi 3)- Offers data speed of 54Mbps for 2.4GHz. Meaning it provides speed of 802.11a and coverage of 802.11b making it the best of it’s time. Since WiFi 3 runs on 2.4GHz signal, it is backward compatible with WiFi 1 devices. Obviously it will bottleneck the speed limit for WiFi 1 devices according to their standards due to hardware capacity limitations.<br /><br /><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f4cc.png" alt="📌" class="wp-smiley" style="height: 1em; max-height: 1em;" />802.11n (WiFi 4)- Offers a speed range of 300 Mbps-600Mbps in frequency range of 2.4GHz &#8211; 5GHz. It offers a speed of 300Mbps for 2.4GHz frequency and 600Mbps for 5GHz frequency. IEEE also introduced a feature called MIMO, enabling it to establish connection with multiple devices at the same time.<br /><br /><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f4cc.png" alt="📌" class="wp-smiley" style="height: 1em; max-height: 1em;" />802.11ac (WiFi 5)- Offers speed of 400Mbps (1Gbps) with 5GHz. Since it doesn’t offer 2.4GHz band, it is not backward compatible with 802.11b and 802.11g devices. Bummer<img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f60c.png" alt="😌" class="wp-smiley" style="height: 1em; max-height: 1em;" /><br /><br /><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f4cc.png" alt="📌" class="wp-smiley" style="height: 1em; max-height: 1em;" />802.11ax (WiFi 6)- Cutting edge technology and offers data speed from 3.4Gbps to 14Gbps theoretically with 2.4GHz as well as 5GHz, making it backward compatible with every older version. It comes with cooler technologies like MIMO, BSS coloring and TWT. As mentioned earlier, MIMO serves multiple devices at the same time; BSS coloring provides better signal quality by preventing signal collision; and the best one of all, TWT-Target Wakeup Time: this feature deserves a fresh post but for now just thank it for protecting your device’s battery<img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/263a.png" alt="☺" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+
+
+<p>Follow <a href='https://architmodi.github.io/mentions/codejammies/' class='mention'><span class='mentions-prefix'>@</span>codejammies</a> on instagram to get updates on my new posts. Until next time! Ciao<img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f9a6.png" alt="🦦" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://architmodi.github.io/2020/06/07/30-seconds-read-wifi-versions/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		
+		<media:thumbnail url="https://codejammies.files.wordpress.com/2020/06/d2af06083cd6f50a2c69d176a491692d.draft_.96dpi.png" />
+		<media:content url="https://codejammies.files.wordpress.com/2020/06/d2af06083cd6f50a2c69d176a491692d.draft_.96dpi.png" medium="image">
+			<media:title type="html">d2af06083cd6f50a2c69d176a491692d.draft.96dpi</media:title>
+		</media:content>
+
+		<media:content url="https://2.gravatar.com/avatar/5c0d3989b094b21d3861dbd4e11f55fa?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">codejammies</media:title>
+		</media:content>
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/06/image.jpg?w=1024" medium="image" />
+	</item>
+		<item>
+		<title>30 Seconds Read: EIGRP (Enhanced Interior Gateway Routing Protocol)</title>
+		<link>https://architmodi.github.io/2020/05/01/30-seconds-read-eigrp-enhanced-interior-gateway-routing-protocol/</link>
+					<comments>https://architmodi.github.io/2020/05/01/30-seconds-read-eigrp-enhanced-interior-gateway-routing-protocol/#respond</comments>
+		
+		<dc:creator><![CDATA[Sayali]]></dc:creator>
+		<pubDate>Fri, 01 May 2020 04:57:36 +0000</pubDate>
+				<category><![CDATA[30 seconds read]]></category>
+		<category><![CDATA[eigrp]]></category>
+		<category><![CDATA[engineer]]></category>
+		<category><![CDATA[network engineering]]></category>
+		<category><![CDATA[routing]]></category>
+		<category><![CDATA[routing protocols]]></category>
+		<category><![CDATA[stem]]></category>
+		<category><![CDATA[women in tech]]></category>
+		<guid isPermaLink="false">http://codejammies.wordpress.com/2020/05/01/30-seconds-read-eigrp-enhanced-interior-gateway-routing-protocol/</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img data-attachment-id="637" data-permalink="https://architmodi.github.io/2020/05/01/30-seconds-read-eigrp-enhanced-interior-gateway-routing-protocol/image-28/" data-orig-file="https://codejammies.files.wordpress.com/2020/05/image.jpg" data-orig-size="1080,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/05/image.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/05/image.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/05/image.jpg?w=1024" alt="" class="wp-image-637" srcset="https://codejammies.files.wordpress.com/2020/05/image.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/05/image.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/05/image.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/05/image.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/05/image.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="638" data-permalink="https://architmodi.github.io/2020/05/01/30-seconds-read-eigrp-enhanced-interior-gateway-routing-protocol/image-1-9/" data-orig-file="https://codejammies.files.wordpress.com/2020/05/image-1.jpg" data-orig-size="1080,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-1" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/05/image-1.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/05/image-1.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/05/image-1.jpg?w=1024" alt="" class="wp-image-638" srcset="https://codejammies.files.wordpress.com/2020/05/image-1.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/05/image-1.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/05/image-1.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/05/image-1.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/05/image-1.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="639" data-permalink="https://architmodi.github.io/2020/05/01/30-seconds-read-eigrp-enhanced-interior-gateway-routing-protocol/image-2-9/" data-orig-file="https://codejammies.files.wordpress.com/2020/05/image-2.jpg" data-orig-size="1080,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-2" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/05/image-2.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/05/image-2.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/05/image-2.jpg?w=1024" alt="" class="wp-image-639" srcset="https://codejammies.files.wordpress.com/2020/05/image-2.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/05/image-2.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/05/image-2.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/05/image-2.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/05/image-2.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="640" data-permalink="https://architmodi.github.io/2020/05/01/30-seconds-read-eigrp-enhanced-interior-gateway-routing-protocol/image-3-9/" data-orig-file="https://codejammies.files.wordpress.com/2020/05/image-3.jpg" data-orig-size="1080,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-3" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/05/image-3.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/05/image-3.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/05/image-3.jpg?w=1024" alt="" class="wp-image-640" srcset="https://codejammies.files.wordpress.com/2020/05/image-3.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/05/image-3.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/05/image-3.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/05/image-3.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/05/image-3.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="641" data-permalink="https://architmodi.github.io/2020/05/01/30-seconds-read-eigrp-enhanced-interior-gateway-routing-protocol/image-4-9/" data-orig-file="https://codejammies.files.wordpress.com/2020/05/image-4.jpg" data-orig-size="1080,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-4" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/05/image-4.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/05/image-4.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/05/image-4.jpg?w=1024" alt="" class="wp-image-641" srcset="https://codejammies.files.wordpress.com/2020/05/image-4.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/05/image-4.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/05/image-4.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/05/image-4.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/05/image-4.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="642" data-permalink="https://architmodi.github.io/2020/05/01/30-seconds-read-eigrp-enhanced-interior-gateway-routing-protocol/image-5-9/" data-orig-file="https://codejammies.files.wordpress.com/2020/05/image-5.jpg" data-orig-size="1080,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-5" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/05/image-5.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/05/image-5.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/05/image-5.jpg?w=1024" alt="" class="wp-image-642" srcset="https://codejammies.files.wordpress.com/2020/05/image-5.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/05/image-5.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/05/image-5.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/05/image-5.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/05/image-5.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="643" data-permalink="https://architmodi.github.io/2020/05/01/30-seconds-read-eigrp-enhanced-interior-gateway-routing-protocol/image-6-9/" data-orig-file="https://codejammies.files.wordpress.com/2020/05/image-6.jpg" data-orig-size="1080,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-6" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/05/image-6.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/05/image-6.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/05/image-6.jpg?w=1024" alt="" class="wp-image-643" srcset="https://codejammies.files.wordpress.com/2020/05/image-6.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/05/image-6.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/05/image-6.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/05/image-6.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/05/image-6.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://architmodi.github.io/2020/05/01/30-seconds-read-eigrp-enhanced-interior-gateway-routing-protocol/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		
+		<media:thumbnail url="https://codejammies.files.wordpress.com/2020/05/9dcfb5423fe874a8c3d75a981c78479d.draft_.96dpi.png" />
+		<media:content url="https://codejammies.files.wordpress.com/2020/05/9dcfb5423fe874a8c3d75a981c78479d.draft_.96dpi.png" medium="image">
+			<media:title type="html">9dcfb5423fe874a8c3d75a981c78479d.draft.96dpi</media:title>
+		</media:content>
+
+		<media:content url="https://2.gravatar.com/avatar/5c0d3989b094b21d3861dbd4e11f55fa?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">codejammies</media:title>
+		</media:content>
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/05/image.jpg?w=1024" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/05/image-1.jpg?w=1024" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/05/image-2.jpg?w=1024" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/05/image-3.jpg?w=1024" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/05/image-4.jpg?w=1024" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/05/image-5.jpg?w=1024" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/05/image-6.jpg?w=1024" medium="image" />
+	</item>
+		<item>
+		<title>30 Seconds Read: Spanning Tree Protocol Port States</title>
+		<link>https://architmodi.github.io/2020/04/25/30-seconds-read-spanning-tree-protocol-port-states/</link>
+					<comments>https://architmodi.github.io/2020/04/25/30-seconds-read-spanning-tree-protocol-port-states/#respond</comments>
+		
+		<dc:creator><![CDATA[Sayali]]></dc:creator>
+		<pubDate>Sat, 25 Apr 2020 18:02:05 +0000</pubDate>
+				<category><![CDATA[30 seconds read]]></category>
+		<category><![CDATA[computer hardware]]></category>
+		<category><![CDATA[engineer]]></category>
+		<category><![CDATA[engineering]]></category>
+		<category><![CDATA[interview]]></category>
+		<category><![CDATA[network engineering]]></category>
+		<category><![CDATA[stem]]></category>
+		<category><![CDATA[student]]></category>
+		<category><![CDATA[technology]]></category>
+		<category><![CDATA[telecommunications]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[women in tech]]></category>
+		<guid isPermaLink="false">http://codejammies.wordpress.com/2020/04/25/30-seconds-read-spanning-tree-protocol-port-states/</guid>
+
+					<description><![CDATA[Happy reading!🌻]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img data-attachment-id="569" data-permalink="https://architmodi.github.io/2020/04/25/30-seconds-read-spanning-tree-protocol-port-states/image-6-8/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image-6-3.jpg" data-orig-size="1080,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-6" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image-6-3.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image-6-3.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/04/image-6-3.jpg?w=1024" alt="" class="wp-image-569" srcset="https://codejammies.files.wordpress.com/2020/04/image-6-3.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/04/image-6-3.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image-6-3.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image-6-3.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/04/image-6-3.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="568" data-permalink="https://architmodi.github.io/2020/04/25/30-seconds-read-spanning-tree-protocol-port-states/image-5-8/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image-5-3.jpg" data-orig-size="974,974" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-5" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image-5-3.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image-5-3.jpg?w=974" src="https://codejammies.files.wordpress.com/2020/04/image-5-3.jpg?w=974" alt="" class="wp-image-568" srcset="https://codejammies.files.wordpress.com/2020/04/image-5-3.jpg 974w, https://codejammies.files.wordpress.com/2020/04/image-5-3.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image-5-3.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image-5-3.jpg?w=768 768w" sizes="(max-width: 974px) 100vw, 974px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="567" data-permalink="https://architmodi.github.io/2020/04/25/30-seconds-read-spanning-tree-protocol-port-states/image-4-8/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image-4-3.jpg" data-orig-size="1080,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-4" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image-4-3.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image-4-3.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/04/image-4-3.jpg?w=1024" alt="" class="wp-image-567" srcset="https://codejammies.files.wordpress.com/2020/04/image-4-3.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/04/image-4-3.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image-4-3.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image-4-3.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/04/image-4-3.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="566" data-permalink="https://architmodi.github.io/2020/04/25/30-seconds-read-spanning-tree-protocol-port-states/image-3-8/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image-3-3.jpg" data-orig-size="1080,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-3" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image-3-3.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image-3-3.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/04/image-3-3.jpg?w=1024" alt="" class="wp-image-566" srcset="https://codejammies.files.wordpress.com/2020/04/image-3-3.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/04/image-3-3.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image-3-3.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image-3-3.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/04/image-3-3.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="565" data-permalink="https://architmodi.github.io/2020/04/25/30-seconds-read-spanning-tree-protocol-port-states/image-2-8/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image-2-3.jpg" data-orig-size="1080,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-2" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image-2-3.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image-2-3.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/04/image-2-3.jpg?w=1024" alt="" class="wp-image-565" srcset="https://codejammies.files.wordpress.com/2020/04/image-2-3.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/04/image-2-3.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image-2-3.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image-2-3.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/04/image-2-3.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="564" data-permalink="https://architmodi.github.io/2020/04/25/30-seconds-read-spanning-tree-protocol-port-states/image-1-8/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image-1-3.jpg" data-orig-size="1080,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-1" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image-1-3.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image-1-3.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/04/image-1-3.jpg?w=1024" alt="" class="wp-image-564" srcset="https://codejammies.files.wordpress.com/2020/04/image-1-3.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/04/image-1-3.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image-1-3.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image-1-3.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/04/image-1-3.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="563" data-permalink="https://architmodi.github.io/2020/04/25/30-seconds-read-spanning-tree-protocol-port-states/image-27/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image-10.jpg" data-orig-size="1080,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image-10.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image-10.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/04/image-10.jpg?w=1024" alt="" class="wp-image-563" srcset="https://codejammies.files.wordpress.com/2020/04/image-10.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/04/image-10.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image-10.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image-10.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/04/image-10.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>Happy reading!<img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f33b.png" alt="🌻" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://architmodi.github.io/2020/04/25/30-seconds-read-spanning-tree-protocol-port-states/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		
+		<media:thumbnail url="https://codejammies.files.wordpress.com/2020/04/e3d17a6bfc7b395621af2a4c25ed8e24.draft_.96dpi.png" />
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/e3d17a6bfc7b395621af2a4c25ed8e24.draft_.96dpi.png" medium="image">
+			<media:title type="html">e3d17a6bfc7b395621af2a4c25ed8e24.draft.96dpi</media:title>
+		</media:content>
+
+		<media:content url="https://2.gravatar.com/avatar/5c0d3989b094b21d3861dbd4e11f55fa?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">codejammies</media:title>
+		</media:content>
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image-6-3.jpg?w=1024" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image-5-3.jpg?w=974" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image-4-3.jpg?w=1024" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image-3-3.jpg?w=1024" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image-2-3.jpg?w=1024" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image-1-3.jpg?w=1024" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image-10.jpg?w=1024" medium="image" />
+	</item>
+		<item>
+		<title>30 Seconds Read: Load Balancer</title>
+		<link>https://architmodi.github.io/2020/04/08/30-seconds-read-load-balancer/</link>
+					<comments>https://architmodi.github.io/2020/04/08/30-seconds-read-load-balancer/#respond</comments>
+		
+		<dc:creator><![CDATA[Sayali]]></dc:creator>
+		<pubDate>Wed, 08 Apr 2020 22:39:31 +0000</pubDate>
+				<category><![CDATA[30 seconds read]]></category>
+		<category><![CDATA[codejammies]]></category>
+		<category><![CDATA[engineer]]></category>
+		<category><![CDATA[load balancer]]></category>
+		<category><![CDATA[network engineering]]></category>
+		<category><![CDATA[networking]]></category>
+		<category><![CDATA[stem]]></category>
+		<category><![CDATA[telecommunications]]></category>
+		<category><![CDATA[women in tech]]></category>
+		<guid isPermaLink="false">http://codejammies.wordpress.com/?p=534</guid>
+
+					<description><![CDATA[Learn what, why, and how load balancers distribute load across a network of servers- Hope you enjoyed the 30 seconds read! Follow me on wordpress and instagram @codejammies for more informational content👩🏻‍💻]]></description>
+										<content:encoded><![CDATA[
+<p>Learn what, why, and how load balancers distribute load across a network of servers-</p>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="512" data-permalink="https://architmodi.github.io/2020/04/08/30-seconds-read-load-balancer/image-25/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image-6.jpg" data-orig-size="1248,1202" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image-6.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image-6.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/04/image-6.jpg?w=1024" alt="" class="wp-image-512" srcset="https://codejammies.files.wordpress.com/2020/04/image-6.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/04/image-6.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image-6.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image-6.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/04/image-6.jpg 1248w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="514" data-permalink="https://architmodi.github.io/2020/04/08/30-seconds-read-load-balancer/image-1-6/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image-1-1.jpg" data-orig-size="1079,1079" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-1" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image-1-1.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image-1-1.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/04/image-1-1.jpg?w=1024" alt="" class="wp-image-514" srcset="https://codejammies.files.wordpress.com/2020/04/image-1-1.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/04/image-1-1.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image-1-1.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image-1-1.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/04/image-1-1.jpg 1079w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="516" data-permalink="https://architmodi.github.io/2020/04/08/30-seconds-read-load-balancer/image-2-6/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image-2-1.jpg" data-orig-size="1079,1079" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-2" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image-2-1.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image-2-1.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/04/image-2-1.jpg?w=1024" alt="" class="wp-image-516" srcset="https://codejammies.files.wordpress.com/2020/04/image-2-1.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/04/image-2-1.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image-2-1.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image-2-1.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/04/image-2-1.jpg 1079w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="518" data-permalink="https://architmodi.github.io/2020/04/08/30-seconds-read-load-balancer/image-3-6/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image-3-1.jpg" data-orig-size="1079,1079" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-3" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image-3-1.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image-3-1.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/04/image-3-1.jpg?w=1024" alt="" class="wp-image-518" srcset="https://codejammies.files.wordpress.com/2020/04/image-3-1.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/04/image-3-1.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image-3-1.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image-3-1.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/04/image-3-1.jpg 1079w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="525" data-permalink="https://architmodi.github.io/2020/04/08/30-seconds-read-load-balancer/image-4-6/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image-4-1.jpg" data-orig-size="1079,1079" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-4" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image-4-1.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image-4-1.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/04/image-4-1.jpg?w=1024" alt="" class="wp-image-525" srcset="https://codejammies.files.wordpress.com/2020/04/image-4-1.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/04/image-4-1.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image-4-1.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image-4-1.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/04/image-4-1.jpg 1079w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="527" data-permalink="https://architmodi.github.io/2020/04/08/30-seconds-read-load-balancer/image-5-6/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image-5-1.jpg" data-orig-size="1079,1079" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-5" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image-5-1.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image-5-1.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/04/image-5-1.jpg?w=1024" alt="" class="wp-image-527" srcset="https://codejammies.files.wordpress.com/2020/04/image-5-1.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/04/image-5-1.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image-5-1.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image-5-1.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/04/image-5-1.jpg 1079w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="529" data-permalink="https://architmodi.github.io/2020/04/08/30-seconds-read-load-balancer/image-6-6/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image-6-1.jpg" data-orig-size="1079,1079" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-6" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image-6-1.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image-6-1.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/04/image-6-1.jpg?w=1024" alt="" class="wp-image-529" srcset="https://codejammies.files.wordpress.com/2020/04/image-6-1.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/04/image-6-1.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image-6-1.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image-6-1.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/04/image-6-1.jpg 1079w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="531" data-permalink="https://architmodi.github.io/2020/04/08/30-seconds-read-load-balancer/image-7-5/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image-7.jpg" data-orig-size="1079,1079" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-7" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image-7.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image-7.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/04/image-7.jpg?w=1024" alt="" class="wp-image-531" srcset="https://codejammies.files.wordpress.com/2020/04/image-7.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/04/image-7.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image-7.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image-7.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/04/image-7.jpg 1079w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="533" data-permalink="https://architmodi.github.io/2020/04/08/30-seconds-read-load-balancer/image-8-5/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image-8.jpg" data-orig-size="1079,1079" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-8" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image-8.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image-8.jpg?w=1000" src="https://codejammies.files.wordpress.com/2020/04/image-8.jpg?w=1024" alt="" class="wp-image-533" srcset="https://codejammies.files.wordpress.com/2020/04/image-8.jpg?w=1024 1024w, https://codejammies.files.wordpress.com/2020/04/image-8.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image-8.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image-8.jpg?w=768 768w, https://codejammies.files.wordpress.com/2020/04/image-8.jpg 1079w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>Hope you enjoyed the 30 seconds read! Follow me on wordpress and instagram <a class="mention" href="https://architmodi.github.io/mentions/codejammies/">@codejammies</a> for more informational content<img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f469-1f3fb-200d-1f4bb.png" alt="👩🏻‍💻" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://architmodi.github.io/2020/04/08/30-seconds-read-load-balancer/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		
+		<media:thumbnail url="https://codejammies.files.wordpress.com/2020/04/img_0760.jpg" />
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/img_0760.jpg" medium="image">
+			<media:title type="html">img_0760</media:title>
+		</media:content>
+
+		<media:content url="https://2.gravatar.com/avatar/5c0d3989b094b21d3861dbd4e11f55fa?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">codejammies</media:title>
+		</media:content>
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image-6.jpg?w=1024" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image-1-1.jpg?w=1024" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image-2-1.jpg?w=1024" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image-3-1.jpg?w=1024" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image-4-1.jpg?w=1024" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image-5-1.jpg?w=1024" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image-6-1.jpg?w=1024" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image-7.jpg?w=1024" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image-8.jpg?w=1024" medium="image" />
+	</item>
+		<item>
+		<title>30 Seconds Read: Network Switches</title>
+		<link>https://architmodi.github.io/2020/04/01/30-seconds-read-network-switches/</link>
+					<comments>https://architmodi.github.io/2020/04/01/30-seconds-read-network-switches/#respond</comments>
+		
+		<dc:creator><![CDATA[Sayali]]></dc:creator>
+		<pubDate>Thu, 02 Apr 2020 03:01:40 +0000</pubDate>
+				<category><![CDATA[30 seconds read]]></category>
+		<category><![CDATA[basic]]></category>
+		<category><![CDATA[codejammies]]></category>
+		<category><![CDATA[computer engineering]]></category>
+		<category><![CDATA[computer hardware]]></category>
+		<category><![CDATA[computer science]]></category>
+		<category><![CDATA[electrical engineering]]></category>
+		<category><![CDATA[electronic engineering]]></category>
+		<category><![CDATA[engineer]]></category>
+		<category><![CDATA[engineering]]></category>
+		<category><![CDATA[interview]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[network engineering]]></category>
+		<category><![CDATA[networking]]></category>
+		<category><![CDATA[stem]]></category>
+		<category><![CDATA[student]]></category>
+		<category><![CDATA[tech]]></category>
+		<category><![CDATA[technology]]></category>
+		<category><![CDATA[telecommunications]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[women in tech]]></category>
+		<category><![CDATA[womenshistorymonth]]></category>
+		<guid isPermaLink="false">http://codejammies.wordpress.com/2020/04/01/30-seconds-read-network-switches/</guid>
+
+					<description><![CDATA[Hope you enjoyed the 30 seconds read! Follow me on wordpress and instagram @codejammies for more informational content👩🏻‍💻]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img data-attachment-id="478" data-permalink="https://architmodi.github.io/2020/04/01/30-seconds-read-network-switches/image-24/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image.jpg" data-orig-size="828,828" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image.jpg?w=828" src="https://codejammies.files.wordpress.com/2020/04/image.jpg?w=828" alt="" class="wp-image-478" srcset="https://codejammies.files.wordpress.com/2020/04/image.jpg 828w, https://codejammies.files.wordpress.com/2020/04/image.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image.jpg?w=768 768w" sizes="(max-width: 828px) 100vw, 828px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="479" data-permalink="https://architmodi.github.io/2020/04/01/30-seconds-read-network-switches/image-1-5/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image-1.jpg" data-orig-size="828,828" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-1" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image-1.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image-1.jpg?w=828" src="https://codejammies.files.wordpress.com/2020/04/image-1.jpg?w=828" alt="" class="wp-image-479" srcset="https://codejammies.files.wordpress.com/2020/04/image-1.jpg 828w, https://codejammies.files.wordpress.com/2020/04/image-1.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image-1.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image-1.jpg?w=768 768w" sizes="(max-width: 828px) 100vw, 828px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="480" data-permalink="https://architmodi.github.io/2020/04/01/30-seconds-read-network-switches/image-2-5/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image-2.jpg" data-orig-size="828,828" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-2" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image-2.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image-2.jpg?w=828" src="https://codejammies.files.wordpress.com/2020/04/image-2.jpg?w=828" alt="" class="wp-image-480" srcset="https://codejammies.files.wordpress.com/2020/04/image-2.jpg 828w, https://codejammies.files.wordpress.com/2020/04/image-2.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image-2.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image-2.jpg?w=768 768w" sizes="(max-width: 828px) 100vw, 828px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="481" data-permalink="https://architmodi.github.io/2020/04/01/30-seconds-read-network-switches/image-3-5/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image-3.jpg" data-orig-size="828,828" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-3" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image-3.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image-3.jpg?w=828" src="https://codejammies.files.wordpress.com/2020/04/image-3.jpg?w=828" alt="" class="wp-image-481" srcset="https://codejammies.files.wordpress.com/2020/04/image-3.jpg 828w, https://codejammies.files.wordpress.com/2020/04/image-3.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image-3.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image-3.jpg?w=768 768w" sizes="(max-width: 828px) 100vw, 828px" /></figure>
+
+
+
+<figure class="wp-block-video"><video controls src="https://videos.files.wordpress.com/ISRcFQMc/837cd895d0b04a5d8ce29647c3279a2a.mov"></video></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="474" data-permalink="https://architmodi.github.io/2020/04/01/30-seconds-read-network-switches/ddf24ed731a610fc1ecd8a0e3d1f9097-draft-96dpi/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/ddf24ed731a610fc1ecd8a0e3d1f9097.draft_.96dpi.png" data-orig-size="1080,1920" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="ddf24ed731a610fc1ecd8a0e3d1f9097.draft.96dpi" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/ddf24ed731a610fc1ecd8a0e3d1f9097.draft_.96dpi.png?w=169" data-large-file="https://codejammies.files.wordpress.com/2020/04/ddf24ed731a610fc1ecd8a0e3d1f9097.draft_.96dpi.png?w=576" src="https://codejammies.files.wordpress.com/2020/04/ddf24ed731a610fc1ecd8a0e3d1f9097.draft_.96dpi.png?w=576" alt="" class="wp-image-474" srcset="https://codejammies.files.wordpress.com/2020/04/ddf24ed731a610fc1ecd8a0e3d1f9097.draft_.96dpi.png?w=576 576w, https://codejammies.files.wordpress.com/2020/04/ddf24ed731a610fc1ecd8a0e3d1f9097.draft_.96dpi.png?w=84 84w, https://codejammies.files.wordpress.com/2020/04/ddf24ed731a610fc1ecd8a0e3d1f9097.draft_.96dpi.png?w=169 169w, https://codejammies.files.wordpress.com/2020/04/ddf24ed731a610fc1ecd8a0e3d1f9097.draft_.96dpi.png?w=768 768w, https://codejammies.files.wordpress.com/2020/04/ddf24ed731a610fc1ecd8a0e3d1f9097.draft_.96dpi.png 1080w" sizes="(max-width: 576px) 100vw, 576px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="482" data-permalink="https://architmodi.github.io/2020/04/01/30-seconds-read-network-switches/image-4-5/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image-4.jpg" data-orig-size="828,828" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-4" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image-4.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image-4.jpg?w=828" src="https://codejammies.files.wordpress.com/2020/04/image-4.jpg?w=828" alt="" class="wp-image-482" srcset="https://codejammies.files.wordpress.com/2020/04/image-4.jpg 828w, https://codejammies.files.wordpress.com/2020/04/image-4.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image-4.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image-4.jpg?w=768 768w" sizes="(max-width: 828px) 100vw, 828px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="483" data-permalink="https://architmodi.github.io/2020/04/01/30-seconds-read-network-switches/image-5-5/" data-orig-file="https://codejammies.files.wordpress.com/2020/04/image-5.jpg" data-orig-size="828,828" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-5" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/04/image-5.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/04/image-5.jpg?w=828" src="https://codejammies.files.wordpress.com/2020/04/image-5.jpg?w=828" alt="" class="wp-image-483" srcset="https://codejammies.files.wordpress.com/2020/04/image-5.jpg 828w, https://codejammies.files.wordpress.com/2020/04/image-5.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/04/image-5.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/04/image-5.jpg?w=768 768w" sizes="(max-width: 828px) 100vw, 828px" /></figure>
+
+
+
+<p>Hope you enjoyed the 30 seconds read! Follow me on wordpress and instagram <a class="mention" href="https://architmodi.github.io/mentions/codejammies/">@codejammies</a> for more informational content<img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f469-1f3fb-200d-1f4bb.png" alt="👩🏻‍💻" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://architmodi.github.io/2020/04/01/30-seconds-read-network-switches/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		<enclosure url="http://videos.files.wordpress.com/ISRcFQMc/837cd895d0b04a5d8ce29647c3279a2a.mov" length="291822" type="video/quicktime" />
+
+		
+		<media:thumbnail url="https://codejammies.files.wordpress.com/2020/04/img_0718.jpg" />
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/img_0718.jpg" medium="image">
+			<media:title type="html">img_0718</media:title>
+		</media:content>
+
+		<media:content url="https://2.gravatar.com/avatar/5c0d3989b094b21d3861dbd4e11f55fa?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">codejammies</media:title>
+		</media:content>
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image.jpg?w=828" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image-1.jpg?w=828" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image-2.jpg?w=828" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image-3.jpg?w=828" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/ddf24ed731a610fc1ecd8a0e3d1f9097.draft_.96dpi.png?w=576" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image-4.jpg?w=828" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/image-5.jpg?w=828" medium="image" />
+	</item>
+		<item>
+		<title>30 Seconds Read: Linux Boot Process And Runlevels</title>
+		<link>https://architmodi.github.io/2020/03/27/30-seconds-read-linux-boot-process/</link>
+					<comments>https://architmodi.github.io/2020/03/27/30-seconds-read-linux-boot-process/#respond</comments>
+		
+		<dc:creator><![CDATA[Sayali]]></dc:creator>
+		<pubDate>Fri, 27 Mar 2020 23:46:38 +0000</pubDate>
+				<category><![CDATA[30 seconds read]]></category>
+		<category><![CDATA[basic]]></category>
+		<category><![CDATA[bios]]></category>
+		<category><![CDATA[boot]]></category>
+		<category><![CDATA[bootprocess]]></category>
+		<category><![CDATA[codejammies]]></category>
+		<category><![CDATA[computer engineering]]></category>
+		<category><![CDATA[computer hardware]]></category>
+		<category><![CDATA[computer science]]></category>
+		<category><![CDATA[each for equal]]></category>
+		<category><![CDATA[education]]></category>
+		<category><![CDATA[electrical engineering]]></category>
+		<category><![CDATA[electronic engineering]]></category>
+		<category><![CDATA[engineer]]></category>
+		<category><![CDATA[engineering]]></category>
+		<category><![CDATA[how to]]></category>
+		<category><![CDATA[interview]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[network engineering]]></category>
+		<category><![CDATA[networking]]></category>
+		<category><![CDATA[stem]]></category>
+		<category><![CDATA[student]]></category>
+		<category><![CDATA[tech]]></category>
+		<category><![CDATA[technology]]></category>
+		<category><![CDATA[telecommunications]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[update bios]]></category>
+		<category><![CDATA[women in tech]]></category>
+		<category><![CDATA[womenshistorymonth]]></category>
+		<guid isPermaLink="false">http://codejammies.wordpress.com/?p=434</guid>
+
+					<description><![CDATA[Curious about what happens when you turn on your Linux system? Learn how Linux boots and operates in different modes in just 30 seconds- Interested in learning more about Linux and System BIOS? Check out my article on Popular Linux Interview Questions and How To Update System BIOS. Hope you enjoyed the 30 seconds read!... <div class="link-more"><a href="https://architmodi.github.io/2020/03/27/30-seconds-read-linux-boot-process/">Read More</a></div>]]></description>
+										<content:encoded><![CDATA[
+<p>Curious about what happens when you turn on your Linux system? Learn how Linux boots and operates in different modes in just 30 seconds-</p>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="435" data-permalink="https://architmodi.github.io/2020/03/27/30-seconds-read-linux-boot-process/image-10-2/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-10-1.jpg" data-orig-size="827,827" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-10" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-10-1.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-10-1.jpg?w=827" src="https://codejammies.files.wordpress.com/2020/03/image-10-1.jpg?w=827" alt="" class="wp-image-435" srcset="https://codejammies.files.wordpress.com/2020/03/image-10-1.jpg 827w, https://codejammies.files.wordpress.com/2020/03/image-10-1.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/03/image-10-1.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/03/image-10-1.jpg?w=768 768w" sizes="(max-width: 827px) 100vw, 827px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="436" data-permalink="https://architmodi.github.io/2020/03/27/30-seconds-read-linux-boot-process/image-11-2/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-11-1.jpg" data-orig-size="827,827" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-11" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-11-1.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-11-1.jpg?w=827" src="https://codejammies.files.wordpress.com/2020/03/image-11-1.jpg?w=827" alt="" class="wp-image-436" srcset="https://codejammies.files.wordpress.com/2020/03/image-11-1.jpg 827w, https://codejammies.files.wordpress.com/2020/03/image-11-1.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/03/image-11-1.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/03/image-11-1.jpg?w=768 768w" sizes="(max-width: 827px) 100vw, 827px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="437" data-permalink="https://architmodi.github.io/2020/03/27/30-seconds-read-linux-boot-process/image-12-2/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-12-1.jpg" data-orig-size="828,953" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-12" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-12-1.jpg?w=261" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-12-1.jpg?w=828" src="https://codejammies.files.wordpress.com/2020/03/image-12-1.jpg?w=828" alt="" class="wp-image-437" srcset="https://codejammies.files.wordpress.com/2020/03/image-12-1.jpg 828w, https://codejammies.files.wordpress.com/2020/03/image-12-1.jpg?w=130 130w, https://codejammies.files.wordpress.com/2020/03/image-12-1.jpg?w=261 261w, https://codejammies.files.wordpress.com/2020/03/image-12-1.jpg?w=768 768w" sizes="(max-width: 828px) 100vw, 828px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="438" data-permalink="https://architmodi.github.io/2020/03/27/30-seconds-read-linux-boot-process/image-13-2/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-13-1.jpg" data-orig-size="827,827" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-13" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-13-1.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-13-1.jpg?w=827" src="https://codejammies.files.wordpress.com/2020/03/image-13-1.jpg?w=827" alt="" class="wp-image-438" srcset="https://codejammies.files.wordpress.com/2020/03/image-13-1.jpg 827w, https://codejammies.files.wordpress.com/2020/03/image-13-1.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/03/image-13-1.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/03/image-13-1.jpg?w=768 768w" sizes="(max-width: 827px) 100vw, 827px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="439" data-permalink="https://architmodi.github.io/2020/03/27/30-seconds-read-linux-boot-process/image-14-2/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-14-1.jpg" data-orig-size="827,827" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-14" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-14-1.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-14-1.jpg?w=827" src="https://codejammies.files.wordpress.com/2020/03/image-14-1.jpg?w=827" alt="" class="wp-image-439" srcset="https://codejammies.files.wordpress.com/2020/03/image-14-1.jpg 827w, https://codejammies.files.wordpress.com/2020/03/image-14-1.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/03/image-14-1.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/03/image-14-1.jpg?w=768 768w" sizes="(max-width: 827px) 100vw, 827px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="440" data-permalink="https://architmodi.github.io/2020/03/27/30-seconds-read-linux-boot-process/image-15-2/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-15-1.jpg" data-orig-size="827,827" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-15" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-15-1.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-15-1.jpg?w=827" src="https://codejammies.files.wordpress.com/2020/03/image-15-1.jpg?w=827" alt="" class="wp-image-440" srcset="https://codejammies.files.wordpress.com/2020/03/image-15-1.jpg 827w, https://codejammies.files.wordpress.com/2020/03/image-15-1.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/03/image-15-1.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/03/image-15-1.jpg?w=768 768w" sizes="(max-width: 827px) 100vw, 827px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="441" data-permalink="https://architmodi.github.io/2020/03/27/30-seconds-read-linux-boot-process/image-16-2/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-16-1.jpg" data-orig-size="828,936" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-16" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-16-1.jpg?w=265" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-16-1.jpg?w=828" src="https://codejammies.files.wordpress.com/2020/03/image-16-1.jpg?w=828" alt="" class="wp-image-441" srcset="https://codejammies.files.wordpress.com/2020/03/image-16-1.jpg 828w, https://codejammies.files.wordpress.com/2020/03/image-16-1.jpg?w=133 133w, https://codejammies.files.wordpress.com/2020/03/image-16-1.jpg?w=265 265w, https://codejammies.files.wordpress.com/2020/03/image-16-1.jpg?w=768 768w" sizes="(max-width: 828px) 100vw, 828px" /></figure>
+
+
+
+<p>Interested in learning more about Linux and System BIOS? Check out my article on <a href="https://architmodi.github.io/2020/03/03/popular-linux-interview-questions/" target="_blank" rel="noreferrer noopener">Popular Linux Interview Questions</a> and <a href="https://architmodi.github.io/2019/07/19/how-to-update-bios/" target="_blank" rel="noreferrer noopener">How To Update System BIOS</a>.</p>
+
+
+
+<p>Hope you enjoyed the 30 seconds read! Follow me on wordpress and instagram <a class="mention" href="https://architmodi.github.io/mentions/codejammies/">@codejammies</a> for more informational content<img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f469-1f3fb-200d-1f4bb.png" alt="👩🏻‍💻" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://architmodi.github.io/2020/03/27/30-seconds-read-linux-boot-process/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		
+		<media:thumbnail url="https://codejammies.files.wordpress.com/2020/04/6bd812bc6b5e8c780cfed52b4a337819.draft_.96dpi.png" />
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/6bd812bc6b5e8c780cfed52b4a337819.draft_.96dpi.png" medium="image">
+			<media:title type="html">6bd812bc6b5e8c780cfed52b4a337819.draft.96dpi</media:title>
+		</media:content>
+
+		<media:content url="https://2.gravatar.com/avatar/5c0d3989b094b21d3861dbd4e11f55fa?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">codejammies</media:title>
+		</media:content>
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-10-1.jpg?w=827" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-11-1.jpg?w=827" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-12-1.jpg?w=828" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-13-1.jpg?w=827" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-14-1.jpg?w=827" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-15-1.jpg?w=827" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-16-1.jpg?w=828" medium="image" />
+	</item>
+		<item>
+		<title>30 Seconds Read: UDP</title>
+		<link>https://architmodi.github.io/2020/03/20/30-seconds-read-udp/</link>
+					<comments>https://architmodi.github.io/2020/03/20/30-seconds-read-udp/#respond</comments>
+		
+		<dc:creator><![CDATA[Sayali]]></dc:creator>
+		<pubDate>Fri, 20 Mar 2020 21:43:03 +0000</pubDate>
+				<category><![CDATA[30 seconds read]]></category>
+		<category><![CDATA[basic]]></category>
+		<category><![CDATA[bios]]></category>
+		<category><![CDATA[bios setup]]></category>
+		<category><![CDATA[boot]]></category>
+		<category><![CDATA[classes]]></category>
+		<category><![CDATA[codejammies]]></category>
+		<category><![CDATA[commands]]></category>
+		<category><![CDATA[computer engineering]]></category>
+		<category><![CDATA[computer hardware]]></category>
+		<category><![CDATA[computer science]]></category>
+		<category><![CDATA[cookies]]></category>
+		<category><![CDATA[cpu]]></category>
+		<category><![CDATA[cron]]></category>
+		<category><![CDATA[each for equal]]></category>
+		<category><![CDATA[education]]></category>
+		<category><![CDATA[electrical]]></category>
+		<category><![CDATA[electrical engineering]]></category>
+		<category><![CDATA[electronic engineering]]></category>
+		<category><![CDATA[electronics]]></category>
+		<category><![CDATA[engineer]]></category>
+		<category><![CDATA[engineering]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[hard links]]></category>
+		<category><![CDATA[how to]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[http status codes]]></category>
+		<category><![CDATA[inode]]></category>
+		<category><![CDATA[inodes]]></category>
+		<category><![CDATA[interview]]></category>
+		<category><![CDATA[iwd]]></category>
+		<category><![CDATA[job]]></category>
+		<category><![CDATA[lenovo]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[mtm]]></category>
+		<category><![CDATA[network engineering]]></category>
+		<category><![CDATA[networking]]></category>
+		<category><![CDATA[operating system]]></category>
+		<category><![CDATA[popular]]></category>
+		<category><![CDATA[questions]]></category>
+		<category><![CDATA[soft links]]></category>
+		<category><![CDATA[stem]]></category>
+		<category><![CDATA[sticky bit]]></category>
+		<category><![CDATA[student]]></category>
+		<category><![CDATA[study]]></category>
+		<category><![CDATA[tcp]]></category>
+		<category><![CDATA[tech]]></category>
+		<category><![CDATA[technology]]></category>
+		<category><![CDATA[telecommunications]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[udp]]></category>
+		<category><![CDATA[uefi]]></category>
+		<category><![CDATA[update]]></category>
+		<category><![CDATA[update bios]]></category>
+		<category><![CDATA[update serial number]]></category>
+		<category><![CDATA[windows]]></category>
+		<category><![CDATA[women]]></category>
+		<category><![CDATA[women in tech]]></category>
+		<category><![CDATA[women&#039;s day]]></category>
+		<category><![CDATA[womenshistorymonth]]></category>
+		<guid isPermaLink="false">http://codejammies.wordpress.com/?p=401</guid>
+
+					<description><![CDATA[Hope you enjoyed the 30 seconds read! Follow me on wordpress and instagram @codejammies for more informational content👩🏻‍💻]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img data-attachment-id="391" data-permalink="https://architmodi.github.io/2020/03/20/30-seconds-read-udp/image-23/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-23.jpg" data-orig-size="750,677" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-23.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-23.jpg?w=750" src="https://codejammies.files.wordpress.com/2020/03/image-23.jpg" alt="" class="wp-image-391" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="392" data-permalink="https://architmodi.github.io/2020/03/20/30-seconds-read-udp/image-1-4/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-1-3.jpg" data-orig-size="750,671" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-1" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-1-3.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-1-3.jpg?w=750" src="https://codejammies.files.wordpress.com/2020/03/image-1-3.jpg?w=750" alt="" class="wp-image-392" srcset="https://codejammies.files.wordpress.com/2020/03/image-1-3.jpg 750w, https://codejammies.files.wordpress.com/2020/03/image-1-3.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/03/image-1-3.jpg?w=300 300w" sizes="(max-width: 750px) 100vw, 750px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="393" data-permalink="https://architmodi.github.io/2020/03/20/30-seconds-read-udp/image-2-4/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-2-3.jpg" data-orig-size="749,693" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-2" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-2-3.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-2-3.jpg?w=749" src="https://codejammies.files.wordpress.com/2020/03/image-2-3.jpg?w=749" alt="" class="wp-image-393" srcset="https://codejammies.files.wordpress.com/2020/03/image-2-3.jpg 749w, https://codejammies.files.wordpress.com/2020/03/image-2-3.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/03/image-2-3.jpg?w=300 300w" sizes="(max-width: 749px) 100vw, 749px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="394" data-permalink="https://architmodi.github.io/2020/03/20/30-seconds-read-udp/image-3-4/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-3-3.jpg" data-orig-size="750,735" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-3" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-3-3.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-3-3.jpg?w=750" src="https://codejammies.files.wordpress.com/2020/03/image-3-3.jpg?w=750" alt="" class="wp-image-394" srcset="https://codejammies.files.wordpress.com/2020/03/image-3-3.jpg 750w, https://codejammies.files.wordpress.com/2020/03/image-3-3.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/03/image-3-3.jpg?w=300 300w" sizes="(max-width: 750px) 100vw, 750px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="395" data-permalink="https://architmodi.github.io/2020/03/20/30-seconds-read-udp/image-4-4/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-4-3.jpg" data-orig-size="750,761" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-4" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-4-3.jpg?w=296" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-4-3.jpg?w=750" src="https://codejammies.files.wordpress.com/2020/03/image-4-3.jpg?w=750" alt="" class="wp-image-395" srcset="https://codejammies.files.wordpress.com/2020/03/image-4-3.jpg 750w, https://codejammies.files.wordpress.com/2020/03/image-4-3.jpg?w=148 148w, https://codejammies.files.wordpress.com/2020/03/image-4-3.jpg?w=296 296w" sizes="(max-width: 750px) 100vw, 750px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="396" data-permalink="https://architmodi.github.io/2020/03/20/30-seconds-read-udp/image-5-4/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-5-3.jpg" data-orig-size="750,721" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-5" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-5-3.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-5-3.jpg?w=750" src="https://codejammies.files.wordpress.com/2020/03/image-5-3.jpg?w=750" alt="" class="wp-image-396" srcset="https://codejammies.files.wordpress.com/2020/03/image-5-3.jpg 750w, https://codejammies.files.wordpress.com/2020/03/image-5-3.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/03/image-5-3.jpg?w=300 300w" sizes="(max-width: 750px) 100vw, 750px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="397" data-permalink="https://architmodi.github.io/2020/03/20/30-seconds-read-udp/image-6-5/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-6-4.jpg" data-orig-size="750,685" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-6" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-6-4.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-6-4.jpg?w=750" src="https://codejammies.files.wordpress.com/2020/03/image-6-4.jpg?w=750" alt="" class="wp-image-397" srcset="https://codejammies.files.wordpress.com/2020/03/image-6-4.jpg 750w, https://codejammies.files.wordpress.com/2020/03/image-6-4.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/03/image-6-4.jpg?w=300 300w" sizes="(max-width: 750px) 100vw, 750px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="398" data-permalink="https://architmodi.github.io/2020/03/20/30-seconds-read-udp/image-7-4/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-7-3.jpg" data-orig-size="750,759" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-7" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-7-3.jpg?w=296" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-7-3.jpg?w=750" src="https://codejammies.files.wordpress.com/2020/03/image-7-3.jpg?w=750" alt="" class="wp-image-398" srcset="https://codejammies.files.wordpress.com/2020/03/image-7-3.jpg 750w, https://codejammies.files.wordpress.com/2020/03/image-7-3.jpg?w=148 148w, https://codejammies.files.wordpress.com/2020/03/image-7-3.jpg?w=296 296w" sizes="(max-width: 750px) 100vw, 750px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="399" data-permalink="https://architmodi.github.io/2020/03/20/30-seconds-read-udp/image-8-4/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-8-3.jpg" data-orig-size="750,695" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-8" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-8-3.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-8-3.jpg?w=750" src="https://codejammies.files.wordpress.com/2020/03/image-8-3.jpg?w=750" alt="" class="wp-image-399" srcset="https://codejammies.files.wordpress.com/2020/03/image-8-3.jpg 750w, https://codejammies.files.wordpress.com/2020/03/image-8-3.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/03/image-8-3.jpg?w=300 300w" sizes="(max-width: 750px) 100vw, 750px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="400" data-permalink="https://architmodi.github.io/2020/03/20/30-seconds-read-udp/image-9-2/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-9-1.jpg" data-orig-size="750,678" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-9" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-9-1.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-9-1.jpg?w=750" src="https://codejammies.files.wordpress.com/2020/03/image-9-1.jpg?w=750" alt="" class="wp-image-400" srcset="https://codejammies.files.wordpress.com/2020/03/image-9-1.jpg 750w, https://codejammies.files.wordpress.com/2020/03/image-9-1.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/03/image-9-1.jpg?w=300 300w" sizes="(max-width: 750px) 100vw, 750px" /></figure>
+
+
+
+<p>Hope you enjoyed the 30 seconds read! Follow me on wordpress and instagram <a class="mention" href="https://architmodi.github.io/mentions/codejammies/">@codejammies</a> for more informational content<img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f469-1f3fb-200d-1f4bb.png" alt="👩🏻‍💻" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://architmodi.github.io/2020/03/20/30-seconds-read-udp/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		
+		<media:thumbnail url="https://codejammies.files.wordpress.com/2020/04/5d952da332027d65ea97623304c4bdd7.draft_.96dpi.png" />
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/5d952da332027d65ea97623304c4bdd7.draft_.96dpi.png" medium="image">
+			<media:title type="html">5d952da332027d65ea97623304c4bdd7.draft.96dpi</media:title>
+		</media:content>
+
+		<media:content url="https://2.gravatar.com/avatar/5c0d3989b094b21d3861dbd4e11f55fa?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">codejammies</media:title>
+		</media:content>
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-23.jpg" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-1-3.jpg?w=750" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-2-3.jpg?w=749" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-3-3.jpg?w=750" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-4-3.jpg?w=750" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-5-3.jpg?w=750" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-6-4.jpg?w=750" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-7-3.jpg?w=750" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-8-3.jpg?w=750" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-9-1.jpg?w=750" medium="image" />
+	</item>
+		<item>
+		<title>30 Seconds Read: TCP</title>
+		<link>https://architmodi.github.io/2020/03/19/30-seconds-read-tcp/</link>
+					<comments>https://architmodi.github.io/2020/03/19/30-seconds-read-tcp/#respond</comments>
+		
+		<dc:creator><![CDATA[Sayali]]></dc:creator>
+		<pubDate>Thu, 19 Mar 2020 22:17:45 +0000</pubDate>
+				<category><![CDATA[30 seconds read]]></category>
+		<category><![CDATA[basic]]></category>
+		<category><![CDATA[bios]]></category>
+		<category><![CDATA[bios setup]]></category>
+		<category><![CDATA[boot]]></category>
+		<category><![CDATA[classes]]></category>
+		<category><![CDATA[codejammies]]></category>
+		<category><![CDATA[commands]]></category>
+		<category><![CDATA[computer engineering]]></category>
+		<category><![CDATA[computer hardware]]></category>
+		<category><![CDATA[computer science]]></category>
+		<category><![CDATA[cookies]]></category>
+		<category><![CDATA[cpu]]></category>
+		<category><![CDATA[cron]]></category>
+		<category><![CDATA[each for equal]]></category>
+		<category><![CDATA[education]]></category>
+		<category><![CDATA[electrical]]></category>
+		<category><![CDATA[electrical engineering]]></category>
+		<category><![CDATA[electronic engineering]]></category>
+		<category><![CDATA[electronics]]></category>
+		<category><![CDATA[engineer]]></category>
+		<category><![CDATA[engineering]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[hard links]]></category>
+		<category><![CDATA[how to]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[http status codes]]></category>
+		<category><![CDATA[inode]]></category>
+		<category><![CDATA[inodes]]></category>
+		<category><![CDATA[interview]]></category>
+		<category><![CDATA[iwd]]></category>
+		<category><![CDATA[job]]></category>
+		<category><![CDATA[lenovo]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[mtm]]></category>
+		<category><![CDATA[network engineering]]></category>
+		<category><![CDATA[networking]]></category>
+		<category><![CDATA[operating system]]></category>
+		<category><![CDATA[popular]]></category>
+		<category><![CDATA[questions]]></category>
+		<category><![CDATA[soft links]]></category>
+		<category><![CDATA[stem]]></category>
+		<category><![CDATA[sticky bit]]></category>
+		<category><![CDATA[student]]></category>
+		<category><![CDATA[study]]></category>
+		<category><![CDATA[tcp]]></category>
+		<category><![CDATA[tech]]></category>
+		<category><![CDATA[technology]]></category>
+		<category><![CDATA[telecommunications]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[uefi]]></category>
+		<category><![CDATA[update]]></category>
+		<category><![CDATA[update bios]]></category>
+		<category><![CDATA[update serial number]]></category>
+		<category><![CDATA[windows]]></category>
+		<category><![CDATA[women]]></category>
+		<category><![CDATA[women in tech]]></category>
+		<category><![CDATA[women&#039;s day]]></category>
+		<category><![CDATA[womenshistorymonth]]></category>
+		<guid isPermaLink="false">http://codejammies.wordpress.com/2020/03/19/30-seconds-read-tcp/</guid>
+
+					<description><![CDATA[Hope you enjoyed the 30 seconds read! Follow me on wordpress and instagram @codejammies for more informational content👩🏻‍💻]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img data-attachment-id="366" data-permalink="https://architmodi.github.io/2020/03/19/30-seconds-read-tcp/image-8-3/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-8-2.jpg" data-orig-size="828,792" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-8" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-8-2.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-8-2.jpg?w=828" src="https://codejammies.files.wordpress.com/2020/03/image-8-2.jpg?w=828" alt="" class="wp-image-366" srcset="https://codejammies.files.wordpress.com/2020/03/image-8-2.jpg 828w, https://codejammies.files.wordpress.com/2020/03/image-8-2.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/03/image-8-2.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/03/image-8-2.jpg?w=768 768w" sizes="(max-width: 828px) 100vw, 828px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="365" data-permalink="https://architmodi.github.io/2020/03/19/30-seconds-read-tcp/image-7-3/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-7-2.jpg" data-orig-size="828,820" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-7" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-7-2.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-7-2.jpg?w=828" src="https://codejammies.files.wordpress.com/2020/03/image-7-2.jpg?w=828" alt="" class="wp-image-365" srcset="https://codejammies.files.wordpress.com/2020/03/image-7-2.jpg 828w, https://codejammies.files.wordpress.com/2020/03/image-7-2.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/03/image-7-2.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/03/image-7-2.jpg?w=768 768w" sizes="(max-width: 828px) 100vw, 828px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="364" data-permalink="https://architmodi.github.io/2020/03/19/30-seconds-read-tcp/image-6-4/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-6-3.jpg" data-orig-size="828,818" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-6" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-6-3.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-6-3.jpg?w=828" src="https://codejammies.files.wordpress.com/2020/03/image-6-3.jpg?w=828" alt="" class="wp-image-364" srcset="https://codejammies.files.wordpress.com/2020/03/image-6-3.jpg 828w, https://codejammies.files.wordpress.com/2020/03/image-6-3.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/03/image-6-3.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/03/image-6-3.jpg?w=768 768w" sizes="(max-width: 828px) 100vw, 828px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="363" data-permalink="https://architmodi.github.io/2020/03/19/30-seconds-read-tcp/image-5-3/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-5-2.jpg" data-orig-size="828,798" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-5" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-5-2.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-5-2.jpg?w=828" src="https://codejammies.files.wordpress.com/2020/03/image-5-2.jpg?w=828" alt="" class="wp-image-363" srcset="https://codejammies.files.wordpress.com/2020/03/image-5-2.jpg 828w, https://codejammies.files.wordpress.com/2020/03/image-5-2.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/03/image-5-2.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/03/image-5-2.jpg?w=768 768w" sizes="(max-width: 828px) 100vw, 828px" /></figure>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img data-attachment-id="362" data-permalink="https://architmodi.github.io/2020/03/19/30-seconds-read-tcp/image-4-3/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-4-2.jpg" data-orig-size="787,783" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-4" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-4-2.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-4-2.jpg?w=787" src="https://codejammies.files.wordpress.com/2020/03/image-4-2.jpg?w=787" alt="" class="wp-image-362" width="827" height="822" srcset="https://codejammies.files.wordpress.com/2020/03/image-4-2.jpg 787w, https://codejammies.files.wordpress.com/2020/03/image-4-2.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/03/image-4-2.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/03/image-4-2.jpg?w=768 768w" sizes="(max-width: 827px) 100vw, 827px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="361" data-permalink="https://architmodi.github.io/2020/03/19/30-seconds-read-tcp/image-3-3/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-3-2.jpg" data-orig-size="828,779" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-3" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-3-2.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-3-2.jpg?w=828" src="https://codejammies.files.wordpress.com/2020/03/image-3-2.jpg?w=828" alt="" class="wp-image-361" srcset="https://codejammies.files.wordpress.com/2020/03/image-3-2.jpg 828w, https://codejammies.files.wordpress.com/2020/03/image-3-2.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/03/image-3-2.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/03/image-3-2.jpg?w=768 768w" sizes="(max-width: 828px) 100vw, 828px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="360" data-permalink="https://architmodi.github.io/2020/03/19/30-seconds-read-tcp/image-2-3/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-2-2.jpg" data-orig-size="828,811" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-2" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-2-2.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-2-2.jpg?w=828" src="https://codejammies.files.wordpress.com/2020/03/image-2-2.jpg?w=828" alt="" class="wp-image-360" srcset="https://codejammies.files.wordpress.com/2020/03/image-2-2.jpg 828w, https://codejammies.files.wordpress.com/2020/03/image-2-2.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/03/image-2-2.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/03/image-2-2.jpg?w=768 768w" sizes="(max-width: 828px) 100vw, 828px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="359" data-permalink="https://architmodi.github.io/2020/03/19/30-seconds-read-tcp/image-1-3/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-1-2.jpg" data-orig-size="828,841" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image-1" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-1-2.jpg?w=295" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-1-2.jpg?w=828" src="https://codejammies.files.wordpress.com/2020/03/image-1-2.jpg" alt="" class="wp-image-359" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="358" data-permalink="https://architmodi.github.io/2020/03/19/30-seconds-read-tcp/image-22/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/image-22.jpg" data-orig-size="828,876" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/image-22.jpg?w=284" data-large-file="https://codejammies.files.wordpress.com/2020/03/image-22.jpg?w=828" src="https://codejammies.files.wordpress.com/2020/03/image-22.jpg?w=828" alt="" class="wp-image-358" srcset="https://codejammies.files.wordpress.com/2020/03/image-22.jpg 828w, https://codejammies.files.wordpress.com/2020/03/image-22.jpg?w=142 142w, https://codejammies.files.wordpress.com/2020/03/image-22.jpg?w=284 284w, https://codejammies.files.wordpress.com/2020/03/image-22.jpg?w=768 768w" sizes="(max-width: 828px) 100vw, 828px" /></figure>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img data-attachment-id="357" data-permalink="https://architmodi.github.io/2020/03/19/30-seconds-read-tcp/img_0121/" data-orig-file="https://codejammies.files.wordpress.com/2020/03/img_0121.png" data-orig-size="649,379" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="img_0121" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/03/img_0121.png?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/03/img_0121.png?w=649" src="https://codejammies.files.wordpress.com/2020/03/img_0121.png?w=649" alt="" class="wp-image-357" width="729" height="426" srcset="https://codejammies.files.wordpress.com/2020/03/img_0121.png 649w, https://codejammies.files.wordpress.com/2020/03/img_0121.png?w=150 150w, https://codejammies.files.wordpress.com/2020/03/img_0121.png?w=300 300w" sizes="(max-width: 729px) 100vw, 729px" /><figcaption>TCP Packet</figcaption></figure>
+
+
+
+<p>Hope you enjoyed the 30 seconds read! Follow me on wordpress and instagram <a class="mention" href="https://architmodi.github.io/mentions/codejammies/">@codejammies</a> for more informational content<img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f469-1f3fb-200d-1f4bb.png" alt="👩🏻‍💻" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://architmodi.github.io/2020/03/19/30-seconds-read-tcp/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		
+		<media:thumbnail url="https://codejammies.files.wordpress.com/2020/04/3df99ae569f4809355c1125377127675.draft_.96dpi.png" />
+		<media:content url="https://codejammies.files.wordpress.com/2020/04/3df99ae569f4809355c1125377127675.draft_.96dpi.png" medium="image">
+			<media:title type="html">3df99ae569f4809355c1125377127675.draft.96dpi</media:title>
+		</media:content>
+
+		<media:content url="https://2.gravatar.com/avatar/5c0d3989b094b21d3861dbd4e11f55fa?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">codejammies</media:title>
+		</media:content>
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-8-2.jpg?w=828" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-7-2.jpg?w=828" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-6-3.jpg?w=828" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-5-2.jpg?w=828" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-4-2.jpg?w=787" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-3-2.jpg?w=828" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-2-2.jpg?w=828" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-1-2.jpg" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/image-22.jpg?w=828" medium="image" />
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/03/img_0121.png?w=649" medium="image" />
+	</item>
+	</channel>
+</rss>
