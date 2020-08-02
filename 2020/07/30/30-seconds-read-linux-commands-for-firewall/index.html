@@ -152,7 +152,7 @@ var related_posts_js_options = {"post_heading":"h4"};
 <meta property="og:url" content="https://architmodi.github.io/2020/07/30/30-seconds-read-linux-commands-for-firewall/" />
 <meta property="og:description" content="With over a gazillion linux commands (+alternate commands) for firewall out there, I am listing a handful of my favorites. Hope they come in handy in times of need-⁣ ☕️ Install firewall-⁣ yum insta…" />
 <meta property="article:published_time" content="2020-07-30T21:58:05+00:00" />
-<meta property="article:modified_time" content="2020-07-30T22:02:32+00:00" />
+<meta property="article:modified_time" content="2020-08-02T15:26:01+00:00" />
 <meta property="og:site_name" content="Codejammies" />
 <meta property="og:image" content="https://codejammies.files.wordpress.com/2020/07/img_2479.jpg?w=900" />
 <meta property="og:image:width" content="900" />
@@ -288,60 +288,20 @@ var related_posts_js_options = {"post_heading":"h4"};
 
 			<h1 class="entry-title">30 Seconds Read: Linux Commands For Firewall</h1>
 			<div class="entry-posted">
-				<div class="posted-info"><span class="byline">Posted by <span class="author vcard"><a class="url fn n" href="../../../../author/codejammies/index.html">Sayali</a></span></span><span class="posted-on"> <span class="date-published-word">on</span> <a href="index.html" rel="bookmark"><time class="entry-date published" datetime="2020-07-30T17:58:05-04:00">30 Jul 2020</time><time class="updated" datetime="2020-07-30T18:02:32-04:00">30 Jul 2020</time></a></span></div>			</div><!-- .entry-posted -->
+				<div class="posted-info"><span class="byline">Posted by <span class="author vcard"><a class="url fn n" href="../../../../author/codejammies/index.html">Sayali</a></span></span><span class="posted-on"> <span class="date-published-word">on</span> <a href="index.html" rel="bookmark"><time class="entry-date published" datetime="2020-07-30T17:58:05-04:00">30 Jul 2020</time><time class="updated" datetime="2020-08-02T11:26:01-04:00">2 Aug 2020</time></a></span></div>			</div><!-- .entry-posted -->
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			
-<p>With over a gazillion linux commands (+alternate commands) for firewall out there, I am listing a handful of my favorites. Hope they come in handy in times of need-⁣</p>
+<p class="has-normal-font-size">With over a gazillion linux commands (+alternate commands) for firewall out there, I am listing a handful of my favorites. Hope they come in handy in times of need-⁣</p>
 
 
 
-<p>☕️ Install firewall-⁣</p>
+<p class="has-normal-font-size">☕️ Install firewall-⁣</p>
 
 
 
-<p>yum install firewalld⁣</p>
-
-
-
-<p>⁣</p>
-
-
-
-<p>☕️ Enable/ Disable/ Restart/ Check status-⁣</p>
-
-
-
-<p>1. Enable firewall-⁣</p>
-
-
-
-<p>systemctl enable firewalld⁣</p>
-
-
-
-<p>2. Disable firewall-⁣</p>
-
-
-
-<p>systemctl disable firewalld⁣</p>
-
-
-
-<p>3. Restart firewall-⁣</p>
-
-
-
-<p>systemctl restart firewalld⁣</p>
-
-
-
-<p>4. Check firewall status-⁣</p>
-
-
-
-<p>systemctl status firewalld⁣</p>
+<p class="has-normal-font-size">yum install firewalld⁣</p>
 
 
 
@@ -349,75 +309,39 @@ var related_posts_js_options = {"post_heading":"h4"};
 
 
 
-<p>☕️ View IP table-⁣</p>
+<p class="has-normal-font-size">☕️ Enable/ Disable/ Restart/ Check status-⁣</p>
 
 
 
-<p>iptables -L⁣</p>
+<p class="has-normal-font-size">1. Enable firewall-⁣</p>
 
 
 
-<p>⁣</p>
+<p class="has-normal-font-size">systemctl enable firewalld⁣</p>
 
 
 
-<p>☕️ Change input policies (accept/reject/drop IP addresses). P.S. Users can change the input policies only by flushing the existing policies.⁣</p>
+<p class="has-normal-font-size">2. Disable firewall-⁣</p>
 
 
 
-<p>1. Find the input policies with command-⁣</p>
+<p class="has-normal-font-size">systemctl disable firewalld⁣</p>
 
 
 
-<p>iptables -L | grep INPUT⁣</p>
+<p class="has-normal-font-size">3. Restart firewall-⁣</p>
 
 
 
-<p>2. Flush the input policies with command-⁣</p>
+<p class="has-normal-font-size">systemctl restart firewalld⁣</p>
 
 
 
-<p>iptables -F⁣</p>
+<p class="has-normal-font-size">4. Check firewall status-⁣</p>
 
 
 
-<p>3. Verify that the policies have been flushed by rechecking the IP list-⁣</p>
-
-
-
-<p>iptables -L⁣</p>
-
-
-
-<p>4. Change input policies to reject with-⁣</p>
-
-
-
-<p>iptables -A INPUT —protocol icmp —in-interface enp0s3 -j REJECT⁣</p>
-
-
-
-<p>5. Verify if the reject policy has been applied to the icmp protocol-⁣</p>
-
-
-
-<p>iptables -L | grep REJECT⁣</p>
-
-
-
-<p>6. To change the policies to drop, flush the policies again with the command iptables -F and change to drop with-⁣</p>
-
-
-
-<p>iptables -A INPUT —protocol icmp —in-interface enp0s3 -j DROP⁣</p>
-
-
-
-<p>7. Verify the change with-⁣</p>
-
-
-
-<p>iptables -L | grep DROP⁣</p>
+<p class="has-normal-font-size">systemctl status firewalld⁣</p>
 
 
 
@@ -425,11 +349,11 @@ var related_posts_js_options = {"post_heading":"h4"};
 
 
 
-<p>☕️ Block TCP traffic-⁣</p>
+<p class="has-normal-font-size">☕️ View IP table-⁣</p>
 
 
 
-<p>iptables -A INPUT -p tcp -s xxx.xxx.xxx.xxx -j DROP⁣</p>
+<p class="has-normal-font-size">iptables -L⁣</p>
 
 
 
@@ -437,23 +361,99 @@ var related_posts_js_options = {"post_heading":"h4"};
 
 
 
-<p>☕️ Block/unblock a particular IP address-⁣</p>
+<p class="has-normal-font-size">☕️ Change input policies (accept/reject/drop IP addresses). P.S. Users can change the input policies only by flushing the existing policies.⁣</p>
 
 
 
-<p>1. Block-⁣</p>
+<p class="has-normal-font-size">1. Find the input policies with command-⁣</p>
 
 
 
-<p>iptables -A INPUT -s xxx.xxx.xxx.xxx -j DROP⁣</p>
+<p class="has-normal-font-size">iptables -L | grep INPUT⁣</p>
 
 
 
-<p>2. Unblock-⁣</p>
+<p class="has-normal-font-size">2. Flush the input policies with command-⁣</p>
 
 
 
-<p>iptables -D INPUT -s xxx.xxx.xxx.xxx -j DROP⁣</p>
+<p class="has-normal-font-size">iptables -F⁣</p>
+
+
+
+<p class="has-normal-font-size">3. Verify that the policies have been flushed by rechecking the IP list-⁣</p>
+
+
+
+<p class="has-normal-font-size">iptables -L⁣</p>
+
+
+
+<p class="has-normal-font-size">4. Change input policies to reject with-⁣</p>
+
+
+
+<p class="has-normal-font-size">iptables -A INPUT —protocol icmp —in-interface enp0s3 -j REJECT⁣</p>
+
+
+
+<p class="has-normal-font-size">5. Verify if the reject policy has been applied to the icmp protocol-⁣</p>
+
+
+
+<p class="has-normal-font-size">iptables -L | grep REJECT⁣</p>
+
+
+
+<p class="has-normal-font-size">6. To change the policies to drop, flush the policies again with the command iptables -F and change to drop with-⁣</p>
+
+
+
+<p class="has-normal-font-size">iptables -A INPUT —protocol icmp —in-interface enp0s3 -j DROP⁣</p>
+
+
+
+<p class="has-normal-font-size">7. Verify the change with-⁣</p>
+
+
+
+<p class="has-normal-font-size">iptables -L | grep DROP⁣</p>
+
+
+
+<p>⁣</p>
+
+
+
+<p class="has-normal-font-size">☕️ Block TCP traffic-⁣</p>
+
+
+
+<p class="has-normal-font-size">iptables -A INPUT -p tcp -s xxx.xxx.xxx.xxx -j DROP⁣</p>
+
+
+
+<p>⁣</p>
+
+
+
+<p class="has-normal-font-size">☕️ Block/unblock a particular IP address-⁣</p>
+
+
+
+<p class="has-normal-font-size">1. Block-⁣</p>
+
+
+
+<p class="has-normal-font-size">iptables -A INPUT -s xxx.xxx.xxx.xxx -j DROP⁣</p>
+
+
+
+<p class="has-normal-font-size">2. Unblock-⁣</p>
+
+
+
+<p class="has-normal-font-size">iptables -D INPUT -s xxx.xxx.xxx.xxx -j DROP⁣</p>
 
 
 
@@ -465,23 +465,11 @@ var related_posts_js_options = {"post_heading":"h4"};
 
 
 
-<p>☕️ Block outgoing connections on specific ports-⁣</p>
+<p class="has-normal-font-size">☕️ Block outgoing connections on specific ports-⁣</p>
 
 
 
-<p>iptables -A OUTPUT -p tcp &#8211;dport xxx -j DROP⁣</p>
-
-
-
-<p>⁣</p>
-
-
-
-<p>☕️ Block incoming connections on specific ports-⁣</p>
-
-
-
-<p>iptables -A INPUT -p tcp &#8211;dport xxx -j ACCEPT⁣</p>
+<p class="has-normal-font-size">iptables -A OUTPUT -p tcp &#8211;dport xxx -j DROP⁣</p>
 
 
 
@@ -489,23 +477,11 @@ var related_posts_js_options = {"post_heading":"h4"};
 
 
 
-<p>☕️ Implement multiport access for incoming traffic-⁣</p>
+<p class="has-normal-font-size">☕️ Block incoming connections on specific ports-⁣</p>
 
 
 
-<p>iptables -A INPUT -p tcp -m multiport &#8211;dports 22,80,443 -j ACCEPT⁣</p>
-
-
-
-<p>⁣</p>
-
-
-
-<p>☕️ Implement multiport access for outgoing traffic-⁣</p>
-
-
-
-<p>iptables -A OUTPUT -p tcp -m multiport &#8211;sports 22,80,443 -j ACCEPT⁣</p>
+<p class="has-normal-font-size">iptables -A INPUT -p tcp &#8211;dport xxx -j ACCEPT⁣</p>
 
 
 
@@ -513,22 +489,46 @@ var related_posts_js_options = {"post_heading":"h4"};
 
 
 
-<p>Hope you enjoyed the 30 seconds read! Comment below and let me know what you would like to read next👩🏻‍💻⁣</p>
-<div id="atatags-370373-5f261aa1bc37a">
+<p class="has-normal-font-size">☕️ Implement multiport access for incoming traffic-⁣</p>
+
+
+
+<p class="has-normal-font-size">iptables -A INPUT -p tcp -m multiport &#8211;dports 22,80,443 -j ACCEPT⁣</p>
+
+
+
+<p>⁣</p>
+
+
+
+<p class="has-normal-font-size">☕️ Implement multiport access for outgoing traffic-⁣</p>
+
+
+
+<p class="has-normal-font-size">iptables -A OUTPUT -p tcp -m multiport &#8211;sports 22,80,443 -j ACCEPT⁣</p>
+
+
+
+<p>⁣</p>
+
+
+
+<p class="has-normal-font-size">Hope you enjoyed the 30 seconds read! Comment below and let me know what you would like to read next👩🏻‍💻⁣</p>
+<div id="atatags-370373-5f26dbfe9f31a">
         <script type="text/javascript">
             __ATA.cmd.push(function() {
-                __ATA.initVideoSlot('atatags-370373-5f261aa1bc37a', {
+                __ATA.initVideoSlot('atatags-370373-5f26dbfe9f31a', {
                     sectionId: '370373',
                     format: 'inread'
                 });
             });
         </script>
-    </div>			<div id="atatags-26942-5f261aa1bc3b5"></div>
+    </div>			<div id="atatags-26942-5f26dbfe9f358"></div>
 			
 			<script>
 				__ATA.cmd.push(function() {
 					__ATA.initDynamicSlot({
-						id: 'atatags-26942-5f261aa1bc3b5',
+						id: 'atatags-26942-5f26dbfe9f358',
 						location: 120,
 						formFactor: '001',
 						label: {
@@ -544,7 +544,7 @@ var related_posts_js_options = {"post_heading":"h4"};
 						}
 					});
 				});
-			</script><div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-900" class="share-twitter sd-button share-icon no-text" href="index.html%3Fshare=twitter.html" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-900" class="share-facebook sd-button share-icon no-text" href="index.html%3Fshare=facebook.html" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-print"><a rel="nofollow noopener noreferrer" data-shared="" class="share-print sd-button share-icon no-text" href="index.html#print" target="_blank" title="Click to print"><span></span><span class="sharing-screen-reader-text">Click to print (Opens in new window)</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-900" class="share-linkedin sd-button share-icon no-text" href="index.html%3Fshare=linkedin.html" target="_blank" title="Click to share on LinkedIn"><span></span><span class="sharing-screen-reader-text">Click to share on LinkedIn (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow noopener noreferrer" data-shared="" class="share-reddit sd-button share-icon no-text" href="index.html%3Fshare=reddit.html" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-tumblr"><a rel="nofollow noopener noreferrer" data-shared="" class="share-tumblr sd-button share-icon no-text" href="index.html%3Fshare=tumblr.html" target="_blank" title="Click to share on Tumblr"><span></span><span class="sharing-screen-reader-text">Click to share on Tumblr (Opens in new window)</span></a></li><li class="share-pinterest"><a rel="nofollow noopener noreferrer" data-shared="sharing-pinterest-900" class="share-pinterest sd-button share-icon no-text" href="index.html%3Fshare=pinterest.html" target="_blank" title="Click to share on Pinterest"><span></span><span class="sharing-screen-reader-text">Click to share on Pinterest (Opens in new window)</span></a></li><li class="share-pocket"><a rel="nofollow noopener noreferrer" data-shared="" class="share-pocket sd-button share-icon no-text" href="index.html%3Fshare=pocket.html" target="_blank" title="Click to share on Pocket"><span></span><span class="sharing-screen-reader-text">Click to share on Pocket (Opens in new window)</span></a></li><li class="share-telegram"><a rel="nofollow noopener noreferrer" data-shared="" class="share-telegram sd-button share-icon no-text" href="index.html%3Fshare=telegram.html" target="_blank" title="Click to share on Telegram"><span></span><span class="sharing-screen-reader-text">Click to share on Telegram (Opens in new window)</span></a></li><li class="share-jetpack-whatsapp"><a rel="nofollow noopener noreferrer" data-shared="" class="share-jetpack-whatsapp sd-button share-icon no-text" href="https://architmodi.github.io/2020/07/30/30-seconds-read-linux-commands-for-firewall/?share=jetpack-whatsapp" target="_blank" title="Click to share on WhatsApp"><span></span><span class="sharing-screen-reader-text">Click to share on WhatsApp (Opens in new window)</span></a></li><li class="share-skype"><a rel="nofollow noopener noreferrer" data-shared="sharing-skype-900" class="share-skype sd-button share-icon no-text" href="index.html%3Fshare=skype.html" target="_blank" title="Click to share on Skype"><span></span><span class="sharing-screen-reader-text">Click to share on Skype (Opens in new window)</span></a></li><li class="share-email"><a rel="nofollow noopener noreferrer" data-shared="" class="share-email sd-button share-icon no-text" href="index.html%3Fshare=email.html" target="_blank" title="Click to email this to a friend"><span></span><span class="sharing-screen-reader-text">Click to email this to a friend (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-164396964-900-5f261aa1bccd6' data-src='//widgets.wp.com/likes/index.html?ver=20190321#blog_id=164396964&amp;post_id=900&amp;origin=codejammies.wordpress.com&amp;obj_id=164396964-900-5f261aa1bccd6' data-name='like-post-frame-164396964-900-5f261aa1bccd6'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+			</script><div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-900" class="share-twitter sd-button share-icon no-text" href="index.html%3Fshare=twitter.html" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-900" class="share-facebook sd-button share-icon no-text" href="index.html%3Fshare=facebook.html" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-print"><a rel="nofollow noopener noreferrer" data-shared="" class="share-print sd-button share-icon no-text" href="index.html#print" target="_blank" title="Click to print"><span></span><span class="sharing-screen-reader-text">Click to print (Opens in new window)</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-900" class="share-linkedin sd-button share-icon no-text" href="index.html%3Fshare=linkedin.html" target="_blank" title="Click to share on LinkedIn"><span></span><span class="sharing-screen-reader-text">Click to share on LinkedIn (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow noopener noreferrer" data-shared="" class="share-reddit sd-button share-icon no-text" href="index.html%3Fshare=reddit.html" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-tumblr"><a rel="nofollow noopener noreferrer" data-shared="" class="share-tumblr sd-button share-icon no-text" href="index.html%3Fshare=tumblr.html" target="_blank" title="Click to share on Tumblr"><span></span><span class="sharing-screen-reader-text">Click to share on Tumblr (Opens in new window)</span></a></li><li class="share-pinterest"><a rel="nofollow noopener noreferrer" data-shared="sharing-pinterest-900" class="share-pinterest sd-button share-icon no-text" href="index.html%3Fshare=pinterest.html" target="_blank" title="Click to share on Pinterest"><span></span><span class="sharing-screen-reader-text">Click to share on Pinterest (Opens in new window)</span></a></li><li class="share-pocket"><a rel="nofollow noopener noreferrer" data-shared="" class="share-pocket sd-button share-icon no-text" href="index.html%3Fshare=pocket.html" target="_blank" title="Click to share on Pocket"><span></span><span class="sharing-screen-reader-text">Click to share on Pocket (Opens in new window)</span></a></li><li class="share-telegram"><a rel="nofollow noopener noreferrer" data-shared="" class="share-telegram sd-button share-icon no-text" href="index.html%3Fshare=telegram.html" target="_blank" title="Click to share on Telegram"><span></span><span class="sharing-screen-reader-text">Click to share on Telegram (Opens in new window)</span></a></li><li class="share-jetpack-whatsapp"><a rel="nofollow noopener noreferrer" data-shared="" class="share-jetpack-whatsapp sd-button share-icon no-text" href="https://architmodi.github.io/2020/07/30/30-seconds-read-linux-commands-for-firewall/?share=jetpack-whatsapp" target="_blank" title="Click to share on WhatsApp"><span></span><span class="sharing-screen-reader-text">Click to share on WhatsApp (Opens in new window)</span></a></li><li class="share-skype"><a rel="nofollow noopener noreferrer" data-shared="sharing-skype-900" class="share-skype sd-button share-icon no-text" href="index.html%3Fshare=skype.html" target="_blank" title="Click to share on Skype"><span></span><span class="sharing-screen-reader-text">Click to share on Skype (Opens in new window)</span></a></li><li class="share-email"><a rel="nofollow noopener noreferrer" data-shared="" class="share-email sd-button share-icon no-text" href="index.html%3Fshare=email.html" target="_blank" title="Click to email this to a friend"><span></span><span class="sharing-screen-reader-text">Click to email this to a friend (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-164396964-900-5f26dbfe9fd38' data-src='//widgets.wp.com/likes/index.html?ver=20190321#blog_id=164396964&amp;post_id=900&amp;origin=codejammies.wordpress.com&amp;obj_id=164396964-900-5f26dbfe9fd38' data-name='like-post-frame-164396964-900-5f26dbfe9fd38'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
 <div id='jp-relatedposts' class='jp-relatedposts' >
 	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
 </div></div>					</div><!-- .entry-content -->
@@ -569,7 +569,7 @@ var related_posts_js_options = {"post_heading":"h4"};
 		
 		
 			<div id="respond" class="comment-respond">
-		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://architmodi.github.io/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="e8bccc840e" /><input type="hidden" name="_wp_http_referer" value="/2020/07/30/30-seconds-read-linux-commands-for-firewall/" />
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://architmodi.github.io/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="f4333e7b05" /><input type="hidden" name="_wp_http_referer" value="/2020/07/30/30-seconds-read-linux-commands-for-firewall/" />
 <input type="hidden" name="hc_post_as" id="hc_post_as" value="guest" />
 
 <div class="comment-form-field comment-textarea">
@@ -765,9 +765,9 @@ jQuery(document).ready( highlander_expando_javascript );
 
 <p class="form-submit"><input name="submit" type="submit" id="comment-submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='900' id='comment_post_ID' />
 <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="2a45a90a5c" /></p>
-<input type="hidden" name="genseq" value="1596332705" />
-<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="3"/></p></form>	</div><!-- #respond -->
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="97a07f0f41" /></p>
+<input type="hidden" name="genseq" value="1596382206" />
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="96"/></p></form>	</div><!-- #respond -->
 	<div style="clear: both"></div>
 	</div><!-- #comments -->
 </div><!-- .comments-area-wrapper -->
@@ -841,7 +841,7 @@ var WPGroHo = {"my_hash":""};
 		<div style="display:none">
 	</div>
 <script>
-var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/codejammies.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/codejammies.wordpress.com\/wp-login.php?action=logout&_wpnonce=22a4c804fd","homeURL":"https:\/\/codejammies.wordpress.com\/","postID":"900","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"","userIsLoggedIn":"","isJetpack":"","text_direction":"ltr"};
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/codejammies.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/codejammies.wordpress.com\/wp-login.php?action=logout&_wpnonce=a129ed4ef6","homeURL":"https:\/\/codejammies.wordpress.com\/","postID":"900","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"","userIsLoggedIn":"","isJetpack":"","text_direction":"ltr"};
 </script>
 <script type='text/javascript' src='https://s0.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1573483029j'></script>
 		<!-- CCPA [start] -->
@@ -1000,7 +1000,7 @@ To find out more, including how to control cookies, see here:
 var comment_like_text = {"loading":"Loading..."};
 </script>
 <script>
-var actionbardata = {"siteID":"164396964","siteName":"Codejammies","siteURL":"http:\/\/codejammies.wordpress.com","icon":"<img alt='' src='https:\/\/codejammies.files.wordpress.com\/2020\/04\/image-6-2.jpg?w=50' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/dyad-2","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F07%2F30%2F30-seconds-read-linux-commands-for-firewall%2F&signup_flow=account","themeURL":"https:\/\/wordpress.com\/theme\/dyad-2\/","xhrURL":"https:\/\/codejammies.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"a0b9f0daa9","isSingular":"1","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"db1dce57e9\" \/>","referer":"https:\/\/codejammies.wordpress.com\/2020\/07\/30\/30-seconds-read-linux-commands-for-firewall\/","canFollow":"1","feedID":"97968314","statusMessage":"","customizeLink":"https:\/\/codejammies.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F07%2F30%2F30-seconds-read-linux-commands-for-firewall%2F","postID":"900","shortlink":"https:\/\/wp.me\/pb7N9W-ew","canEditPost":"","editLink":"https:\/\/wordpress.com\/post\/codejammies.wordpress.com\/900","statsLink":"https:\/\/wordpress.com\/stats\/post\/900\/codejammies.wordpress.com","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: Dyad 2","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href="https://architmodi.github.io/2020/07/30/30-seconds-read-linux-commands-for-firewall/\&quot;https:\/\/wordpress.com\/read\&quot;">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage subscriptions","viewReader":"View site in Reader","viewReadPost":"View post in Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"","alreadyUser":"Already have a WordPress.com account? <a href="https://architmodi.github.io/2020/07/30/30-seconds-read-linux-commands-for-firewall/\&quot;https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F07%2F30%2F30-seconds-read-linux-commands-for-firewall%2F&amp;signup_flow=account\&quot;">Log in now.<\/a>","stats":"Stats"}};
+var actionbardata = {"siteID":"164396964","siteName":"Codejammies","siteURL":"http:\/\/codejammies.wordpress.com","icon":"<img alt='' src='https:\/\/codejammies.files.wordpress.com\/2020\/04\/image-6-2.jpg?w=50' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/dyad-2","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F07%2F30%2F30-seconds-read-linux-commands-for-firewall%2F&signup_flow=account","themeURL":"https:\/\/wordpress.com\/theme\/dyad-2\/","xhrURL":"https:\/\/codejammies.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"abd91abfc1","isSingular":"1","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"e42f5fbac6\" \/>","referer":"https:\/\/codejammies.wordpress.com\/2020\/07\/30\/30-seconds-read-linux-commands-for-firewall\/","canFollow":"1","feedID":"97968314","statusMessage":"","customizeLink":"https:\/\/codejammies.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F07%2F30%2F30-seconds-read-linux-commands-for-firewall%2F","postID":"900","shortlink":"https:\/\/wp.me\/pb7N9W-ew","canEditPost":"","editLink":"https:\/\/wordpress.com\/post\/codejammies.wordpress.com\/900","statsLink":"https:\/\/wordpress.com\/stats\/post\/900\/codejammies.wordpress.com","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: Dyad 2","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href="https://architmodi.github.io/2020/07/30/30-seconds-read-linux-commands-for-firewall/\&quot;https:\/\/wordpress.com\/read\&quot;">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage subscriptions","viewReader":"View site in Reader","viewReadPost":"View post in Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"","alreadyUser":"Already have a WordPress.com account? <a href="https://architmodi.github.io/2020/07/30/30-seconds-read-linux-commands-for-firewall/\&quot;https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F07%2F30%2F30-seconds-read-linux-commands-for-firewall%2F&amp;signup_flow=account\&quot;">Log in now.<\/a>","stats":"Stats"}};
 </script>
 <script>
 var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
@@ -1096,7 +1096,7 @@ _tkq = window._tkq || [];
 _stq = window._stq || [];
 _tkq.push(['storeContext', {'blog_id':'164396964','blog_tz':'-4','user_lang':'en','blog_lang':'en','user_id':'0'}]);
 _stq.push(['view', {'blog':'164396964','v':'wpcom','tz':'-4','user_id':'0','post':'900','subd':'codejammies'}]);
-_stq.push(['extra', {'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdWFnNncxc1tjZG9XVXhRREQ/V0xPZ1hKXy8rZ2tpQ1MrVi9bRFtVLFR3QS5NeUtRTzd+Ul9hM0h3VnxmSUQ/c0RmdVhlSyVbS2hlNjVuUmJFPUtrVmpwb1ZGPzR+Y2VXUVhrMkg9LFQlWmVlSzVbalQxP3Y0LzQ2T1BIR0F3NyZpeHI4YU0rMGR2ZCtvMmVSSENTcS5zRkxBTDRBRUJ8Nmp6bmRDdkZndVZDQS9OOSxxP2lodm5uTHFuMjhQfjAlQ1NIbTc3JiU4YVtmRHlGN0dCWEQrNzJEUHcsZ2RlalV+Mmk/Q2lbLFda'}]);
+_stq.push(['extra', {'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdWFnNncxc1tjZG9XVXhRREQ/V0xPZ1hKXy8rZ2tpQ1MrVi9bRFtVLFR3QS5NeUtRTzd+Ul9hM0h3VnxmSUQ/c0RmUTdFcUxBPzZXPU9nbGR0Y1pYdXFtSERlbGs2NU9uTT9baDU0Mjc9RG41eUh4WU15YnMwRCV+dGNQeXgzbVVCPXhMNURzZlJEMW0rcm5fSmwvWFdtT2s0MiUyUDlDOHVYcD95bXBXdCtJMHM/TSV5fDd4TUVGeFVQOGZ0eEw4R0RQTVNdfDQlV2ZrWmRQQklpcW8tdltCZSxycHpKYUkyaGtLOG0zbXU2'}]);
 _stq.push([ 'clickTrackerInit', '164396964', '900' ]);
 	</script>
 <noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
