@@ -13,7 +13,7 @@
 	<atom:link href="https://architmodi.github.io/category/technical-articles/feed/" rel="self" type="application/rss+xml" />
 	<link>https://architmodi.github.io</link>
 	<description>Lessons Between Dummies</description>
-	<lastBuildDate>Thu, 13 Aug 2020 20:48:58 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 13 Aug 2020 21:11:18 +0000</lastBuildDate>
 	<language>en</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -46,13 +46,13 @@
 		<category><![CDATA[ospf routers]]></category>
 		<guid isPermaLink="false">http://codejammies.wordpress.com/?p=952</guid>
 
-					<description><![CDATA[There are 5 types of internal gateway routing protocols and OSPF is one of them. But what makes it so special? One of the best things about OSPF is that it is open source in nature unlike EIGRP which is CISCO proprietary. Meaning, it can run on routers manufactured by different vendors. OSPF is a... <div class="link-more"><a href="https://architmodi.github.io/2020/08/13/ospf/">Read More</a></div>]]></description>
+					<description><![CDATA[There are 5 types of internal gateway routing protocols and OSPF is one of them. But what makes it so special? One of the best things about OSPF is that it is open source in nature meaning, it can run on routers manufactured by different vendors. OSPF is a link-state internal gateway protocol that follows... <div class="link-more"><a href="https://architmodi.github.io/2020/08/13/ospf/">Read More</a></div>]]></description>
 										<content:encoded><![CDATA[
-<p class="has-normal-font-size">There are 5 types of internal gateway routing protocols and OSPF is one of them. But what makes it so special? One of the best things about OSPF is that it is open source in nature unlike EIGRP which is CISCO proprietary. Meaning, it can run on routers manufactured by different vendors. OSPF is a link-state internal gateway protocol that follows Dijkstra algorithm. It&#8217;s administrative distance is 110 and uses multicast addresses 224.0.0.5 and 224.0.0.6 for exchanging information between it&#8217;s neighbors. It uses cost as it&#8217;s metric and IP port 89 for packet transfer. </p>
+<p class="has-normal-font-size">There are 5 types of internal gateway routing protocols and OSPF is one of them. But what makes it so special? One of the best things about OSPF is that it is open source in nature meaning, it can run on routers manufactured by different vendors. OSPF is a link-state internal gateway protocol that follows Dijkstra algorithm. It&#8217;s administrative distance is 110 and uses multicast addresses 224.0.0.5 and 224.0.0.6 for exchanging information between it&#8217;s neighbors. It uses cost as it&#8217;s metric and IP port 89 for packet transfer. </p>
 
 
 
-<p class="has-normal-font-size">In this post you will learn about- <em>OSPF tables, types of routers, LSA types, OSPF packet types , OSPF states and OSPF areas</em></p>
+<p class="has-normal-font-size">In this post you will learn about- <em>OSPF tables, Types of routers, LSA types, OSPF packet types , OSPF states and OSPF areas</em></p>
 
 
 
@@ -60,7 +60,11 @@
 
 
 
-<p class="has-text-align-center has-medium-font-size"><strong>OSPF Tables</strong></p>
+<p class="has-text-align-center has-yellow-background-color has-background has-medium-font-size"><strong>OSPF Tables</strong></p>
+
+
+
+<p></p>
 
 
 
@@ -92,7 +96,11 @@
 
 
 
-<p class="has-text-align-center has-medium-font-size"><strong>OSPF Routers</strong></p>
+<p class="has-text-align-center has-yellow-background-color has-background has-medium-font-size"><strong>OSPF Routers</strong></p>
+
+
+
+<p></p>
 
 
 
@@ -124,7 +132,11 @@
 
 
 
-<p class="has-text-align-center has-medium-font-size"><strong>OSPF LSA Types</strong></p>
+<p class="has-text-align-center has-yellow-background-color has-background has-medium-font-size"><strong>OSPF LSA Types</strong></p>
+
+
+
+<p></p>
 
 
 
@@ -172,7 +184,11 @@
 
 
 
-<p class="has-text-align-center has-medium-font-size"><strong>OSPF Packet Types</strong></p>
+<p class="has-text-align-center has-yellow-background-color has-background has-medium-font-size"><strong>OSPF Packet Types</strong></p>
+
+
+
+<p></p>
 
 
 
@@ -200,7 +216,11 @@
 
 
 
-<p class="has-text-align-center has-medium-font-size"><strong>OSPF States</strong></p>
+<p class="has-text-align-center has-yellow-background-color has-background has-medium-font-size"><strong>OSPF States</strong></p>
+
+
+
+<p></p>
 
 
 
@@ -244,15 +264,19 @@
 
 
 
-<p class="has-text-align-center has-medium-font-size"><strong>OSPF Areas</strong></p>
+<p class="has-text-align-center has-yellow-background-color has-background has-medium-font-size"><strong>OSPF Areas</strong></p>
 
 
 
-<p class="has-normal-font-size">OSPF implements a 2-layer area architecture- backbone area and non-backbone area. Backbone area is also commonly known as area 0. This, as the name suggests is the spine of the OSPF network. Every non-backbone area is physically or virtually connected to the OSPF area 0. Non-backbone areas are where the users are placed. Let&#8217;s have a brief look at all non-backbone areas-</p>
+<p></p>
 
 
 
-<p class="has-normal-font-size"><strong>1. Standard Area</strong>&#8211; As mentioned earlier, this area should be connected to the area 0 of OSPF. This area allows intra-area, inter-area, external and a default routes.</p>
+<p class="has-normal-font-size">OSPF implements a 2-layer area architecture- backbone area and non-backbone area. Backbone area is also commonly known as Area 0. This, as the name suggests is the spine of the OSPF network. Every non-backbone area is physically or virtually connected to the OSPF Area 0. Non-backbone areas are where the users are placed. Let&#8217;s have a brief look at all non-backbone areas-</p>
+
+
+
+<p class="has-normal-font-size"><strong>1. Standard Area</strong>&#8211; As mentioned earlier, this area should be connected to the Area 0 of OSPF. This area allows intra-area, inter-area, external and a default routes.</p>
 
 
 
