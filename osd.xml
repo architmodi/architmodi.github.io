@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+	<ShortName>codejammies</ShortName>
+	<Description>Search C O D E J A M M I E S - Lessons Between Dummies</Description>
+	<Contact>help@wordpress.com</Contact>
+	<Url type="application/atom+xml" template="https://architmodi.github.io/?s={searchTerms}&amp;feed=atom" />
+	<Url type="rss+xml" template="https://architmodi.github.io/?s={searchTerms}&amp;feed=rss2" />
+	<Url type="text/html" template="https://architmodi.github.io/?s={searchTerms}" method="GET" />
+	<Url type="application/opensearchdescription+xml" rel="self" template="https://architmodi.github.io/osd.xml" />
+	<LongName>C O D E J A M M I E S</LongName>
+	<Image height="16" width="16" type="image/vnd.microsoft.icon">https://codejammies.files.wordpress.com/2020/04/image-6-2.jpg?w=16</Image>
+	<Image height="64" width="64" type="image/jpeg">https://codejammies.files.wordpress.com/2020/04/image-6-2.jpg?w=64</Image>
+	<Query role="example" searchTerms="photography" />
+	<Tags>stem women-in-tech engineer network-engineering technology interview tutorial engineering student computer-hardware</Tags>
+	<Developer>Automattic</Developer>
+	<SyndicationRight>open</SyndicationRight>
+	<AdultContent>false</AdultContent>
+	<Language>en</Language>
+	<OutputEncoding>UTF-8</OutputEncoding>
+	<InputEncoding>UTF-8</InputEncoding>
+	<moz:SearchForm>https://architmodi.github.io</moz:SearchForm>
+</OpenSearchDescription>
