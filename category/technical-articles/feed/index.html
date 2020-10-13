@@ -13,7 +13,7 @@
 	<atom:link href="https://architmodi.github.io/category/technical-articles/feed/" rel="self" type="application/rss+xml" />
 	<link>https://architmodi.github.io</link>
 	<description>Lessons Between Dummies</description>
-	<lastBuildDate>Thu, 13 Aug 2020 21:11:18 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 13 Oct 2020 15:59:21 +0000</lastBuildDate>
 	<language>en</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -48,19 +48,11 @@
 
 					<description><![CDATA[There are 5 types of internal gateway routing protocols and OSPF is one of them. But what makes it so special? One of the best things about OSPF is that it is open source in nature meaning, it can run on routers manufactured by different vendors. OSPF is a link-state internal gateway protocol that follows... <div class="link-more"><a href="https://architmodi.github.io/2020/08/13/ospf/">Read More</a></div>]]></description>
 										<content:encoded><![CDATA[
-<p class="has-normal-font-size">There are 5 types of internal gateway routing protocols and OSPF is one of them. But what makes it so special? One of the best things about OSPF is that it is open source in nature meaning, it can run on routers manufactured by different vendors. OSPF is a link-state internal gateway protocol that follows Dijkstra algorithm. It&#8217;s administrative distance is 110 and uses multicast addresses 224.0.0.5 and 224.0.0.6 for exchanging information between it&#8217;s neighbors. It uses cost as it&#8217;s metric and IP port 89 for packet transfer. </p>
+<p class="has-medium-font-size">There are 5 types of internal gateway routing protocols and OSPF is one of them. But what makes it so special? One of the best things about OSPF is that it is open source in nature meaning, it can run on routers manufactured by different vendors. OSPF is a link-state internal gateway protocol that follows Dijkstra algorithm. It&#8217;s administrative distance is 110 and uses multicast addresses 224.0.0.5 and 224.0.0.6 for exchanging information between it&#8217;s neighbors. It uses cost as it&#8217;s metric and IP port 89 for packet transfer. </p>
 
 
 
-<p class="has-normal-font-size">In this post you will learn about- <em>OSPF tables, Types of routers, LSA types, OSPF packet types , OSPF states and OSPF areas</em></p>
-
-
-
-<p></p>
-
-
-
-<p class="has-text-align-center has-yellow-background-color has-background has-medium-font-size"><strong>OSPF Tables</strong></p>
+<p class="has-medium-font-size">In this post you will learn about- <em>OSPF tables, Types of routers, LSA types, OSPF packet types , OSPF states and OSPF areas</em></p>
 
 
 
@@ -68,27 +60,7 @@
 
 
 
-<p class="has-normal-font-size"><strong>1. Neighbor Table-</strong> Stores information about neighboring OSPF routers.</p>
-
-
-
-<p class="has-text-align-center has-yellow-color has-text-color has-normal-font-size">Command-<em> show ip ospf neighbor</em></p>
-
-
-
-<p class="has-normal-font-size"><strong>2. Topology Table-</strong> Stores all possible routes learned from neighboring routers.</p>
-
-
-
-<p class="has-text-align-center has-yellow-color has-text-color has-normal-font-size">Command-<em> show ip ospf database</em></p>
-
-
-
-<p class="has-normal-font-size"><strong>3. Routing Table-</strong> Stores only best path to destination.</p>
-
-
-
-<p class="has-text-align-center has-yellow-color has-text-color has-normal-font-size">Command- <em>show ip route ospf</em></p>
+<p class="has-text-align-center has-yellow-background-color has-background has-large-font-size"><strong>OSPF Tables</strong></p>
 
 
 
@@ -96,7 +68,27 @@
 
 
 
-<p class="has-text-align-center has-yellow-background-color has-background has-medium-font-size"><strong>OSPF Routers</strong></p>
+<p class="has-medium-font-size"><strong>1. Neighbor Table-</strong> Stores information about neighboring OSPF routers.</p>
+
+
+
+<p class="has-text-align-center has-yellow-color has-text-color has-medium-font-size">Command-<em> show ip ospf neighbor</em></p>
+
+
+
+<p class="has-medium-font-size"><strong>2. Topology Table-</strong> Stores all possible routes learned from neighboring routers.</p>
+
+
+
+<p class="has-text-align-center has-yellow-color has-text-color has-medium-font-size">Command-<em> show ip ospf database</em></p>
+
+
+
+<p class="has-medium-font-size"><strong>3. Routing Table-</strong> Stores only best path to destination.</p>
+
+
+
+<p class="has-text-align-center has-yellow-color has-text-color has-medium-font-size">Command- <em>show ip route ospf</em></p>
 
 
 
@@ -104,27 +96,7 @@
 
 
 
-<p class="has-normal-font-size"><strong>1. Area Border Router (ABR)- </strong>Routers that are located on the borders of each OSPF area and are connected to multiple areas, are known as ABRs. In addition, ABRs summarize IP addresses of each OSPF area.</p>
-
-
-
-<p class="has-normal-font-size"><strong>2. Autonomous System Border Router (ASBR)-</strong> Similar to ABRs, ASBRs are connected to different OSPF areas, however, they are also connected to routers with different routing protocols like EIGRP, EGP etc.</p>
-
-
-
-<p class="has-normal-font-size"><strong>3. Designated Router (DR)-</strong> DR generates LSAs and exchange information with other routers in the same area. DR uses multicast address 224.0.0.5 to send updates to other routers and all routers except DR uses the multicast address 224.0.0.6 to send LSU and LSA packets to the DR.</p>
-
-
-
-<p class="has-normal-font-size"><em>DR Election- DR is elected by routers on the basis of router priority. The router with highest priority is elected as DR.</em></p>
-
-
-
-<p class="has-normal-font-size"><strong>4. Backup Designated Router (BDR)- </strong>As you might have guessed by the name, BDR is a backup designated router in case the actual designated router fails. In case of a DR failure, BDR is will act as a DR and a new BDR will be elected.</p>
-
-
-
-<p class="has-normal-font-size"><em>BDR Election- BDR is elected by routers on the basis of router priority. The router with second highest priority is elected as BDR.</em></p>
+<p class="has-text-align-center has-yellow-background-color has-background has-large-font-size"><strong>OSPF Routers</strong></p>
 
 
 
@@ -132,7 +104,35 @@
 
 
 
-<p class="has-text-align-center has-yellow-background-color has-background has-medium-font-size"><strong>OSPF LSA Types</strong></p>
+<p class="has-medium-font-size"><strong>1. Area Border Router (ABR)- </strong>Routers that are located on the borders of each OSPF area and are connected to multiple areas, are known as ABRs. In addition, ABRs summarize IP addresses of each OSPF area.</p>
+
+
+
+<p class="has-medium-font-size"><strong>2. Autonomous System Border Router (ASBR)-</strong> Similar to ABRs, ASBRs are connected to different OSPF areas, however, they are also connected to routers with different routing protocols like EIGRP, EGP etc.</p>
+
+
+
+<p class="has-medium-font-size"><strong>3. Designated Router (DR)-</strong> DR generates LSAs and exchange information with other routers in the same area. DR uses multicast address 224.0.0.5 to send updates to other routers and all routers except DR uses the multicast address 224.0.0.6 to send LSU and LSA packets to the DR.</p>
+
+
+
+<p class="has-medium-font-size"><em>DR Election- DR is elected by routers on the basis of router priority. The router with highest priority is elected as DR.</em></p>
+
+
+
+<p class="has-medium-font-size"><strong>4. Backup Designated Router (BDR)- </strong>As you might have guessed by the name, BDR is a backup designated router in case the actual designated router fails. In case of a DR failure, BDR is will act as a DR and a new BDR will be elected.</p>
+
+
+
+<p class="has-medium-font-size"><em>BDR Election- BDR is elected by routers on the basis of router priority. The router with second highest priority is elected as BDR.</em></p>
+
+
+
+<p class="has-medium-font-size"></p>
+
+
+
+<p class="has-text-align-center has-yellow-background-color has-background has-large-font-size"><strong>OSPF LSA Types</strong></p>
 
 
 
@@ -140,7 +140,7 @@
 
 
 
-<p class="has-normal-font-size">Before moving forward with this topic, let&#8217;s have a brief look at LSA. Link State Advertisements (LSAs) are information about routes that are transported inside Link State Updates (LSUs). Each LSU packet contains one or more LSAs, and when an LSU is sent between routers, it floods the LSA information through the network. This is also known as LSDB flooding. Receiving OSPF routers store LSAs inside Link State Database (LSDB). Once LSDBs between the routers sync, OSPF finds a best path using Spanning Tree Protocol (STP) algorithm for each network.</p>
+<p class="has-medium-font-size">Before moving forward with this topic, let&#8217;s have a brief look at LSA. Link State Advertisements (LSAs) are information about routes that are transported inside Link State Updates (LSUs). Each LSU packet contains one or more LSAs, and when an LSU is sent between routers, it floods the LSA information through the network. This is also known as LSDB flooding. Receiving OSPF routers store LSAs inside Link State Database (LSDB). Once LSDBs between the routers sync, OSPF finds a best path using Spanning Tree Protocol (STP) algorithm for each network.</p>
 
 
 
@@ -148,67 +148,43 @@
 
 
 
-<p class="has-yellow-color has-text-color has-normal-font-size"><em>LSA header content- LS age (2 Bytes), Options (1 Byte), LS Type (1 Byte), LS ID (4 Bytes), Advertising router (4 Bytes), LS sequence number (4 Bytes), LS checksum (2 Bytes), Length (2 Bytes)</em></p>
+<p class="has-yellow-color has-text-color has-medium-font-size"><em>LSA header content- LS age (2 Bytes), Options (1 Byte), LS Type (1 Byte), LS ID (4 Bytes), Advertising router (4 Bytes), LS sequence number (4 Bytes), LS checksum (2 Bytes), Length (2 Bytes)</em></p>
 
 
 
-<p class="has-normal-font-size"><strong>1. Router LSA- </strong>Also known as Type 1 LSAs, are sent between routers within the same area. These carries information about the interfaces of router and it&#8217;s adjacent neighbors.</p>
+<p class="has-medium-font-size"><strong>1. Router LSA- </strong>Also known as Type 1 LSAs, are sent between routers within the same area. These carries information about the interfaces of router and it&#8217;s adjacent neighbors.</p>
 
 
 
-<p class="has-normal-font-size"><strong>2. Network LSA-</strong> Also known as Type 2 LSAs, are generated and flooded between the routers in the same area by the Designated Router (DR) in order to describe directly connected routers.</p>
+<p class="has-medium-font-size"><strong>2. Network LSA-</strong> Also known as Type 2 LSAs, are generated and flooded between the routers in the same area by the Designated Router (DR) in order to describe directly connected routers.</p>
 
 
 
-<p class="has-normal-font-size"><strong>3. Summary LSA- </strong>These are generated by Area Border Routers (ABRs) to advertise directly connected areas to other areas.</p>
+<p class="has-medium-font-size"><strong>3. Summary LSA- </strong>These are generated by Area Border Routers (ABRs) to advertise directly connected areas to other areas.</p>
 
 
 
-<p class="has-normal-font-size"><strong>4. ASBR Summary LSA- </strong>These are generated by ABRs in order to let other routers known where the Autonomous System Border Routers (ASBRs) are located.</p>
+<p class="has-medium-font-size"><strong>4. ASBR Summary LSA- </strong>These are generated by ABRs in order to let other routers known where the Autonomous System Border Routers (ASBRs) are located.</p>
 
 
 
-<p class="has-normal-font-size"><strong>5. External LSA-</strong> Also known as ASBR External LSAs, are generated by ASBR to advertise external redistribution routes into the OSPF&#8217;s autonomous system.</p>
+<p class="has-medium-font-size"><strong>5. External LSA-</strong> Also known as ASBR External LSAs, are generated by ASBR to advertise external redistribution routes into the OSPF&#8217;s autonomous system.</p>
 
 
 
-<p class="has-normal-font-size"><strong>6. Multicast LSA-</strong> Supposedly supports multicast routing through OSPF, but is not used much and is anticipated to be outdated soon.</p>
+<p class="has-medium-font-size"><strong>6. Multicast LSA-</strong> Supposedly supports multicast routing through OSPF, but is not used much and is anticipated to be outdated soon.</p>
 
 
 
-<p class="has-normal-font-size"><strong>7. NSSA External LSA- </strong>Not-so-stubby-area packets are used for the areas which does not allow Type 5 LSA packet. NSSA External LSA acts as a mask to Type 5 LSA packets and help them move through these areas.</p>
+<p class="has-medium-font-size"><strong>7. NSSA External LSA- </strong>Not-so-stubby-area packets are used for the areas which does not allow Type 5 LSA packet. NSSA External LSA acts as a mask to Type 5 LSA packets and help them move through these areas.</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p class="has-text-align-center has-yellow-background-color has-background has-medium-font-size"><strong>OSPF Packet Types</strong></p>
-
-
-
-<p></p>
-
-
-
-<p class="has-normal-font-size"><strong>1. Hello</strong>&#8211; Hello packet is used for discovering, forming and maintaining OSPF neighborship</p>
-
-
-
-<p class="has-normal-font-size"><strong>2. Database Description-</strong> DBD is a summary of LSDB, it&#8217;s responsibility is to check whether the LSDB between 2 routers is the same. LSDB contains updated link-state information exchanged among the network and all routers within the same area share the same LSDB. When 2 routers form new neighbor adjacencies, they sync their LSDBs to be fully adjacent.</p>
-
-
-
-<p class="has-normal-font-size"><strong>3. Link State Requests-</strong> LSR is used for requesting missing LSDB information by OSPF routers.</p>
-
-
-
-<p class="has-normal-font-size"><strong>4. Link State Updates-</strong> LSU is a packet in response to LSR. It carries the missing piece of information requested by the OSPF routers.</p>
-
-
-
-<p class="has-normal-font-size"><strong>5. Link State Acknowledgement-</strong> Once the OSPF router receives missing LSDB information through LSU, it sends out an LSAck packet to acknowledge the transfer.</p>
+<p class="has-text-align-center has-yellow-background-color has-background has-large-font-size"><strong>OSPF Packet Types</strong></p>
 
 
 
@@ -216,7 +192,23 @@
 
 
 
-<p class="has-text-align-center has-yellow-background-color has-background has-medium-font-size"><strong>OSPF States</strong></p>
+<p class="has-medium-font-size"><strong>1. Hello</strong>&#8211; Hello packet is used for discovering, forming and maintaining OSPF neighborship</p>
+
+
+
+<p class="has-medium-font-size"><strong>2. Database Description-</strong> DBD is a summary of LSDB, it&#8217;s responsibility is to check whether the LSDB between 2 routers is the same. LSDB contains updated link-state information exchanged among the network and all routers within the same area share the same LSDB. When 2 routers form new neighbor adjacencies, they sync their LSDBs to be fully adjacent.</p>
+
+
+
+<p class="has-medium-font-size"><strong>3. Link State Requests-</strong> LSR is used for requesting missing LSDB information by OSPF routers.</p>
+
+
+
+<p class="has-medium-font-size"><strong>4. Link State Updates-</strong> LSU is a packet in response to LSR. It carries the missing piece of information requested by the OSPF routers.</p>
+
+
+
+<p class="has-medium-font-size"><strong>5. Link State Acknowledgement-</strong> Once the OSPF router receives missing LSDB information through LSU, it sends out an LSAck packet to acknowledge the transfer.</p>
 
 
 
@@ -224,39 +216,7 @@
 
 
 
-<p class="has-normal-font-size">In order to become OSPF neighbors, routers need to go through the following states-</p>
-
-
-
-<p class="has-normal-font-size"><strong>1. Down-</strong> This state indicates that no hello packets are received from neighbor as yet.</p>
-
-
-
-<p class="has-normal-font-size"><strong>2. Attempt-</strong> This state is only valid for manually configured neighbors.</p>
-
-
-
-<p class="has-normal-font-size"><strong>3. Init-</strong> This state specifies that the router has received a hello packet from its neighbor, but the receiving router&#8217;s ID was not included in the hello packet.</p>
-
-
-
-<p class="has-normal-font-size"><strong>4. Two-way</strong>&#8211; This state specifies that both routers received hello packets and have each other&#8217;s router IDs and a two way communication is established. In the end of this state, DR and BDR are elected.</p>
-
-
-
-<p class="has-normal-font-size"><strong>5. Exstart</strong>&#8211; Once the DR and BDR are elected, the actual process of exchanging link state information can start between the routers and their DR and BDR. In this state, the routers and their DR/BDR establish a master-slave relationship and choose the initial sequence number for adjacency formation. The router with the higher router ID becomes the master and starts the exchange.</p>
-
-
-
-<p class="has-normal-font-size"><strong>6. Exchange</strong>&#8211; In this state, OSPF routers exchange Database Descriptor packets.</p>
-
-
-
-<p class="has-normal-font-size"><strong>7. Loading-</strong> Based on the information provided by the DBDs, routers send Link State Request (LSR) packets. The neighbor then provides the requested information in Link State Update (LSU) packets. During the adjacency, if a router receives an outdated or missing LSA, it requests that LSA by sending a Link State Request (LSR) packet. After receiving the requested information, routers will send acknowledgement through LSAck packet.</p>
-
-
-
-<p class="has-normal-font-size"><strong>8. Full</strong>&#8211; This state indicates that routers have completely formed adjacencies with one another and are now sharing synced databases.</p>
+<p class="has-text-align-center has-yellow-background-color has-background has-large-font-size"><strong>OSPF States</strong></p>
 
 
 
@@ -264,7 +224,39 @@
 
 
 
-<p class="has-text-align-center has-yellow-background-color has-background has-medium-font-size"><strong>OSPF Areas</strong></p>
+<p class="has-medium-font-size">In order to become OSPF neighbors, routers need to go through the following states-</p>
+
+
+
+<p class="has-medium-font-size"><strong>1. Down-</strong> This state indicates that no hello packets are received from neighbor as yet.</p>
+
+
+
+<p class="has-medium-font-size"><strong>2. Attempt-</strong> This state is only valid for manually configured neighbors.</p>
+
+
+
+<p class="has-medium-font-size"><strong>3. Init-</strong> This state specifies that the router has received a hello packet from its neighbor, but the receiving router&#8217;s ID was not included in the hello packet.</p>
+
+
+
+<p class="has-medium-font-size"><strong>4. Two-way</strong>&#8211; This state specifies that both routers received hello packets and have each other&#8217;s router IDs and a two way communication is established. In the end of this state, DR and BDR are elected.</p>
+
+
+
+<p class="has-medium-font-size"><strong>5. Exstart</strong>&#8211; Once the DR and BDR are elected, the actual process of exchanging link state information can start between the routers and their DR and BDR. In this state, the routers and their DR/BDR establish a master-slave relationship and choose the initial sequence number for adjacency formation. The router with the higher router ID becomes the master and starts the exchange.</p>
+
+
+
+<p class="has-medium-font-size"><strong>6. Exchange</strong>&#8211; In this state, OSPF routers exchange Database Descriptor packets.</p>
+
+
+
+<p class="has-medium-font-size"><strong>7. Loading-</strong> Based on the information provided by the DBDs, routers send Link State Request (LSR) packets. The neighbor then provides the requested information in Link State Update (LSU) packets. During the adjacency, if a router receives an outdated or missing LSA, it requests that LSA by sending a Link State Request (LSR) packet. After receiving the requested information, routers will send acknowledgement through LSAck packet.</p>
+
+
+
+<p class="has-medium-font-size"><strong>8. Full</strong>&#8211; This state indicates that routers have completely formed adjacencies with one another and are now sharing synced databases.</p>
 
 
 
@@ -272,23 +264,7 @@
 
 
 
-<p class="has-normal-font-size">OSPF implements a 2-layer area architecture- backbone area and non-backbone area. Backbone area is also commonly known as Area 0. This, as the name suggests is the spine of the OSPF network. Every non-backbone area is physically or virtually connected to the OSPF Area 0. Non-backbone areas are where the users are placed. Let&#8217;s have a brief look at all non-backbone areas-</p>
-
-
-
-<p class="has-normal-font-size"><strong>1. Standard Area</strong>&#8211; As mentioned earlier, this area should be connected to the Area 0 of OSPF. This area allows intra-area, inter-area, external and a default routes.</p>
-
-
-
-<p class="has-normal-font-size"><strong>2. Stub Area</strong>&#8211; Stub areas are typically implemented when routers with limited capacities are used in OSPF networks. These are typically used in hub-and-spoke network. Stub areas accept intra-area routes but do not allow external routes.</p>
-
-
-
-<p class="has-normal-font-size"><strong>3. Totally Stubby Area</strong>&#8211; This area is Cisco proprietary and does not accept external AS routes or inter-area routes. It only recognizes intra-area routes and the default route.</p>
-
-
-
-<p class="has-normal-font-size"><strong>4</strong>. <strong>Not So Stubby Area (NSSA)</strong>&#8211; NSSA allows intra-area, inter-area and the default route (0.0.0.0).</p>
+<p class="has-text-align-center has-yellow-background-color has-background has-large-font-size"><strong>OSPF Areas</strong></p>
 
 
 
@@ -296,7 +272,31 @@
 
 
 
-<p class="has-normal-font-size">Hope you enjoyed this post, I will be back with another OSPF article soon. Until next time<img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f379.png" alt="🍹" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p class="has-medium-font-size">OSPF implements a 2-layer area architecture- backbone area and non-backbone area. Backbone area is also commonly known as Area 0. This, as the name suggests is the spine of the OSPF network. Every non-backbone area is physically or virtually connected to the OSPF Area 0. Non-backbone areas are where the users are placed. Let&#8217;s have a brief look at all non-backbone areas-</p>
+
+
+
+<p class="has-medium-font-size"><strong>1. Standard Area</strong>&#8211; As mentioned earlier, this area should be connected to the Area 0 of OSPF. This area allows intra-area, inter-area, external and a default routes.</p>
+
+
+
+<p class="has-medium-font-size"><strong>2. Stub Area</strong>&#8211; Stub areas are typically implemented when routers with limited capacities are used in OSPF networks. These are typically used in hub-and-spoke network. Stub areas accept intra-area routes but do not allow external routes.</p>
+
+
+
+<p class="has-medium-font-size"><strong>3. Totally Stubby Area</strong>&#8211; This area is Cisco proprietary and does not accept external AS routes or inter-area routes. It only recognizes intra-area routes and the default route.</p>
+
+
+
+<p class="has-medium-font-size"><strong>4</strong>. <strong>Not So Stubby Area (NSSA)</strong>&#8211; NSSA allows intra-area, inter-area and the default route (0.0.0.0).</p>
+
+
+
+<p class="has-medium-font-size"></p>
+
+
+
+<p class="has-medium-font-size">Hope you enjoyed this post, I will be back with another OSPF article soon. Until next time<img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f379.png" alt="🍹" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://architmodi.github.io/2020/08/13/ospf/feed/</wfw:commentRss>
@@ -339,427 +339,427 @@
 
 					<description><![CDATA[Hello there! Linux is one of the most desirable skills in the job market today and after giving over 20 interviews I have come up with a cheat sheet which I personally use and may come in handy for your test or interview. Recruiters are interested in understanding the depth of your knowledge so I... <div class="link-more"><a href="https://architmodi.github.io/2020/03/03/popular-linux-interview-questions/">Read More</a></div>]]></description>
 										<content:encoded><![CDATA[
-<p>Hello there! Linux is one of the most desirable skills in the job market today and after giving over 20 interviews I have come up with a cheat sheet which I personally use and may come in handy for your test or interview. Recruiters are interested in understanding the depth of your knowledge so I have tried to cover important topics like inodes, hard/soft links, LVM to name a few in this article. And now without any further ado, ladies and gentlemen I present Popular Linux Interview Questions! *pff*</p>
+<p class="has-medium-font-size">Hello there! Linux is one of the most desirable skills in the job market today and after giving over 20 interviews I have come up with a cheat sheet which I personally use and may come in handy for your test or interview. Recruiters are interested in understanding the depth of your knowledge so I have tried to cover important topics like inodes, hard/soft links, LVM to name a few in this article. And now without any further ado, ladies and gentlemen I present Popular Linux Interview Questions! *pff*</p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Explain sticky bit in linux</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Explain sticky bit in linux</p>
 
 
 
-<p>Sticky bit is a permission bit that is set on a file or a directory such that only the owner of the file/directory and the root user can rename or delete the file/directory. Details about the sticky bits can be found under the /temp folder.</p>
+<p class="has-medium-font-size">Sticky bit is a permission bit that is set on a file or a directory such that only the owner of the file/directory and the root user can rename or delete the file/directory. Details about the sticky bits can be found under the /temp folder.</p>
 
 
 
-<p>Enable sticky bit- chmod +t file_name/directory_name</p>
+<p class="has-medium-font-size">Enable sticky bit- chmod +t file_name/directory_name</p>
 
 
 
-<p>Disable sticky bit- chmod -t file_name/directory_name</p>
+<p class="has-medium-font-size">Disable sticky bit- chmod -t file_name/directory_name</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />What are inodes?</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />What are inodes?</p>
 
 
 
-<p>Inode is a data structure that describes a file/directory in linux system by storing metadata about the files. Inodes store information like size of the file, device id, UID, GID, mode (ie permissions), timestamps and pointer to the actual data. In short, inodes store every information about the file except the actual data and the name of the file.</p>
+<p class="has-medium-font-size">Inode is a data structure that describes a file/directory in linux system by storing metadata about the files. Inodes store information like size of the file, device id, UID, GID, mode (ie permissions), timestamps and pointer to the actual data. In short, inodes store every information about the file except the actual data and the name of the file.</p>
 
 
 
-<p>The name of the file is stored separately along with the inode number, this way it can be linked to the metadata representing the file.</p>
+<p class="has-medium-font-size">The name of the file is stored separately along with the inode number, this way it can be linked to the metadata representing the file.</p>
 
 
 
-<p>By default, inodes per filesystem = 1 inode per 16,384 bytes of filesystem..</p>
+<p class="has-medium-font-size">By default, inodes per filesystem = 1 inode per 16,384 bytes of filesystem..</p>
 
 
 
-<p>Inode related commands-</p>
+<p class="has-medium-font-size">Inode related commands-</p>
 
 
 
-<p>df -i     &#8230;gives information about inodes</p>
+<p class="has-medium-font-size">df -i     &#8230;gives information about inodes</p>
 
 
 
-<p>stat file_name &#8230;can be used to view full information about inodes</p>
+<p class="has-medium-font-size">stat file_name &#8230;can be used to view full information about inodes</p>
 
 
 
-<p>find . -inum 100056 &#8230;can be used to find a file associated with a particular inode in the current directory (note: 100056 is an example, substitute it with the desired inode number)</p>
+<p class="has-medium-font-size">find . -inum 100056 &#8230;can be used to find a file associated with a particular inode in the current directory (note: 100056 is an example, substitute it with the desired inode number)</p>
 
 
 
-<p>ln file_A file_B &#8230;can be used to link file A to file B, therefore both files will have same inode number</p>
+<p class="has-medium-font-size">ln file_A file_B &#8230;can be used to link file A to file B, therefore both files will have same inode number</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />What are hard links?</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />What are hard links?</p>
 
 
 
-<p>Hard links are nothing but copies of the actual file with same inode number. In case the user decides to delete a particular file, they will have to delete all hard links associated with it.</p>
+<p class="has-medium-font-size">Hard links are nothing but copies of the actual file with same inode number. In case the user decides to delete a particular file, they will have to delete all hard links associated with it.</p>
 
 
 
-<p>Following command can be used to create hard links-</p>
+<p class="has-medium-font-size">Following command can be used to create hard links-</p>
 
 
 
-<p>ln actual_filename tobe_hardlink_filename</p>
+<p class="has-medium-font-size">ln actual_filename tobe_hardlink_filename</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />What are soft links?</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />What are soft links?</p>
 
 
 
-<p>Soft links, also known as symbolic links act as a pointer to the actual file. You can imagine soft links as shortcuts in Windows system.</p>
+<p class="has-medium-font-size">Soft links, also known as symbolic links act as a pointer to the actual file. You can imagine soft links as shortcuts in Windows system.</p>
 
 
 
-<p>Following command can be used to create soft links-</p>
+<p class="has-medium-font-size">Following command can be used to create soft links-</p>
 
 
 
-<p>ln -s actual_filepath tobe_softlink_filename</p>
+<p class="has-medium-font-size">ln -s actual_filepath tobe_softlink_filename</p>
 
 
 
-<p>Interestingly, hard links can be converted into soft links by using the following command-</p>
+<p class="has-medium-font-size">Interestingly, hard links can be converted into soft links by using the following command-</p>
 
 
 
-<p>ln -P filename hardlink_of_actualfile</p>
+<p class="has-medium-font-size">ln -P filename hardlink_of_actualfile</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Where can the information about cron and anacron files be found in linux?</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Where can the information about cron and anacron files be found in linux?</p>
 
 
 
-<p>Cron/anacron file for the system can be found under /etc/cron.d</p>
+<p class="has-medium-font-size">Cron/anacron file for the system can be found under /etc/cron.d</p>
 
 
 
-<p>Cron/anacron file for the user can be found under /var/spool/cron/crontab</p>
+<p class="has-medium-font-size">Cron/anacron file for the user can be found under /var/spool/cron/crontab</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />How to view CPU information?</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />How to view CPU information?</p>
 
 
 
-<p>CPU information like architecture, model, threads, cache can be viewed under /proc/cpu/info or by using the command lscpu</p>
+<p class="has-medium-font-size">CPU information like architecture, model, threads, cache can be viewed under /proc/cpu/info or by using the command lscpu</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />How to view open processes in linux?</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />How to view open processes in linux?</p>
 
 
 
-<p>Open processes in linux can be viewed under /proc directory or by using the following commands-</p>
+<p class="has-medium-font-size">Open processes in linux can be viewed under /proc directory or by using the following commands-</p>
 
 
 
-<p>ps -ef</p>
+<p class="has-medium-font-size">ps -ef</p>
 
 
 
-<p>top</p>
+<p class="has-medium-font-size">top</p>
 
 
 
-<p>htop</p>
+<p class="has-medium-font-size">htop</p>
 
 
 
-<p>atop</p>
+<p class="has-medium-font-size">atop</p>
 
 
 
-<p>pgrep</p>
+<p class="has-medium-font-size">pgrep</p>
 
 
 
-<p>pstree</p>
+<p class="has-medium-font-size">pstree</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />How to use the SCP command?</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />How to use the SCP command?</p>
 
 
 
-<p>Secure copy, commonly known as SCP is used for securely copying files from local host to remote host and vice versa.</p>
+<p class="has-medium-font-size">Secure copy, commonly known as SCP is used for securely copying files from local host to remote host and vice versa.</p>
 
 
 
-<p>Copy files from local to remote host- scp file.txt username@host-ip: /remote/directory/</p>
+<p class="has-medium-font-size">Copy files from local to remote host- scp file.txt username@host-ip: /remote/directory/</p>
 
 
 
-<p>Copy files from remote to local host- scp -r username@host-ip: /remote/directory /local/directory</p>
+<p class="has-medium-font-size">Copy files from remote to local host- scp -r username@host-ip: /remote/directory /local/directory</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />What is the default permission of a new file?</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />What is the default permission of a new file?</p>
 
 
 
-<p>By default the permission for a new file is set to 644, meaning, user will have read as well as write access whereas group and other will only have read permission. Linux will try to set 666 as the default permission for any newly created file but will end up setting it to 644 as the umask value is 0022 (Therefore, 666 &#8211; 022 = 644)</p>
+<p class="has-medium-font-size">By default the permission for a new file is set to 644, meaning, user will have read as well as write access whereas group and other will only have read permission. Linux will try to set 666 as the default permission for any newly created file but will end up setting it to 644 as the umask value is 0022 (Therefore, 666 &#8211; 022 = 644)</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />How to check memory information in linux?</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />How to check memory information in linux?</p>
 
 
 
-<p>Memory information can be found under the /proc/meminfo directory and by using the following commands-</p>
+<p class="has-medium-font-size">Memory information can be found under the /proc/meminfo directory and by using the following commands-</p>
 
 
 
-<p>free -m</p>
+<p class="has-medium-font-size">free -m</p>
 
 
 
-<p>vmstat</p>
+<p class="has-medium-font-size">vmstat</p>
 
 
 
-<p>top</p>
+<p class="has-medium-font-size">top</p>
 
 
 
-<p>htop</p>
+<p class="has-medium-font-size">htop</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />How to reboot a linux system?</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />How to reboot a linux system?</p>
 
 
 
-<p>Linux systems can be rebooted by CTRL-ALT-DEL or by using simple commands such as-</p>
+<p class="has-medium-font-size">Linux systems can be rebooted by CTRL-ALT-DEL or by using simple commands such as-</p>
 
 
 
-<p>reboot</p>
+<p class="has-medium-font-size">reboot</p>
 
 
 
-<p>reboot -f</p>
+<p class="has-medium-font-size">reboot -f</p>
 
 
 
-<p>restart</p>
+<p class="has-medium-font-size">restart</p>
 
 
 
-<p>shutdown -r</p>
+<p class="has-medium-font-size">shutdown -r</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />How to detect a hidden file?</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />How to detect a hidden file?</p>
 
 
 
-<p>The commands ls or ls -l can be used for listing files/directories in a linux system. But to list all files/directories along with the hidden files, use command ls -a. Also, hidden files are preceded by a dot.</p>
+<p class="has-medium-font-size">The commands ls or ls -l can be used for listing files/directories in a linux system. But to list all files/directories along with the hidden files, use command ls -a. Also, hidden files are preceded by a dot.</p>
 
 
 
-<p>Example- .codejammies</p>
+<p class="has-medium-font-size">Example- .codejammies</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />How to find disk space taken by a particular folder?</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />How to find disk space taken by a particular folder?</p>
 
 
 
-<p>This can be found by checking disk utilization, du -sh</p>
+<p class="has-medium-font-size">This can be found by checking disk utilization, du -sh</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />How to append file_A to file_B?</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />How to append file_A to file_B?</p>
 
 
 
-<p>file_A can be appended to file_B by using two output redirection symbols. Example- cat file_A &gt;&gt; file_B</p>
+<p class="has-medium-font-size">file_A can be appended to file_B by using two output redirection symbols. Example- cat file_A &gt;&gt; file_B</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Find the file named codejammies in your linux system</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Find the file named codejammies in your linux system</p>
 
 
 
-<p>sudo find / -name codejammies -type f</p>
+<p class="has-medium-font-size">sudo find / -name codejammies -type f</p>
 
 
 
-<p>Here / represents root directory and f represents file. If you are looking for a directory, use d instead of f.</p>
+<p class="has-medium-font-size">Here / represents root directory and f represents file. If you are looking for a directory, use d instead of f.</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />What is nohup?</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />What is nohup?</p>
 
 
 
-<p>nohup is command used for ignoring any hang ups, upon using this command system will not stop the process irrespective of errors or interruptions.</p>
+<p class="has-medium-font-size">nohup is command used for ignoring any hang ups, upon using this command system will not stop the process irrespective of errors or interruptions.</p>
 
 
 
-<p>Example- nohup command OR nohup command &amp;</p>
+<p class="has-medium-font-size">Example- nohup command OR nohup command &amp;</p>
 
 
 
-<p>The &amp; let the process to run in the background.</p>
+<p class="has-medium-font-size">The &amp; let the process to run in the background.</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />What is the ideal swap partition size?</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />What is the ideal swap partition size?</p>
 
 
 
-<p>In linux, ideally the swap partition size is twice the amount of physical memory present on the system. In cases where this is not possible, the minimum size of swap partition should be equivalent to the amount of physical memory on the system.</p>
+<p class="has-medium-font-size">In linux, ideally the swap partition size is twice the amount of physical memory present on the system. In cases where this is not possible, the minimum size of swap partition should be equivalent to the amount of physical memory on the system.</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Display physical volumes- pvs OR pvdisplay</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Display physical volumes- pvs OR pvdisplay</p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Display volume groups- vgs OR vgdisplay group_name</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Display volume groups- vgs OR vgdisplay group_name</p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Display logical volume (LVM) information- lvs OR lvsdisplay lv_name</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Display logical volume (LVM) information- lvs OR lvsdisplay lv_name</p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />List partition types on a linux system- lsblk</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />List partition types on a linux system- lsblk</p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />List partitions on a linux system- fdisk -l /dev/sda OR fdisk -l | grep /dev/sd</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />List partitions on a linux system- fdisk -l /dev/sda OR fdisk -l | grep /dev/sd</p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Create a physical volume- pvcreate /dev/sdc</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Create a physical volume- pvcreate /dev/sdc</p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Remove a physical volume- pvremove /dev/sdc</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Remove a physical volume- pvremove /dev/sdc</p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Create a new volume group- vgcreate codejammies /dev/sdc</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Create a new volume group- vgcreate codejammies /dev/sdc</p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Rename a volume group- vgrename codejammies codejammy</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Rename a volume group- vgrename codejammies codejammy</p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Remove a volume group- vgremove codejammy</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Remove a volume group- vgremove codejammy</p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Extend a volume group- vgextend codejammies /dev/sdc</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Extend a volume group- vgextend codejammies /dev/sdc</p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Remove a physical volume from the volume group- vgreduce codejammies /dev/sdc</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Remove a physical volume from the volume group- vgreduce codejammies /dev/sdc</p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Create a logical volume- lvcreate -n lv_codejammies</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Create a logical volume- lvcreate -n lv_codejammies</p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Create a logical volume of a specific size- lvcreate -n lv_codejammies -L4G vg_codejammies</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Create a logical volume of a specific size- lvcreate -n lv_codejammies -L4G vg_codejammies</p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Add space to a filesystem- lvextend /dev/vg_codejammies/lv_codejammies -L+1000M -r</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Add space to a filesystem- lvextend /dev/vg_codejammies/lv_codejammies -L+1000M -r</p>
 
 
 
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Reduce size of filesystem- lvreduce /dev/vg_codejammies/lv_codejammies -L1000M -r</p>
+<p class="has-medium-font-size"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f355.png" alt="🍕" class="wp-smiley" style="height: 1em; max-height: 1em;" />Reduce size of filesystem- lvreduce /dev/vg_codejammies/lv_codejammies -L1000M -r</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p>Linux articles are incomplete without kill signals, so I will be doing a separate article on the same. Hope you enjoyed the read, take it easy!<img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f379.png" alt="🍹" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p class="has-medium-font-size">Linux articles are incomplete without kill signals, so I will be doing a separate article on the same. Hope you enjoyed the read, take it easy!<img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f379.png" alt="🍹" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://architmodi.github.io/2020/03/03/popular-linux-interview-questions/feed/</wfw:commentRss>

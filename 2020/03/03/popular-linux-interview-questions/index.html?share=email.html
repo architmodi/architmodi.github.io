@@ -128,7 +128,7 @@ var related_posts_js_options = {"post_heading":"h4"};
 <meta property="og:url" content="https://architmodi.github.io/2020/03/03/popular-linux-interview-questions/" />
 <meta property="og:description" content="Hello there! Linux is one of the most desirable skills in the job market today and after giving over 20 interviews I have come up with a cheat sheet which I personally use and may come in handy for…" />
 <meta property="article:published_time" content="2020-03-03T23:28:04+00:00" />
-<meta property="article:modified_time" content="2020-04-02T22:45:11+00:00" />
+<meta property="article:modified_time" content="2020-10-13T15:59:21+00:00" />
 <meta property="og:site_name" content="C O D E J A M M I E S" />
 <meta property="og:image" content="https://codejammies.files.wordpress.com/2020/04/3df6589052e8fe76bd7180f4cecd45a0.draft_.96dpi.png?w=675" />
 <meta property="og:image:width" content="675" />
@@ -264,447 +264,447 @@ var related_posts_js_options = {"post_heading":"h4"};
 
 			<h1 class="entry-title">Popular Linux Interview Questions</h1>
 			<div class="entry-posted">
-				<div class="posted-info"><span class="byline">Posted by <span class="author vcard"><a class="url fn n" href="../../../../author/codejammies/index.html">Sayali</a></span></span><span class="posted-on"> <span class="date-published-word">on</span> <a href="index.html" rel="bookmark"><time class="entry-date published" datetime="2020-03-03T19:28:04-05:00">3 Mar 2020</time><time class="updated" datetime="2020-04-02T18:45:11-04:00">2 Apr 2020</time></a></span></div>			</div><!-- .entry-posted -->
+				<div class="posted-info"><span class="byline">Posted by <span class="author vcard"><a class="url fn n" href="../../../../author/codejammies/index.html">Sayali</a></span></span><span class="posted-on"> <span class="date-published-word">on</span> <a href="index.html" rel="bookmark"><time class="entry-date published" datetime="2020-03-03T19:28:04-05:00">3 Mar 2020</time><time class="updated" datetime="2020-10-13T11:59:21-04:00">13 Oct 2020</time></a></span></div>			</div><!-- .entry-posted -->
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			
-<p>Hello there! Linux is one of the most desirable skills in the job market today and after giving over 20 interviews I have come up with a cheat sheet which I personally use and may come in handy for your test or interview. Recruiters are interested in understanding the depth of your knowledge so I have tried to cover important topics like inodes, hard/soft links, LVM to name a few in this article. And now without any further ado, ladies and gentlemen I present Popular Linux Interview Questions! *pff*</p>
+<p class="has-medium-font-size">Hello there! Linux is one of the most desirable skills in the job market today and after giving over 20 interviews I have come up with a cheat sheet which I personally use and may come in handy for your test or interview. Recruiters are interested in understanding the depth of your knowledge so I have tried to cover important topics like inodes, hard/soft links, LVM to name a few in this article. And now without any further ado, ladies and gentlemen I present Popular Linux Interview Questions! *pff*</p>
 
 
 
-<p>🍕Explain sticky bit in linux</p>
+<p class="has-medium-font-size">🍕Explain sticky bit in linux</p>
 
 
 
-<p>Sticky bit is a permission bit that is set on a file or a directory such that only the owner of the file/directory and the root user can rename or delete the file/directory. Details about the sticky bits can be found under the /temp folder.</p>
+<p class="has-medium-font-size">Sticky bit is a permission bit that is set on a file or a directory such that only the owner of the file/directory and the root user can rename or delete the file/directory. Details about the sticky bits can be found under the /temp folder.</p>
 
 
 
-<p>Enable sticky bit- chmod +t file_name/directory_name</p>
+<p class="has-medium-font-size">Enable sticky bit- chmod +t file_name/directory_name</p>
 
 
 
-<p>Disable sticky bit- chmod -t file_name/directory_name</p>
+<p class="has-medium-font-size">Disable sticky bit- chmod -t file_name/directory_name</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p>🍕What are inodes?</p>
+<p class="has-medium-font-size">🍕What are inodes?</p>
 
 
 
-<p>Inode is a data structure that describes a file/directory in linux system by storing metadata about the files. Inodes store information like size of the file, device id, UID, GID, mode (ie permissions), timestamps and pointer to the actual data. In short, inodes store every information about the file except the actual data and the name of the file.</p>
+<p class="has-medium-font-size">Inode is a data structure that describes a file/directory in linux system by storing metadata about the files. Inodes store information like size of the file, device id, UID, GID, mode (ie permissions), timestamps and pointer to the actual data. In short, inodes store every information about the file except the actual data and the name of the file.</p>
 
 
 
-<p>The name of the file is stored separately along with the inode number, this way it can be linked to the metadata representing the file.</p>
+<p class="has-medium-font-size">The name of the file is stored separately along with the inode number, this way it can be linked to the metadata representing the file.</p>
 
 
 
-<p>By default, inodes per filesystem = 1 inode per 16,384 bytes of filesystem..</p>
+<p class="has-medium-font-size">By default, inodes per filesystem = 1 inode per 16,384 bytes of filesystem..</p>
 
 
 
-<p>Inode related commands-</p>
+<p class="has-medium-font-size">Inode related commands-</p>
 
 
 
-<p>df -i     &#8230;gives information about inodes</p>
+<p class="has-medium-font-size">df -i     &#8230;gives information about inodes</p>
 
 
 
-<p>stat file_name &#8230;can be used to view full information about inodes</p>
+<p class="has-medium-font-size">stat file_name &#8230;can be used to view full information about inodes</p>
 
 
 
-<p>find . -inum 100056 &#8230;can be used to find a file associated with a particular inode in the current directory (note: 100056 is an example, substitute it with the desired inode number)</p>
+<p class="has-medium-font-size">find . -inum 100056 &#8230;can be used to find a file associated with a particular inode in the current directory (note: 100056 is an example, substitute it with the desired inode number)</p>
 
 
 
-<p>ln file_A file_B &#8230;can be used to link file A to file B, therefore both files will have same inode number</p>
+<p class="has-medium-font-size">ln file_A file_B &#8230;can be used to link file A to file B, therefore both files will have same inode number</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p>🍕What are hard links?</p>
+<p class="has-medium-font-size">🍕What are hard links?</p>
 
 
 
-<p>Hard links are nothing but copies of the actual file with same inode number. In case the user decides to delete a particular file, they will have to delete all hard links associated with it.</p>
+<p class="has-medium-font-size">Hard links are nothing but copies of the actual file with same inode number. In case the user decides to delete a particular file, they will have to delete all hard links associated with it.</p>
 
 
 
-<p>Following command can be used to create hard links-</p>
+<p class="has-medium-font-size">Following command can be used to create hard links-</p>
 
 
 
-<p>ln actual_filename tobe_hardlink_filename</p>
+<p class="has-medium-font-size">ln actual_filename tobe_hardlink_filename</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p>🍕What are soft links?</p>
+<p class="has-medium-font-size">🍕What are soft links?</p>
 
 
 
-<p>Soft links, also known as symbolic links act as a pointer to the actual file. You can imagine soft links as shortcuts in Windows system.</p>
+<p class="has-medium-font-size">Soft links, also known as symbolic links act as a pointer to the actual file. You can imagine soft links as shortcuts in Windows system.</p>
 
 
 
-<p>Following command can be used to create soft links-</p>
+<p class="has-medium-font-size">Following command can be used to create soft links-</p>
 
 
 
-<p>ln -s actual_filepath tobe_softlink_filename</p>
+<p class="has-medium-font-size">ln -s actual_filepath tobe_softlink_filename</p>
 
 
 
-<p>Interestingly, hard links can be converted into soft links by using the following command-</p>
+<p class="has-medium-font-size">Interestingly, hard links can be converted into soft links by using the following command-</p>
 
 
 
-<p>ln -P filename hardlink_of_actualfile</p>
+<p class="has-medium-font-size">ln -P filename hardlink_of_actualfile</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p>🍕Where can the information about cron and anacron files be found in linux?</p>
+<p class="has-medium-font-size">🍕Where can the information about cron and anacron files be found in linux?</p>
 
 
 
-<p>Cron/anacron file for the system can be found under /etc/cron.d</p>
+<p class="has-medium-font-size">Cron/anacron file for the system can be found under /etc/cron.d</p>
 
 
 
-<p>Cron/anacron file for the user can be found under /var/spool/cron/crontab</p>
+<p class="has-medium-font-size">Cron/anacron file for the user can be found under /var/spool/cron/crontab</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p>🍕How to view CPU information?</p>
+<p class="has-medium-font-size">🍕How to view CPU information?</p>
 
 
 
-<p>CPU information like architecture, model, threads, cache can be viewed under /proc/cpu/info or by using the command lscpu</p>
+<p class="has-medium-font-size">CPU information like architecture, model, threads, cache can be viewed under /proc/cpu/info or by using the command lscpu</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p>🍕How to view open processes in linux?</p>
+<p class="has-medium-font-size">🍕How to view open processes in linux?</p>
 
 
 
-<p>Open processes in linux can be viewed under /proc directory or by using the following commands-</p>
+<p class="has-medium-font-size">Open processes in linux can be viewed under /proc directory or by using the following commands-</p>
 
 
 
-<p>ps -ef</p>
+<p class="has-medium-font-size">ps -ef</p>
 
 
 
-<p>top</p>
+<p class="has-medium-font-size">top</p>
 
 
 
-<p>htop</p>
+<p class="has-medium-font-size">htop</p>
 
 
 
-<p>atop</p>
+<p class="has-medium-font-size">atop</p>
 
 
 
-<p>pgrep</p>
+<p class="has-medium-font-size">pgrep</p>
 
 
 
-<p>pstree</p>
+<p class="has-medium-font-size">pstree</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p>🍕How to use the SCP command?</p>
+<p class="has-medium-font-size">🍕How to use the SCP command?</p>
 
 
 
-<p>Secure copy, commonly known as SCP is used for securely copying files from local host to remote host and vice versa.</p>
+<p class="has-medium-font-size">Secure copy, commonly known as SCP is used for securely copying files from local host to remote host and vice versa.</p>
 
 
 
-<p>Copy files from local to remote host- scp file.txt username@host-ip: /remote/directory/</p>
+<p class="has-medium-font-size">Copy files from local to remote host- scp file.txt username@host-ip: /remote/directory/</p>
 
 
 
-<p>Copy files from remote to local host- scp -r username@host-ip: /remote/directory /local/directory</p>
+<p class="has-medium-font-size">Copy files from remote to local host- scp -r username@host-ip: /remote/directory /local/directory</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p>🍕What is the default permission of a new file?</p>
+<p class="has-medium-font-size">🍕What is the default permission of a new file?</p>
 
 
 
-<p>By default the permission for a new file is set to 644, meaning, user will have read as well as write access whereas group and other will only have read permission. Linux will try to set 666 as the default permission for any newly created file but will end up setting it to 644 as the umask value is 0022 (Therefore, 666 &#8211; 022 = 644)</p>
+<p class="has-medium-font-size">By default the permission for a new file is set to 644, meaning, user will have read as well as write access whereas group and other will only have read permission. Linux will try to set 666 as the default permission for any newly created file but will end up setting it to 644 as the umask value is 0022 (Therefore, 666 &#8211; 022 = 644)</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p>🍕How to check memory information in linux?</p>
+<p class="has-medium-font-size">🍕How to check memory information in linux?</p>
 
 
 
-<p>Memory information can be found under the /proc/meminfo directory and by using the following commands-</p>
+<p class="has-medium-font-size">Memory information can be found under the /proc/meminfo directory and by using the following commands-</p>
 
 
 
-<p>free -m</p>
+<p class="has-medium-font-size">free -m</p>
 
 
 
-<p>vmstat</p>
+<p class="has-medium-font-size">vmstat</p>
 
 
 
-<p>top</p>
+<p class="has-medium-font-size">top</p>
 
 
 
-<p>htop</p>
+<p class="has-medium-font-size">htop</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p>🍕How to reboot a linux system?</p>
+<p class="has-medium-font-size">🍕How to reboot a linux system?</p>
 
 
 
-<p>Linux systems can be rebooted by CTRL-ALT-DEL or by using simple commands such as-</p>
+<p class="has-medium-font-size">Linux systems can be rebooted by CTRL-ALT-DEL or by using simple commands such as-</p>
 
 
 
-<p>reboot</p>
+<p class="has-medium-font-size">reboot</p>
 
 
 
-<p>reboot -f</p>
+<p class="has-medium-font-size">reboot -f</p>
 
 
 
-<p>restart</p>
+<p class="has-medium-font-size">restart</p>
 
 
 
-<p>shutdown -r</p>
+<p class="has-medium-font-size">shutdown -r</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p>🍕How to detect a hidden file?</p>
+<p class="has-medium-font-size">🍕How to detect a hidden file?</p>
 
 
 
-<p>The commands ls or ls -l can be used for listing files/directories in a linux system. But to list all files/directories along with the hidden files, use command ls -a. Also, hidden files are preceded by a dot.</p>
+<p class="has-medium-font-size">The commands ls or ls -l can be used for listing files/directories in a linux system. But to list all files/directories along with the hidden files, use command ls -a. Also, hidden files are preceded by a dot.</p>
 
 
 
-<p>Example- .codejammies</p>
+<p class="has-medium-font-size">Example- .codejammies</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p>🍕How to find disk space taken by a particular folder?</p>
+<p class="has-medium-font-size">🍕How to find disk space taken by a particular folder?</p>
 
 
 
-<p>This can be found by checking disk utilization, du -sh</p>
+<p class="has-medium-font-size">This can be found by checking disk utilization, du -sh</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p>🍕How to append file_A to file_B?</p>
+<p class="has-medium-font-size">🍕How to append file_A to file_B?</p>
 
 
 
-<p>file_A can be appended to file_B by using two output redirection symbols. Example- cat file_A &gt;&gt; file_B</p>
+<p class="has-medium-font-size">file_A can be appended to file_B by using two output redirection symbols. Example- cat file_A &gt;&gt; file_B</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p>🍕Find the file named codejammies in your linux system</p>
+<p class="has-medium-font-size">🍕Find the file named codejammies in your linux system</p>
 
 
 
-<p>sudo find / -name codejammies -type f</p>
+<p class="has-medium-font-size">sudo find / -name codejammies -type f</p>
 
 
 
-<p>Here / represents root directory and f represents file. If you are looking for a directory, use d instead of f.</p>
+<p class="has-medium-font-size">Here / represents root directory and f represents file. If you are looking for a directory, use d instead of f.</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p>🍕What is nohup?</p>
+<p class="has-medium-font-size">🍕What is nohup?</p>
 
 
 
-<p>nohup is command used for ignoring any hang ups, upon using this command system will not stop the process irrespective of errors or interruptions.</p>
+<p class="has-medium-font-size">nohup is command used for ignoring any hang ups, upon using this command system will not stop the process irrespective of errors or interruptions.</p>
 
 
 
-<p>Example- nohup command OR nohup command &amp;</p>
+<p class="has-medium-font-size">Example- nohup command OR nohup command &amp;</p>
 
 
 
-<p>The &amp; let the process to run in the background.</p>
+<p class="has-medium-font-size">The &amp; let the process to run in the background.</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p>🍕What is the ideal swap partition size?</p>
+<p class="has-medium-font-size">🍕What is the ideal swap partition size?</p>
 
 
 
-<p>In linux, ideally the swap partition size is twice the amount of physical memory present on the system. In cases where this is not possible, the minimum size of swap partition should be equivalent to the amount of physical memory on the system.</p>
+<p class="has-medium-font-size">In linux, ideally the swap partition size is twice the amount of physical memory present on the system. In cases where this is not possible, the minimum size of swap partition should be equivalent to the amount of physical memory on the system.</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p>🍕Display physical volumes- pvs OR pvdisplay</p>
+<p class="has-medium-font-size">🍕Display physical volumes- pvs OR pvdisplay</p>
 
 
 
-<p>🍕Display volume groups- vgs OR vgdisplay group_name</p>
+<p class="has-medium-font-size">🍕Display volume groups- vgs OR vgdisplay group_name</p>
 
 
 
-<p>🍕Display logical volume (LVM) information- lvs OR lvsdisplay lv_name</p>
+<p class="has-medium-font-size">🍕Display logical volume (LVM) information- lvs OR lvsdisplay lv_name</p>
 
 
 
-<p>🍕List partition types on a linux system- lsblk</p>
+<p class="has-medium-font-size">🍕List partition types on a linux system- lsblk</p>
 
 
 
-<p>🍕List partitions on a linux system- fdisk -l /dev/sda OR fdisk -l | grep /dev/sd</p>
+<p class="has-medium-font-size">🍕List partitions on a linux system- fdisk -l /dev/sda OR fdisk -l | grep /dev/sd</p>
 
 
 
-<p>🍕Create a physical volume- pvcreate /dev/sdc</p>
+<p class="has-medium-font-size">🍕Create a physical volume- pvcreate /dev/sdc</p>
 
 
 
-<p>🍕Remove a physical volume- pvremove /dev/sdc</p>
+<p class="has-medium-font-size">🍕Remove a physical volume- pvremove /dev/sdc</p>
 
 
 
-<p>🍕Create a new volume group- vgcreate codejammies /dev/sdc</p>
+<p class="has-medium-font-size">🍕Create a new volume group- vgcreate codejammies /dev/sdc</p>
 
 
 
-<p>🍕Rename a volume group- vgrename codejammies codejammy</p>
+<p class="has-medium-font-size">🍕Rename a volume group- vgrename codejammies codejammy</p>
 
 
 
-<p>🍕Remove a volume group- vgremove codejammy</p>
+<p class="has-medium-font-size">🍕Remove a volume group- vgremove codejammy</p>
 
 
 
-<p>🍕Extend a volume group- vgextend codejammies /dev/sdc</p>
+<p class="has-medium-font-size">🍕Extend a volume group- vgextend codejammies /dev/sdc</p>
 
 
 
-<p>🍕Remove a physical volume from the volume group- vgreduce codejammies /dev/sdc</p>
+<p class="has-medium-font-size">🍕Remove a physical volume from the volume group- vgreduce codejammies /dev/sdc</p>
 
 
 
-<p>🍕Create a logical volume- lvcreate -n lv_codejammies</p>
+<p class="has-medium-font-size">🍕Create a logical volume- lvcreate -n lv_codejammies</p>
 
 
 
-<p>🍕Create a logical volume of a specific size- lvcreate -n lv_codejammies -L4G vg_codejammies</p>
+<p class="has-medium-font-size">🍕Create a logical volume of a specific size- lvcreate -n lv_codejammies -L4G vg_codejammies</p>
 
 
 
-<p>🍕Add space to a filesystem- lvextend /dev/vg_codejammies/lv_codejammies -L+1000M -r</p>
+<p class="has-medium-font-size">🍕Add space to a filesystem- lvextend /dev/vg_codejammies/lv_codejammies -L+1000M -r</p>
 
 
 
-<p>🍕Reduce size of filesystem- lvreduce /dev/vg_codejammies/lv_codejammies -L1000M -r</p>
+<p class="has-medium-font-size">🍕Reduce size of filesystem- lvreduce /dev/vg_codejammies/lv_codejammies -L1000M -r</p>
 
 
 
-<p></p>
+<p class="has-medium-font-size"></p>
 
 
 
-<p>Linux articles are incomplete without kill signals, so I will be doing a separate article on the same. Hope you enjoyed the read, take it easy!🍹</p>
-<div id="atatags-370373-5f85cd1ce6919">
+<p class="has-medium-font-size">Linux articles are incomplete without kill signals, so I will be doing a separate article on the same. Hope you enjoyed the read, take it easy!🍹</p>
+<div id="atatags-370373-5f85d06e518d3">
         <script type="text/javascript">
             __ATA.cmd.push(function() {
-                __ATA.initVideoSlot('atatags-370373-5f85cd1ce6919', {
+                __ATA.initVideoSlot('atatags-370373-5f85d06e518d3', {
                     sectionId: '370373',
                     format: 'inread'
                 });
             });
         </script>
-    </div>			<div id="atatags-26942-5f85cd1ce6949"></div>
+    </div>			<div id="atatags-26942-5f85d06e51911"></div>
 			
 			<script>
 				__ATA.cmd.push(function() {
 					__ATA.initDynamicSlot({
-						id: 'atatags-26942-5f85cd1ce6949',
+						id: 'atatags-26942-5f85d06e51911',
 						location: 120,
 						formFactor: '001',
 						label: {
@@ -720,7 +720,7 @@ var related_posts_js_options = {"post_heading":"h4"};
 						}
 					});
 				});
-			</script><div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-197" class="share-twitter sd-button share-icon no-text" href="index.html%3Fshare=twitter.html" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-197" class="share-facebook sd-button share-icon no-text" href="index.html%3Fshare=facebook.html" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-print"><a rel="nofollow noopener noreferrer" data-shared="" class="share-print sd-button share-icon no-text" href="index.html#print" target="_blank" title="Click to print"><span></span><span class="sharing-screen-reader-text">Click to print (Opens in new window)</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-197" class="share-linkedin sd-button share-icon no-text" href="index.html%3Fshare=linkedin.html" target="_blank" title="Click to share on LinkedIn"><span></span><span class="sharing-screen-reader-text">Click to share on LinkedIn (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow noopener noreferrer" data-shared="" class="share-reddit sd-button share-icon no-text" href="index.html%3Fshare=reddit.html" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-tumblr"><a rel="nofollow noopener noreferrer" data-shared="" class="share-tumblr sd-button share-icon no-text" href="index.html%3Fshare=tumblr.html" target="_blank" title="Click to share on Tumblr"><span></span><span class="sharing-screen-reader-text">Click to share on Tumblr (Opens in new window)</span></a></li><li class="share-pinterest"><a rel="nofollow noopener noreferrer" data-shared="sharing-pinterest-197" class="share-pinterest sd-button share-icon no-text" href="index.html%3Fshare=pinterest.html" target="_blank" title="Click to share on Pinterest"><span></span><span class="sharing-screen-reader-text">Click to share on Pinterest (Opens in new window)</span></a></li><li class="share-pocket"><a rel="nofollow noopener noreferrer" data-shared="" class="share-pocket sd-button share-icon no-text" href="index.html%3Fshare=pocket.html" target="_blank" title="Click to share on Pocket"><span></span><span class="sharing-screen-reader-text">Click to share on Pocket (Opens in new window)</span></a></li><li class="share-telegram"><a rel="nofollow noopener noreferrer" data-shared="" class="share-telegram sd-button share-icon no-text" href="index.html%3Fshare=telegram.html" target="_blank" title="Click to share on Telegram"><span></span><span class="sharing-screen-reader-text">Click to share on Telegram (Opens in new window)</span></a></li><li class="share-jetpack-whatsapp"><a rel="nofollow noopener noreferrer" data-shared="" class="share-jetpack-whatsapp sd-button share-icon no-text" href="https://architmodi.github.io/2020/03/03/popular-linux-interview-questions/?share=jetpack-whatsapp" target="_blank" title="Click to share on WhatsApp"><span></span><span class="sharing-screen-reader-text">Click to share on WhatsApp (Opens in new window)</span></a></li><li class="share-skype"><a rel="nofollow noopener noreferrer" data-shared="sharing-skype-197" class="share-skype sd-button share-icon no-text" href="index.html%3Fshare=skype.html" target="_blank" title="Click to share on Skype"><span></span><span class="sharing-screen-reader-text">Click to share on Skype (Opens in new window)</span></a></li><li class="share-email"><a rel="nofollow noopener noreferrer" data-shared="" class="share-email sd-button share-icon no-text" href="index.html%3Fshare=email.html" target="_blank" title="Click to email this to a friend"><span></span><span class="sharing-screen-reader-text">Click to email this to a friend (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-164396964-197-5f85cd1ce73a5' data-src='//widgets.wp.com/likes/index.html?ver=20200826#blog_id=164396964&amp;post_id=197&amp;origin=codejammies.wordpress.com&amp;obj_id=164396964-197-5f85cd1ce73a5' data-name='like-post-frame-164396964-197-5f85cd1ce73a5'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+			</script><div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-197" class="share-twitter sd-button share-icon no-text" href="index.html%3Fshare=twitter.html" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-197" class="share-facebook sd-button share-icon no-text" href="index.html%3Fshare=facebook.html" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-print"><a rel="nofollow noopener noreferrer" data-shared="" class="share-print sd-button share-icon no-text" href="index.html#print" target="_blank" title="Click to print"><span></span><span class="sharing-screen-reader-text">Click to print (Opens in new window)</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-197" class="share-linkedin sd-button share-icon no-text" href="index.html%3Fshare=linkedin.html" target="_blank" title="Click to share on LinkedIn"><span></span><span class="sharing-screen-reader-text">Click to share on LinkedIn (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow noopener noreferrer" data-shared="" class="share-reddit sd-button share-icon no-text" href="index.html%3Fshare=reddit.html" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-tumblr"><a rel="nofollow noopener noreferrer" data-shared="" class="share-tumblr sd-button share-icon no-text" href="index.html%3Fshare=tumblr.html" target="_blank" title="Click to share on Tumblr"><span></span><span class="sharing-screen-reader-text">Click to share on Tumblr (Opens in new window)</span></a></li><li class="share-pinterest"><a rel="nofollow noopener noreferrer" data-shared="sharing-pinterest-197" class="share-pinterest sd-button share-icon no-text" href="index.html%3Fshare=pinterest.html" target="_blank" title="Click to share on Pinterest"><span></span><span class="sharing-screen-reader-text">Click to share on Pinterest (Opens in new window)</span></a></li><li class="share-pocket"><a rel="nofollow noopener noreferrer" data-shared="" class="share-pocket sd-button share-icon no-text" href="index.html%3Fshare=pocket.html" target="_blank" title="Click to share on Pocket"><span></span><span class="sharing-screen-reader-text">Click to share on Pocket (Opens in new window)</span></a></li><li class="share-telegram"><a rel="nofollow noopener noreferrer" data-shared="" class="share-telegram sd-button share-icon no-text" href="index.html%3Fshare=telegram.html" target="_blank" title="Click to share on Telegram"><span></span><span class="sharing-screen-reader-text">Click to share on Telegram (Opens in new window)</span></a></li><li class="share-jetpack-whatsapp"><a rel="nofollow noopener noreferrer" data-shared="" class="share-jetpack-whatsapp sd-button share-icon no-text" href="https://architmodi.github.io/2020/03/03/popular-linux-interview-questions/?share=jetpack-whatsapp" target="_blank" title="Click to share on WhatsApp"><span></span><span class="sharing-screen-reader-text">Click to share on WhatsApp (Opens in new window)</span></a></li><li class="share-skype"><a rel="nofollow noopener noreferrer" data-shared="sharing-skype-197" class="share-skype sd-button share-icon no-text" href="index.html%3Fshare=skype.html" target="_blank" title="Click to share on Skype"><span></span><span class="sharing-screen-reader-text">Click to share on Skype (Opens in new window)</span></a></li><li class="share-email"><a rel="nofollow noopener noreferrer" data-shared="" class="share-email sd-button share-icon no-text" href="index.html%3Fshare=email.html" target="_blank" title="Click to email this to a friend"><span></span><span class="sharing-screen-reader-text">Click to email this to a friend (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-164396964-197-5f85d06e52393' data-src='//widgets.wp.com/likes/index.html?ver=20200826#blog_id=164396964&amp;post_id=197&amp;origin=codejammies.wordpress.com&amp;obj_id=164396964-197-5f85d06e52393' data-name='like-post-frame-164396964-197-5f85d06e52393'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
 <div id='jp-relatedposts' class='jp-relatedposts' >
 	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
 </div></div>					</div><!-- .entry-content -->
@@ -956,8 +956,8 @@ jQuery(document).ready( highlander_expando_javascript );
 <p class="form-submit"><input name="submit" type="submit" id="comment-submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='197' id='comment_post_ID' />
 <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
 </p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="e6de9b6873" /></p>
-<input type="hidden" name="genseq" value="1602604316" />
-<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="247"/></p></form>	</div><!-- #respond -->
+<input type="hidden" name="genseq" value="1602605166" />
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="78"/></p></form>	</div><!-- #respond -->
 	<div style="clear: both"></div>
 	</div><!-- #comments -->
 </div><!-- .comments-area-wrapper -->
@@ -1289,7 +1289,7 @@ _tkq = window._tkq || [];
 _stq = window._stq || [];
 _tkq.push(['storeContext', {'blog_id':'164396964','blog_tz':'-4','user_lang':'en','blog_lang':'en','user_id':'0'}]);
 _stq.push(['view', {'blog':'164396964','v':'wpcom','tz':'-4','user_id':'0','post':'197','subd':'codejammies'}]);
-_stq.push(['extra', {'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdWFnNncxc1tjZG9XVXhRREQ/V0xPZ1hKXy8rZ2tpQ1MrVi9bRFtVLFR3QS5NeUtRTzd+Ul9hM0h3VnxmSUQ/c0RmdVhlSyVbS2hlNjVuUmJFUkE2OUpjVlFqfGhMYWNqaUt4OEU4OGk4c2FwemprT0JVSS84VCxBak90SzhydnFTfjYlV11vfnw5cVpzJWFLbk5aZE9vZz09LCw0cFRJd1BsZ3kxTVdjRjd8JS1VbXd8JitbUzU2TjglcHUsMH5DRW9lVXgreWt3eExbVlUvdD9CTVNYUjV1bk9GXzFPYUhwT3daOTNpLHBXRm1B'}]);
+_stq.push(['extra', {'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdWFnNncxc1tjZG9XVXhRREQ/V0xPZ1hKXy8rZ2tpQ1MrVi9bRFtVLFR3QS5NeUtRTzd+Ul9hM0h3VnxmSUQ/c0RmdVhlSyVbS2hlNjVuUmJFLUs2aVt3UHhCbXwyejg2b2ZycFBPUF15LWhhQ242X1p2RWFkVUg5cVthZmZ5dy5QZENjby1LN2xCRlYmLlhPd0dEcjU3LnZ3ekhWMys1RG5WeFBIcH5Qbi91alNfVTUyZUZtSXFrW1h1a2R2Q2YzOElJaHVscSZwcl8vNVo9PWNpMjA2M1FURHhITlM2ejhMUHJuQy16RixTQ3Q='}]);
 _stq.push([ 'clickTrackerInit', '164396964', '197' ]);
 	</script>
 <noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
