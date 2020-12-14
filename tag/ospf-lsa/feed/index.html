@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:media="http://search.yahoo.com/mrss/"
+	>
+
+<channel>
+	<title>ospf lsa &#8211; C O D E J A M M I E S</title>
+	<atom:link href="https://architmodi.github.io/tag/ospf-lsa/feed/" rel="self" type="application/rss+xml" />
+	<link>https://architmodi.github.io</link>
+	<description>Lessons Between Dummies</description>
+	<lastBuildDate>Tue, 13 Oct 2020 15:57:33 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>http://wordpress.com/</generator>
+
+<image>
+	<url>https://codejammies.files.wordpress.com/2020/04/image-6-2.jpg?w=32</url>
+	<title>ospf lsa &#8211; C O D E J A M M I E S</title>
+	<link>https://architmodi.github.io</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<cloud domain='codejammies.wordpress.com' port='80' path='/?rsscloud=notify' registerProcedure='' protocol='http-post' />
+<atom:link rel="search" type="application/opensearchdescription+xml" href="https://architmodi.github.io/osd.xml" title="C O D E J A M M I E S" />
+	<atom:link rel='hub' href='https://architmodi.github.io/?pushpress=hub'/>
+	<item>
+		<title>OSPF Explained</title>
+		<link>https://architmodi.github.io/2020/08/13/ospf/</link>
+					<comments>https://architmodi.github.io/2020/08/13/ospf/#respond</comments>
+		
+		<dc:creator><![CDATA[Sayali]]></dc:creator>
+		<pubDate>Thu, 13 Aug 2020 20:31:29 +0000</pubDate>
+				<category><![CDATA[Technical Articles]]></category>
+		<category><![CDATA[networking]]></category>
+		<category><![CDATA[ospf]]></category>
+		<category><![CDATA[ospf area]]></category>
+		<category><![CDATA[ospf lsa]]></category>
+		<category><![CDATA[ospf routers]]></category>
+		<guid isPermaLink="false">http://codejammies.wordpress.com/?p=952</guid>
+
+					<description><![CDATA[There are 5 types of internal gateway routing protocols and OSPF is one of them. But what makes it so special? One of the best things about OSPF is that it is open source in nature meaning, it can run on routers manufactured by different vendors. OSPF is a link-state internal gateway protocol that follows... <div class="link-more"><a href="https://architmodi.github.io/2020/08/13/ospf/">Read More</a></div>]]></description>
+										<content:encoded><![CDATA[
+<p class="has-medium-font-size">There are 5 types of internal gateway routing protocols and OSPF is one of them. But what makes it so special? One of the best things about OSPF is that it is open source in nature meaning, it can run on routers manufactured by different vendors. OSPF is a link-state internal gateway protocol that follows Dijkstra algorithm. It&#8217;s administrative distance is 110 and uses multicast addresses 224.0.0.5 and 224.0.0.6 for exchanging information between it&#8217;s neighbors. It uses cost as it&#8217;s metric and IP port 89 for packet transfer. </p>
+
+
+
+<p class="has-medium-font-size">In this post you will learn about- <em>OSPF tables, Types of routers, LSA types, OSPF packet types , OSPF states and OSPF areas</em></p>
+
+
+
+<p></p>
+
+
+
+<p class="has-text-align-center has-yellow-background-color has-background has-large-font-size"><strong>OSPF Tables</strong></p>
+
+
+
+<p></p>
+
+
+
+<p class="has-medium-font-size"><strong>1. Neighbor Table-</strong> Stores information about neighboring OSPF routers.</p>
+
+
+
+<p class="has-text-align-center has-yellow-color has-text-color has-medium-font-size">Command-<em> show ip ospf neighbor</em></p>
+
+
+
+<p class="has-medium-font-size"><strong>2. Topology Table-</strong> Stores all possible routes learned from neighboring routers.</p>
+
+
+
+<p class="has-text-align-center has-yellow-color has-text-color has-medium-font-size">Command-<em> show ip ospf database</em></p>
+
+
+
+<p class="has-medium-font-size"><strong>3. Routing Table-</strong> Stores only best path to destination.</p>
+
+
+
+<p class="has-text-align-center has-yellow-color has-text-color has-medium-font-size">Command- <em>show ip route ospf</em></p>
+
+
+
+<p></p>
+
+
+
+<p class="has-text-align-center has-yellow-background-color has-background has-large-font-size"><strong>OSPF Routers</strong></p>
+
+
+
+<p></p>
+
+
+
+<p class="has-medium-font-size"><strong>1. Area Border Router (ABR)- </strong>Routers that are located on the borders of each OSPF area and are connected to multiple areas, are known as ABRs. In addition, ABRs summarize IP addresses of each OSPF area.</p>
+
+
+
+<p class="has-medium-font-size"><strong>2. Autonomous System Border Router (ASBR)-</strong> Similar to ABRs, ASBRs are connected to different OSPF areas, however, they are also connected to routers with different routing protocols like EIGRP, EGP etc.</p>
+
+
+
+<p class="has-medium-font-size"><strong>3. Designated Router (DR)-</strong> DR generates LSAs and exchange information with other routers in the same area. DR uses multicast address 224.0.0.5 to send updates to other routers and all routers except DR uses the multicast address 224.0.0.6 to send LSU and LSA packets to the DR.</p>
+
+
+
+<p class="has-medium-font-size"><em>DR Election- DR is elected by routers on the basis of router priority. The router with highest priority is elected as DR.</em></p>
+
+
+
+<p class="has-medium-font-size"><strong>4. Backup Designated Router (BDR)- </strong>As you might have guessed by the name, BDR is a backup designated router in case the actual designated router fails. In case of a DR failure, BDR is will act as a DR and a new BDR will be elected.</p>
+
+
+
+<p class="has-medium-font-size"><em>BDR Election- BDR is elected by routers on the basis of router priority. The router with second highest priority is elected as BDR.</em></p>
+
+
+
+<p class="has-medium-font-size"></p>
+
+
+
+<p class="has-text-align-center has-yellow-background-color has-background has-large-font-size"><strong>OSPF LSA Types</strong></p>
+
+
+
+<p></p>
+
+
+
+<p class="has-medium-font-size">Before moving forward with this topic, let&#8217;s have a brief look at LSA. Link State Advertisements (LSAs) are information about routes that are transported inside Link State Updates (LSUs). Each LSU packet contains one or more LSAs, and when an LSU is sent between routers, it floods the LSA information through the network. This is also known as LSDB flooding. Receiving OSPF routers store LSAs inside Link State Database (LSDB). Once LSDBs between the routers sync, OSPF finds a best path using Spanning Tree Protocol (STP) algorithm for each network.</p>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="984" data-permalink="https://architmodi.github.io/2020/08/13/ospf/image-33/" data-orig-file="https://codejammies.files.wordpress.com/2020/08/image.jpg" data-orig-size="827,827" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="image" data-image-description="" data-medium-file="https://codejammies.files.wordpress.com/2020/08/image.jpg?w=300" data-large-file="https://codejammies.files.wordpress.com/2020/08/image.jpg?w=827" src="https://codejammies.files.wordpress.com/2020/08/image.jpg?w=827" alt="" class="wp-image-984" srcset="https://codejammies.files.wordpress.com/2020/08/image.jpg 827w, https://codejammies.files.wordpress.com/2020/08/image.jpg?w=150 150w, https://codejammies.files.wordpress.com/2020/08/image.jpg?w=300 300w, https://codejammies.files.wordpress.com/2020/08/image.jpg?w=768 768w" sizes="(max-width: 827px) 100vw, 827px" /></figure>
+
+
+
+<p class="has-yellow-color has-text-color has-medium-font-size"><em>LSA header content- LS age (2 Bytes), Options (1 Byte), LS Type (1 Byte), LS ID (4 Bytes), Advertising router (4 Bytes), LS sequence number (4 Bytes), LS checksum (2 Bytes), Length (2 Bytes)</em></p>
+
+
+
+<p class="has-medium-font-size"><strong>1. Router LSA- </strong>Also known as Type 1 LSAs, are sent between routers within the same area. These carries information about the interfaces of router and it&#8217;s adjacent neighbors.</p>
+
+
+
+<p class="has-medium-font-size"><strong>2. Network LSA-</strong> Also known as Type 2 LSAs, are generated and flooded between the routers in the same area by the Designated Router (DR) in order to describe directly connected routers.</p>
+
+
+
+<p class="has-medium-font-size"><strong>3. Summary LSA- </strong>These are generated by Area Border Routers (ABRs) to advertise directly connected areas to other areas.</p>
+
+
+
+<p class="has-medium-font-size"><strong>4. ASBR Summary LSA- </strong>These are generated by ABRs in order to let other routers known where the Autonomous System Border Routers (ASBRs) are located.</p>
+
+
+
+<p class="has-medium-font-size"><strong>5. External LSA-</strong> Also known as ASBR External LSAs, are generated by ASBR to advertise external redistribution routes into the OSPF&#8217;s autonomous system.</p>
+
+
+
+<p class="has-medium-font-size"><strong>6. Multicast LSA-</strong> Supposedly supports multicast routing through OSPF, but is not used much and is anticipated to be outdated soon.</p>
+
+
+
+<p class="has-medium-font-size"><strong>7. NSSA External LSA- </strong>Not-so-stubby-area packets are used for the areas which does not allow Type 5 LSA packet. NSSA External LSA acts as a mask to Type 5 LSA packets and help them move through these areas.</p>
+
+
+
+<p class="has-medium-font-size"></p>
+
+
+
+<p class="has-text-align-center has-yellow-background-color has-background has-large-font-size"><strong>OSPF Packet Types</strong></p>
+
+
+
+<p></p>
+
+
+
+<p class="has-medium-font-size"><strong>1. Hello</strong>&#8211; Hello packet is used for discovering, forming and maintaining OSPF neighborship</p>
+
+
+
+<p class="has-medium-font-size"><strong>2. Database Description-</strong> DBD is a summary of LSDB, it&#8217;s responsibility is to check whether the LSDB between 2 routers is the same. LSDB contains updated link-state information exchanged among the network and all routers within the same area share the same LSDB. When 2 routers form new neighbor adjacencies, they sync their LSDBs to be fully adjacent.</p>
+
+
+
+<p class="has-medium-font-size"><strong>3. Link State Requests-</strong> LSR is used for requesting missing LSDB information by OSPF routers.</p>
+
+
+
+<p class="has-medium-font-size"><strong>4. Link State Updates-</strong> LSU is a packet in response to LSR. It carries the missing piece of information requested by the OSPF routers.</p>
+
+
+
+<p class="has-medium-font-size"><strong>5. Link State Acknowledgement-</strong> Once the OSPF router receives missing LSDB information through LSU, it sends out an LSAck packet to acknowledge the transfer.</p>
+
+
+
+<p></p>
+
+
+
+<p class="has-text-align-center has-yellow-background-color has-background has-large-font-size"><strong>OSPF States</strong></p>
+
+
+
+<p></p>
+
+
+
+<p class="has-medium-font-size">In order to become OSPF neighbors, routers need to go through the following states-</p>
+
+
+
+<p class="has-medium-font-size"><strong>1. Down-</strong> This state indicates that no hello packets are received from neighbor as yet.</p>
+
+
+
+<p class="has-medium-font-size"><strong>2. Attempt-</strong> This state is only valid for manually configured neighbors.</p>
+
+
+
+<p class="has-medium-font-size"><strong>3. Init-</strong> This state specifies that the router has received a hello packet from its neighbor, but the receiving router&#8217;s ID was not included in the hello packet.</p>
+
+
+
+<p class="has-medium-font-size"><strong>4. Two-way</strong>&#8211; This state specifies that both routers received hello packets and have each other&#8217;s router IDs and a two way communication is established. In the end of this state, DR and BDR are elected.</p>
+
+
+
+<p class="has-medium-font-size"><strong>5. Exstart</strong>&#8211; Once the DR and BDR are elected, the actual process of exchanging link state information can start between the routers and their DR and BDR. In this state, the routers and their DR/BDR establish a master-slave relationship and choose the initial sequence number for adjacency formation. The router with the higher router ID becomes the master and starts the exchange.</p>
+
+
+
+<p class="has-medium-font-size"><strong>6. Exchange</strong>&#8211; In this state, OSPF routers exchange Database Descriptor packets.</p>
+
+
+
+<p class="has-medium-font-size"><strong>7. Loading-</strong> Based on the information provided by the DBDs, routers send Link State Request (LSR) packets. The neighbor then provides the requested information in Link State Update (LSU) packets. During the adjacency, if a router receives an outdated or missing LSA, it requests that LSA by sending a Link State Request (LSR) packet. After receiving the requested information, routers will send acknowledgement through LSAck packet.</p>
+
+
+
+<p class="has-medium-font-size"><strong>8. Full</strong>&#8211; This state indicates that routers have completely formed adjacencies with one another and are now sharing synced databases.</p>
+
+
+
+<p></p>
+
+
+
+<p class="has-text-align-center has-yellow-background-color has-background has-large-font-size"><strong>OSPF Areas</strong></p>
+
+
+
+<p></p>
+
+
+
+<p class="has-medium-font-size">OSPF implements a 2-layer area architecture- backbone area and non-backbone area. Backbone area is also commonly known as Area 0. This, as the name suggests is the spine of the OSPF network. Every non-backbone area is physically or virtually connected to the OSPF Area 0. Non-backbone areas are where the users are placed. Let&#8217;s have a brief look at all non-backbone areas-</p>
+
+
+
+<p class="has-medium-font-size"><strong>1. Standard Area</strong>&#8211; As mentioned earlier, this area should be connected to the Area 0 of OSPF. This area allows intra-area, inter-area, external and a default routes.</p>
+
+
+
+<p class="has-medium-font-size"><strong>2. Stub Area</strong>&#8211; Stub areas are typically implemented when routers with limited capacities are used in OSPF networks. These are typically used in hub-and-spoke network. Stub areas accept intra-area routes but do not allow external routes.</p>
+
+
+
+<p class="has-medium-font-size"><strong>3. Totally Stubby Area</strong>&#8211; This area is Cisco proprietary and does not accept external AS routes or inter-area routes. It only recognizes intra-area routes and the default route.</p>
+
+
+
+<p class="has-medium-font-size"><strong>4</strong>. <strong>Not So Stubby Area (NSSA)</strong>&#8211; NSSA allows intra-area, inter-area and the default route (0.0.0.0).</p>
+
+
+
+<p class="has-medium-font-size"></p>
+
+
+
+<p class="has-medium-font-size">Hope you enjoyed this post, I will be back with another OSPF article soon. Until next time<img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f379.png" alt="🍹" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://architmodi.github.io/2020/08/13/ospf/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		
+		<media:content url="https://2.gravatar.com/avatar/5c0d3989b094b21d3861dbd4e11f55fa?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">codejammies</media:title>
+		</media:content>
+
+		<media:content url="https://codejammies.files.wordpress.com/2020/08/image.jpg?w=827" medium="image" />
+	</item>
+	</channel>
+</rss>
