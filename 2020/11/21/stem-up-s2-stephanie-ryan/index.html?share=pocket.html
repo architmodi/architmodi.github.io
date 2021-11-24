@@ -72,10 +72,9 @@
     </div>
 
     <div class="small-12 large-6 columns">
-      <div id="login-page-login-container">
+      <div id="login-page-login-container" >
   <div class="coreform-container loginform-container loginform-containererror">
       <h2>Log In</h2>
-
       
   <p class="login-error">Please log into your Pocket account.</p>
 
@@ -83,32 +82,35 @@
 <form action="https://getpocket.com/login_process.php" method="post" name="loginform" class="loginform">
 
   <div class="loginform-formemail">
-    <div class="form-field">
-      <span class="error-bubble"><span class="error-msg"></span><span class="error-arrow"></span></span>
-      <label for="feed_id">Email or username</label>
-      <input type="text" id="feed_id" name="feed_id" autocomplete="off"
-        autofocus tabindex="1"
-        placeholder="Email or username">
-    </div>
-    <br>
-    <div class="form-field">
-      <span class="error-bubble"><span class="error-msg"></span><span class="error-arrow"></span></span>
-      <label for="login_password">Password</label>
-      <input type="password" id="login_password" name="password"
-        autocomplete="off" tabindex="2"
-        placeholder="Password">
-    </div>
+    <!-- If the FxA login flag is not enabled, render the default login form -->
+      <div class="form-field">
+        <span class="error-bubble"><span class="error-msg"></span><span class="error-arrow"></span></span>
+        <label for="feed_id">Email or username</label>
+        <input type="text" id="feed_id" name="feed_id" autocomplete="off"
+          autofocus tabindex="1"
+          placeholder="Email or username">
+      </div>
+      <br>
+      <div class="form-field">
+        <span class="error-bubble"><span class="error-msg"></span><span class="error-arrow"></span></span>
+        <label for="login_password">Password</label>
+        <input type="password" id="login_password" name="password"
+          autocomplete="off" tabindex="2"
+          placeholder="Password">
+      </div>
+
   </div>
 
   <input type="hidden" class="field-form-route" name="route" value="/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F11%2F21%2Fstem-up-s2-stephanie-ryan%2F&amp;url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F11%2F21%2Fstem-up-s2-stephanie-ryan%2F&amp;title=STEM%20Up%20%28S2%29%3A%20Stephanie%20Ryan">
-  <input type="hidden" class="field-form-check" name="form_check" value="f768f374358d8059f34e2d5fdfc35c5ab2607bb5da9c965f04f27c11323ec8be">
+  <input type="hidden" class="field-form-check" name="form_check" value="d5f245971f62b110f57676997e259521bb9d9a166fee9a21351c1696164ee1a4">
   <input type="hidden" class="field-form-src" name="src" value="">
 
   <div class="login-processing"></div>
   <div id="captcha-placeholder"></div>
 
-  <input type="submit" tabindex="4" value="Log In"
-    class="login-btn-email btn-disabled" disabled>
+    <input type="submit" tabindex="4" value="Log In"
+           class="login-btn-email btn-disabled" disabled>
+
 
   <p class="forgot-p">
     <a class="forgot" href="https://getpocket.com/forgot?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F11%252F21%252Fstem-up-s2-stephanie-ryan%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F11%252F21%252Fstem-up-s2-stephanie-ryan%252F%26title%3DSTEM%2520Up%2520%2528S2%2529%253A%2520Stephanie%2520Ryan"
@@ -194,7 +196,7 @@ ga('create', 'UA-370613-9', 'auto');
 ga('require', 'displayfeatures');
 ga('send', 'pageview');
 </script>
-<script>window.__STATE__ = {"api":{"baseUrl":"\/v3","consumerKey":"86291-f8d3e654be359e75b7625e79"},"appleAuth":{"clientId":"com.pocket.apple-sso","redirectURI":"https:\/\/getpocket.com\/connect\/apple\/check","scope":"name email","state":"12345"},"csrf":{"token":"c095f49b3fc6d0f81db579d53ccc600b0f7ffa93f798ae4ce74e65024c146f78"},"captcha":{"isRequired":true,"siteKey":"6LfIpyYUAAAAAPtNSKafudr16odFL1eQte0vR0Py"},"csrfSymfony":{"token":"rPKyXeP97k5t8k2SniJYQmMNRZFFNkrH-6UfD6QXDcM"},"env":"prod","googleAuth":{"clientId":"173409440056-oek12ddu7d36lbnpquv9dr8rs6ijcer0.apps.googleusercontent.com"},"localization":{"locale":"en-US"},"sentry":{"dsn":"https:\/\/15c50c1db6cf425594a1d4d779dc0792@sentry.io\/285989","version":"274a5bafb57f78386f4e65d0ef93bbbcb64dbd82","environment":"prod"},"stripe":{"publicKey":"pk_live_bh3nfDMzSI1Z9MvuwRWg8vWh"},"login":{"errorHtml":"Please log into your Pocket account.","messageHtml":null,"userDefaults":{"route":"\/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F11%2F21%2Fstem-up-s2-stephanie-ryan%2F&url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F11%2F21%2Fstem-up-s2-stephanie-ryan%2F&title=STEM%20Up%20%28S2%29%3A%20Stephanie%20Ryan","form_check":"f17eda43b63d7ef6dd5cddd453ee55b0dca5bc6e9f7b59f07e78a159d81815a3"}}};</script><script src="https://assets.getpocket.com/web/main.ba9806c7bc46056e1919.js" ></script>
+<script>window.__STATE__ = {"api":{"baseUrl":"\/v3","consumerKey":"86291-f8d3e654be359e75b7625e79"},"appleAuth":{"clientId":"com.pocket.apple-sso","redirectURI":"https:\/\/getpocket.com\/connect\/apple\/check","scope":"name email","state":"12345"},"csrf":{"token":"e3dc83be24205ac767889dab2275a0494d8ba6e84e6cd878c863b6d6659822ed"},"captcha":{"isRequired":true,"siteKey":"6LfIpyYUAAAAAPtNSKafudr16odFL1eQte0vR0Py"},"csrfSymfony":{"token":"MJ34Vr9-_1jZBNRcA9MWoaj3qRTRxt7Hy1PEWm-9sik"},"env":"prod","googleAuth":{"clientId":"173409440056-oek12ddu7d36lbnpquv9dr8rs6ijcer0.apps.googleusercontent.com"},"localization":{"locale":"en-US"},"sentry":{"dsn":"https:\/\/15c50c1db6cf425594a1d4d779dc0792@sentry.io\/285989","version":"c9f2f2fc6386e73993c39aea8699df5052484118","environment":"prod"},"stripe":{"publicKey":"pk_live_bh3nfDMzSI1Z9MvuwRWg8vWh"},"login":{"errorHtml":"Please log into your Pocket account.","messageHtml":null,"userDefaults":{"route":"\/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F11%2F21%2Fstem-up-s2-stephanie-ryan%2F&url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F11%2F21%2Fstem-up-s2-stephanie-ryan%2F&title=STEM%20Up%20%28S2%29%3A%20Stephanie%20Ryan","form_check":"b75428f564c5665922977aca90c111576768df432186a90cdf4051864ee0ab12"}}};</script><script src="https://assets.getpocket.com/web/main.4f2263743305cb952d1a.js" ></script>
 
 
 <script src="https://getpocket.com/j/v4/global.min.js?v=221"></script>
@@ -235,7 +237,7 @@ ga('send', 'pageview');
       snowplow('addGlobalContexts', [{
         schema: `iglu:com.pocket/user/jsonschema/1-0-0`,
         data: {
-          hashed_guid: "059Acg0Zde3a9f9a1fpaX1aN99T0d849e15u5bT30GS8f5n4418a1my8J1dLCcU6"
+          hashed_guid: "bs6g6d54p0600a380VTb5d0Ke8Abp89097cZ54AaK9ccQTU6ebzsFx16IhRZWj52"
         }
       }])
 

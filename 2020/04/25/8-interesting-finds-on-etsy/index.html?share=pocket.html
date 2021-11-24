@@ -72,10 +72,9 @@
     </div>
 
     <div class="small-12 large-6 columns">
-      <div id="login-page-login-container">
+      <div id="login-page-login-container" >
   <div class="coreform-container loginform-container loginform-containererror">
       <h2>Log In</h2>
-
       
   <p class="login-error">Please log into your Pocket account.</p>
 
@@ -83,32 +82,35 @@
 <form action="https://getpocket.com/login_process.php" method="post" name="loginform" class="loginform">
 
   <div class="loginform-formemail">
-    <div class="form-field">
-      <span class="error-bubble"><span class="error-msg"></span><span class="error-arrow"></span></span>
-      <label for="feed_id">Email or username</label>
-      <input type="text" id="feed_id" name="feed_id" autocomplete="off"
-        autofocus tabindex="1"
-        placeholder="Email or username">
-    </div>
-    <br>
-    <div class="form-field">
-      <span class="error-bubble"><span class="error-msg"></span><span class="error-arrow"></span></span>
-      <label for="login_password">Password</label>
-      <input type="password" id="login_password" name="password"
-        autocomplete="off" tabindex="2"
-        placeholder="Password">
-    </div>
+    <!-- If the FxA login flag is not enabled, render the default login form -->
+      <div class="form-field">
+        <span class="error-bubble"><span class="error-msg"></span><span class="error-arrow"></span></span>
+        <label for="feed_id">Email or username</label>
+        <input type="text" id="feed_id" name="feed_id" autocomplete="off"
+          autofocus tabindex="1"
+          placeholder="Email or username">
+      </div>
+      <br>
+      <div class="form-field">
+        <span class="error-bubble"><span class="error-msg"></span><span class="error-arrow"></span></span>
+        <label for="login_password">Password</label>
+        <input type="password" id="login_password" name="password"
+          autocomplete="off" tabindex="2"
+          placeholder="Password">
+      </div>
+
   </div>
 
   <input type="hidden" class="field-form-route" name="route" value="/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F04%2F25%2F8-interesting-finds-on-etsy%2F&amp;url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F04%2F25%2F8-interesting-finds-on-etsy%2F&amp;title=8%20Interesting%20Finds%20On%20Etsy">
-  <input type="hidden" class="field-form-check" name="form_check" value="277360cc616354f0c8bb7f3a9ea77a8ddf6e1b25a7c29c5890f0f74594873501">
+  <input type="hidden" class="field-form-check" name="form_check" value="da496cda516e5d8ad68225abb3a0c04448a11f331de2ae8636feab1ad456e7f5">
   <input type="hidden" class="field-form-src" name="src" value="">
 
   <div class="login-processing"></div>
   <div id="captcha-placeholder"></div>
 
-  <input type="submit" tabindex="4" value="Log In"
-    class="login-btn-email btn-disabled" disabled>
+    <input type="submit" tabindex="4" value="Log In"
+           class="login-btn-email btn-disabled" disabled>
+
 
   <p class="forgot-p">
     <a class="forgot" href="https://getpocket.com/forgot?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F04%252F25%252F8-interesting-finds-on-etsy%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F04%252F25%252F8-interesting-finds-on-etsy%252F%26title%3D8%2520Interesting%2520Finds%2520On%2520Etsy"
@@ -194,7 +196,7 @@ ga('create', 'UA-370613-9', 'auto');
 ga('require', 'displayfeatures');
 ga('send', 'pageview');
 </script>
-<script>window.__STATE__ = {"api":{"baseUrl":"\/v3","consumerKey":"86291-f8d3e654be359e75b7625e79"},"appleAuth":{"clientId":"com.pocket.apple-sso","redirectURI":"https:\/\/getpocket.com\/connect\/apple\/check","scope":"name email","state":"12345"},"csrf":{"token":"9ce1536fbe9f55b6d7b9d2b3124646efe519849ae0d3f63c5fae858843572606"},"captcha":{"isRequired":true,"siteKey":"6LfIpyYUAAAAAPtNSKafudr16odFL1eQte0vR0Py"},"csrfSymfony":{"token":"rPKyXeP97k5t8k2SniJYQmMNRZFFNkrH-6UfD6QXDcM"},"env":"prod","googleAuth":{"clientId":"173409440056-oek12ddu7d36lbnpquv9dr8rs6ijcer0.apps.googleusercontent.com"},"localization":{"locale":"en-US"},"sentry":{"dsn":"https:\/\/15c50c1db6cf425594a1d4d779dc0792@sentry.io\/285989","version":"274a5bafb57f78386f4e65d0ef93bbbcb64dbd82","environment":"prod"},"stripe":{"publicKey":"pk_live_bh3nfDMzSI1Z9MvuwRWg8vWh"},"login":{"errorHtml":"Please log into your Pocket account.","messageHtml":null,"userDefaults":{"route":"\/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F04%2F25%2F8-interesting-finds-on-etsy%2F&url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F04%2F25%2F8-interesting-finds-on-etsy%2F&title=8%20Interesting%20Finds%20On%20Etsy","form_check":"3977e85b13542541599a4b8ad7d230beb0e0ad6b5fcade86a7993188fbe465f4"}}};</script><script src="https://assets.getpocket.com/web/main.ba9806c7bc46056e1919.js" ></script>
+<script>window.__STATE__ = {"api":{"baseUrl":"\/v3","consumerKey":"86291-f8d3e654be359e75b7625e79"},"appleAuth":{"clientId":"com.pocket.apple-sso","redirectURI":"https:\/\/getpocket.com\/connect\/apple\/check","scope":"name email","state":"12345"},"csrf":{"token":"f7f9461a44e68fbf3c7813e0cd3a59b82ebe93830bec0b87dd3855ebb5498a82"},"captcha":{"isRequired":true,"siteKey":"6LfIpyYUAAAAAPtNSKafudr16odFL1eQte0vR0Py"},"csrfSymfony":{"token":"MJ34Vr9-_1jZBNRcA9MWoaj3qRTRxt7Hy1PEWm-9sik"},"env":"prod","googleAuth":{"clientId":"173409440056-oek12ddu7d36lbnpquv9dr8rs6ijcer0.apps.googleusercontent.com"},"localization":{"locale":"en-US"},"sentry":{"dsn":"https:\/\/15c50c1db6cf425594a1d4d779dc0792@sentry.io\/285989","version":"c9f2f2fc6386e73993c39aea8699df5052484118","environment":"prod"},"stripe":{"publicKey":"pk_live_bh3nfDMzSI1Z9MvuwRWg8vWh"},"login":{"errorHtml":"Please log into your Pocket account.","messageHtml":null,"userDefaults":{"route":"\/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F04%2F25%2F8-interesting-finds-on-etsy%2F&url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F04%2F25%2F8-interesting-finds-on-etsy%2F&title=8%20Interesting%20Finds%20On%20Etsy","form_check":"c2c33bf9682d165c8d89e276443708be37a4fe60cf1b42dda443b17d6aef3dea"}}};</script><script src="https://assets.getpocket.com/web/main.4f2263743305cb952d1a.js" ></script>
 
 
 <script src="https://getpocket.com/j/v4/global.min.js?v=221"></script>
@@ -235,7 +237,7 @@ ga('send', 'pageview');
       snowplow('addGlobalContexts', [{
         schema: `iglu:com.pocket/user/jsonschema/1-0-0`,
         data: {
-          hashed_guid: "059Acg0Zde3a9f9a1fpaX1aN99T0d849e15u5bT30GS8f5n4418a1my8J1dLCcU6"
+          hashed_guid: "bs6g6d54p0600a380VTb5d0Ke8Abp89097cZ54AaK9ccQTU6ebzsFx16IhRZWj52"
         }
       }])
 

@@ -72,10 +72,9 @@
     </div>
 
     <div class="small-12 large-6 columns">
-      <div id="login-page-login-container">
+      <div id="login-page-login-container" >
   <div class="coreform-container loginform-container loginform-containererror">
       <h2>Log In</h2>
-
       
   <p class="login-error">Please log into your Pocket account.</p>
 
@@ -83,32 +82,35 @@
 <form action="https://getpocket.com/login_process.php" method="post" name="loginform" class="loginform">
 
   <div class="loginform-formemail">
-    <div class="form-field">
-      <span class="error-bubble"><span class="error-msg"></span><span class="error-arrow"></span></span>
-      <label for="feed_id">Email or username</label>
-      <input type="text" id="feed_id" name="feed_id" autocomplete="off"
-        autofocus tabindex="1"
-        placeholder="Email or username">
-    </div>
-    <br>
-    <div class="form-field">
-      <span class="error-bubble"><span class="error-msg"></span><span class="error-arrow"></span></span>
-      <label for="login_password">Password</label>
-      <input type="password" id="login_password" name="password"
-        autocomplete="off" tabindex="2"
-        placeholder="Password">
-    </div>
+    <!-- If the FxA login flag is not enabled, render the default login form -->
+      <div class="form-field">
+        <span class="error-bubble"><span class="error-msg"></span><span class="error-arrow"></span></span>
+        <label for="feed_id">Email or username</label>
+        <input type="text" id="feed_id" name="feed_id" autocomplete="off"
+          autofocus tabindex="1"
+          placeholder="Email or username">
+      </div>
+      <br>
+      <div class="form-field">
+        <span class="error-bubble"><span class="error-msg"></span><span class="error-arrow"></span></span>
+        <label for="login_password">Password</label>
+        <input type="password" id="login_password" name="password"
+          autocomplete="off" tabindex="2"
+          placeholder="Password">
+      </div>
+
   </div>
 
   <input type="hidden" class="field-form-route" name="route" value="/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2019%2F07%2F19%2Fhow-to-update-bios%2F&amp;url=https%3A%2F%2Fcodejammies.wordpress.com%2F2019%2F07%2F19%2Fhow-to-update-bios%2F&amp;title=How%20to%20update%20System%20BIOS">
-  <input type="hidden" class="field-form-check" name="form_check" value="96a8c0df95e2acd47e29a53329790e31043e6998043a2cfabdf1eefe9456f771">
+  <input type="hidden" class="field-form-check" name="form_check" value="ba1c52ffeaf899431ae8693ffc4e73d5bbf5135fe16653016da6987d14ad2679">
   <input type="hidden" class="field-form-src" name="src" value="">
 
   <div class="login-processing"></div>
   <div id="captcha-placeholder"></div>
 
-  <input type="submit" tabindex="4" value="Log In"
-    class="login-btn-email btn-disabled" disabled>
+    <input type="submit" tabindex="4" value="Log In"
+           class="login-btn-email btn-disabled" disabled>
+
 
   <p class="forgot-p">
     <a class="forgot" href="https://getpocket.com/forgot?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2019%252F07%252F19%252Fhow-to-update-bios%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2019%252F07%252F19%252Fhow-to-update-bios%252F%26title%3DHow%2520to%2520update%2520System%2520BIOS"
@@ -194,7 +196,7 @@ ga('create', 'UA-370613-9', 'auto');
 ga('require', 'displayfeatures');
 ga('send', 'pageview');
 </script>
-<script>window.__STATE__ = {"api":{"baseUrl":"\/v3","consumerKey":"86291-f8d3e654be359e75b7625e79"},"appleAuth":{"clientId":"com.pocket.apple-sso","redirectURI":"https:\/\/getpocket.com\/connect\/apple\/check","scope":"name email","state":"12345"},"csrf":{"token":"6c19e97087a7886095de2f6d56b484e97ffce8040a0c10c46868f4250366b4a4"},"captcha":{"isRequired":true,"siteKey":"6LfIpyYUAAAAAPtNSKafudr16odFL1eQte0vR0Py"},"csrfSymfony":{"token":"rPKyXeP97k5t8k2SniJYQmMNRZFFNkrH-6UfD6QXDcM"},"env":"prod","googleAuth":{"clientId":"173409440056-oek12ddu7d36lbnpquv9dr8rs6ijcer0.apps.googleusercontent.com"},"localization":{"locale":"en-US"},"sentry":{"dsn":"https:\/\/15c50c1db6cf425594a1d4d779dc0792@sentry.io\/285989","version":"274a5bafb57f78386f4e65d0ef93bbbcb64dbd82","environment":"prod"},"stripe":{"publicKey":"pk_live_bh3nfDMzSI1Z9MvuwRWg8vWh"},"login":{"errorHtml":"Please log into your Pocket account.","messageHtml":null,"userDefaults":{"route":"\/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2019%2F07%2F19%2Fhow-to-update-bios%2F&url=https%3A%2F%2Fcodejammies.wordpress.com%2F2019%2F07%2F19%2Fhow-to-update-bios%2F&title=How%20to%20update%20System%20BIOS","form_check":"d75e9013197ba16f83cd1733cf567351cf6ec3dd433cd912a186ced9888e6b18"}}};</script><script src="https://assets.getpocket.com/web/main.ba9806c7bc46056e1919.js" ></script>
+<script>window.__STATE__ = {"api":{"baseUrl":"\/v3","consumerKey":"86291-f8d3e654be359e75b7625e79"},"appleAuth":{"clientId":"com.pocket.apple-sso","redirectURI":"https:\/\/getpocket.com\/connect\/apple\/check","scope":"name email","state":"12345"},"csrf":{"token":"af69e350a7c5842791512fde57ee2a64baed79af1eee1502fab59a1002ca34b1"},"captcha":{"isRequired":true,"siteKey":"6LfIpyYUAAAAAPtNSKafudr16odFL1eQte0vR0Py"},"csrfSymfony":{"token":"MJ34Vr9-_1jZBNRcA9MWoaj3qRTRxt7Hy1PEWm-9sik"},"env":"prod","googleAuth":{"clientId":"173409440056-oek12ddu7d36lbnpquv9dr8rs6ijcer0.apps.googleusercontent.com"},"localization":{"locale":"en-US"},"sentry":{"dsn":"https:\/\/15c50c1db6cf425594a1d4d779dc0792@sentry.io\/285989","version":"c9f2f2fc6386e73993c39aea8699df5052484118","environment":"prod"},"stripe":{"publicKey":"pk_live_bh3nfDMzSI1Z9MvuwRWg8vWh"},"login":{"errorHtml":"Please log into your Pocket account.","messageHtml":null,"userDefaults":{"route":"\/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2019%2F07%2F19%2Fhow-to-update-bios%2F&url=https%3A%2F%2Fcodejammies.wordpress.com%2F2019%2F07%2F19%2Fhow-to-update-bios%2F&title=How%20to%20update%20System%20BIOS","form_check":"ed18771535d24dc04020481ba2bd682780f7cfd55f1559c627353a270a906993"}}};</script><script src="https://assets.getpocket.com/web/main.4f2263743305cb952d1a.js" ></script>
 
 
 <script src="https://getpocket.com/j/v4/global.min.js?v=221"></script>
@@ -235,7 +237,7 @@ ga('send', 'pageview');
       snowplow('addGlobalContexts', [{
         schema: `iglu:com.pocket/user/jsonschema/1-0-0`,
         data: {
-          hashed_guid: "059Acg0Zde3a9f9a1fpaX1aN99T0d849e15u5bT30GS8f5n4418a1my8J1dLCcU6"
+          hashed_guid: "bs6g6d54p0600a380VTb5d0Ke8Abp89097cZ54AaK9ccQTU6ebzsFx16IhRZWj52"
         }
       }])
 

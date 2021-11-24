@@ -72,10 +72,9 @@
     </div>
 
     <div class="small-12 large-6 columns">
-      <div id="login-page-login-container">
+      <div id="login-page-login-container" >
   <div class="coreform-container loginform-container loginform-containererror">
       <h2>Log In</h2>
-
       
   <p class="login-error">Please log into your Pocket account.</p>
 
@@ -83,32 +82,35 @@
 <form action="https://getpocket.com/login_process.php" method="post" name="loginform" class="loginform">
 
   <div class="loginform-formemail">
-    <div class="form-field">
-      <span class="error-bubble"><span class="error-msg"></span><span class="error-arrow"></span></span>
-      <label for="feed_id">Email or username</label>
-      <input type="text" id="feed_id" name="feed_id" autocomplete="off"
-        autofocus tabindex="1"
-        placeholder="Email or username">
-    </div>
-    <br>
-    <div class="form-field">
-      <span class="error-bubble"><span class="error-msg"></span><span class="error-arrow"></span></span>
-      <label for="login_password">Password</label>
-      <input type="password" id="login_password" name="password"
-        autocomplete="off" tabindex="2"
-        placeholder="Password">
-    </div>
+    <!-- If the FxA login flag is not enabled, render the default login form -->
+      <div class="form-field">
+        <span class="error-bubble"><span class="error-msg"></span><span class="error-arrow"></span></span>
+        <label for="feed_id">Email or username</label>
+        <input type="text" id="feed_id" name="feed_id" autocomplete="off"
+          autofocus tabindex="1"
+          placeholder="Email or username">
+      </div>
+      <br>
+      <div class="form-field">
+        <span class="error-bubble"><span class="error-msg"></span><span class="error-arrow"></span></span>
+        <label for="login_password">Password</label>
+        <input type="password" id="login_password" name="password"
+          autocomplete="off" tabindex="2"
+          placeholder="Password">
+      </div>
+
   </div>
 
   <input type="hidden" class="field-form-route" name="route" value="/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F10%2F15%2F30-seconds-read-bgp-path-attributes%2F&amp;url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F10%2F15%2F30-seconds-read-bgp-path-attributes%2F&amp;title=30%20Seconds%20Read%3A%20BGP%20Path%20Attributes">
-  <input type="hidden" class="field-form-check" name="form_check" value="2fb8d36c5b33ce31deabff42793d2d72ad9fc3b2836ea0a5c5bc8104d7f0497d">
+  <input type="hidden" class="field-form-check" name="form_check" value="59820b111154692620109582f9875dc918abdd2f17fae0fc6c85bae9367502d4">
   <input type="hidden" class="field-form-src" name="src" value="">
 
   <div class="login-processing"></div>
   <div id="captcha-placeholder"></div>
 
-  <input type="submit" tabindex="4" value="Log In"
-    class="login-btn-email btn-disabled" disabled>
+    <input type="submit" tabindex="4" value="Log In"
+           class="login-btn-email btn-disabled" disabled>
+
 
   <p class="forgot-p">
     <a class="forgot" href="https://getpocket.com/forgot?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F10%252F15%252F30-seconds-read-bgp-path-attributes%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F10%252F15%252F30-seconds-read-bgp-path-attributes%252F%26title%3D30%2520Seconds%2520Read%253A%2520BGP%2520Path%2520Attributes"
@@ -194,7 +196,7 @@ ga('create', 'UA-370613-9', 'auto');
 ga('require', 'displayfeatures');
 ga('send', 'pageview');
 </script>
-<script>window.__STATE__ = {"api":{"baseUrl":"\/v3","consumerKey":"86291-f8d3e654be359e75b7625e79"},"appleAuth":{"clientId":"com.pocket.apple-sso","redirectURI":"https:\/\/getpocket.com\/connect\/apple\/check","scope":"name email","state":"12345"},"csrf":{"token":"1d366ca4287a1d56947b6386d44a35ba2debd5faf0c0c69705b520d319ed73ef"},"captcha":{"isRequired":true,"siteKey":"6LfIpyYUAAAAAPtNSKafudr16odFL1eQte0vR0Py"},"csrfSymfony":{"token":"rPKyXeP97k5t8k2SniJYQmMNRZFFNkrH-6UfD6QXDcM"},"env":"prod","googleAuth":{"clientId":"173409440056-oek12ddu7d36lbnpquv9dr8rs6ijcer0.apps.googleusercontent.com"},"localization":{"locale":"en-US"},"sentry":{"dsn":"https:\/\/15c50c1db6cf425594a1d4d779dc0792@sentry.io\/285989","version":"274a5bafb57f78386f4e65d0ef93bbbcb64dbd82","environment":"prod"},"stripe":{"publicKey":"pk_live_bh3nfDMzSI1Z9MvuwRWg8vWh"},"login":{"errorHtml":"Please log into your Pocket account.","messageHtml":null,"userDefaults":{"route":"\/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F10%2F15%2F30-seconds-read-bgp-path-attributes%2F&url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F10%2F15%2F30-seconds-read-bgp-path-attributes%2F&title=30%20Seconds%20Read%3A%20BGP%20Path%20Attributes","form_check":"7d4dbee253b45eafb64c9cf83de0838358b44058a03eeaab34758a9aa5dc1101"}}};</script><script src="https://assets.getpocket.com/web/main.ba9806c7bc46056e1919.js" ></script>
+<script>window.__STATE__ = {"api":{"baseUrl":"\/v3","consumerKey":"86291-f8d3e654be359e75b7625e79"},"appleAuth":{"clientId":"com.pocket.apple-sso","redirectURI":"https:\/\/getpocket.com\/connect\/apple\/check","scope":"name email","state":"12345"},"csrf":{"token":"9ed3114d89a04f18b1456f00688c8479452b5cb0ff965b9e91b66f93c5d59cd8"},"captcha":{"isRequired":true,"siteKey":"6LfIpyYUAAAAAPtNSKafudr16odFL1eQte0vR0Py"},"csrfSymfony":{"token":"MJ34Vr9-_1jZBNRcA9MWoaj3qRTRxt7Hy1PEWm-9sik"},"env":"prod","googleAuth":{"clientId":"173409440056-oek12ddu7d36lbnpquv9dr8rs6ijcer0.apps.googleusercontent.com"},"localization":{"locale":"en-US"},"sentry":{"dsn":"https:\/\/15c50c1db6cf425594a1d4d779dc0792@sentry.io\/285989","version":"c9f2f2fc6386e73993c39aea8699df5052484118","environment":"prod"},"stripe":{"publicKey":"pk_live_bh3nfDMzSI1Z9MvuwRWg8vWh"},"login":{"errorHtml":"Please log into your Pocket account.","messageHtml":null,"userDefaults":{"route":"\/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F10%2F15%2F30-seconds-read-bgp-path-attributes%2F&url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F10%2F15%2F30-seconds-read-bgp-path-attributes%2F&title=30%20Seconds%20Read%3A%20BGP%20Path%20Attributes","form_check":"c91476cf1e8681baab455767fad03af83772fe1df5f1b1e43c6f28656aa2ab18"}}};</script><script src="https://assets.getpocket.com/web/main.4f2263743305cb952d1a.js" ></script>
 
 
 <script src="https://getpocket.com/j/v4/global.min.js?v=221"></script>
@@ -235,7 +237,7 @@ ga('send', 'pageview');
       snowplow('addGlobalContexts', [{
         schema: `iglu:com.pocket/user/jsonschema/1-0-0`,
         data: {
-          hashed_guid: "059Acg0Zde3a9f9a1fpaX1aN99T0d849e15u5bT30GS8f5n4418a1my8J1dLCcU6"
+          hashed_guid: "bs6g6d54p0600a380VTb5d0Ke8Abp89097cZ54AaK9ccQTU6ebzsFx16IhRZWj52"
         }
       }])
 
