@@ -41,37 +41,47 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
     <!--link href="/css/myriad.css" rel="stylesheet"-->
     <link href="https://telegram.org/css/bootstrap.min.css?3" rel="stylesheet">
-    <link href="https://telegram.org/css/telegram.css?215" rel="stylesheet" media="screen">
+    <link href="https://telegram.org/css/telegram.css?219" rel="stylesheet" media="screen">
   </head>
   <body>
-
+      <div class="tgme_background_wrap">
+    <canvas id="tgme_background" class="tgme_background default" width="50" height="50" data-colors="dbddbb,6ba587,d5d88d,88b884"></canvas>
+    <div class="tgme_background_pattern default"></div>
+  </div>
     <div class="tgme_page_wrap">
       <div class="tgme_head_wrap">
         <div class="tgme_head">
           <a href="https://telegram.org/" class="tgme_head_brand">
             <i class="tgme_logo"></i>
           </a>
+          <a class="tgme_head_right_btn" href="https://telegram.org/dl?tme=cd3c41fc6310290581_2338392557756094149">
+            Download
+          </a>
         </div>
       </div>
-      <a class="tgme_head_dl_button" href="https://telegram.org/dl?tme=d0637d20e2b0b12852_11305126984962276586">
-        Don't have <strong>Telegram</strong> yet? Try it now!<i class="tgme_icon_arrow"></i>
-      </a>
-      <div class="tgme_page">
-        <div class="tgme_page_icon">
+      <div class="tgme_body_wrap">
+        <div class="tgme_page">
+          <div class="tgme_page_icon">
   <i class="tgme_icon_share"></i>
 </div>
+<div class="tgme_page_desc_header">
+  https://architmodi.github.io/2020/03/19/30-seconds-read-tcp/
+</div>
 <div class="tgme_page_description">
-  <strong>https://architmodi.github.io/2020/03/19/30-seconds-read-tcp/</strong><br/>
   30 Seconds Read: TCP
 </div>
 <div class="tgme_page_action">
-  <a class="tgme_action_button" href="tg://msg_url?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F03%2F19%2F30-seconds-read-tcp%2F&text=30%20Seconds%20Read%3A%20TCP">Share</a>
+  <a class="tgme_action_button_new shine" href="tg://msg_url?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F03%2F19%2F30-seconds-read-tcp%2F&text=30%20Seconds%20Read%3A%20TCP">Share</a>
 </div>
 <!-- WEBOGRAM_BTN -->
+        </div>
+        
       </div>
     </div>
 
     <div id="tgme_frame_cont"></div>
+
+    <script src="https://telegram.org/js/tgwallpaper.min.js?3"></script>
 
     <script type="text/javascript">
 
@@ -102,7 +112,6 @@ else if (protoUrl) {
   }, 100);
 }
 
-
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164179350-1"></script>
 <script>
@@ -113,8 +122,14 @@ else if (protoUrl) {
  gtag('config', 'UA-164179350-1');
 </script>
 
+var tme_bg = document.getElementById('tgme_background');
+if (tme_bg) {
+  TWallpaper.init(tme_bg);
+  TWallpaper.animate(true);
+  window.onfocus = function(){ TWallpaper.update(); };
+}
     </script>
     <script></script>
   </body>
 </html>
-<!-- page generated in 5.36ms -->
+<!-- page generated in 6.47ms -->
