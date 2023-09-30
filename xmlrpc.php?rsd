@@ -2,12 +2,12 @@
   <service>
     <engineName>WordPress</engineName>
     <engineLink>https://wordpress.org/</engineLink>
-    <homePageLink>https://architmodi.github.io</homePageLink>
+    <homePageLink>https://codejammies.wordpress.com</homePageLink>
     <apis>
-      <api name="WordPress" blogID="1" preferred="true" apiLink="https://architmodi.github.io/xmlrpc.php" />
-      <api name="Movable Type" blogID="1" preferred="false" apiLink="https://architmodi.github.io/xmlrpc.php" />
-      <api name="MetaWeblog" blogID="1" preferred="false" apiLink="https://architmodi.github.io/xmlrpc.php" />
-      <api name="Blogger" blogID="1" preferred="false" apiLink="https://architmodi.github.io/xmlrpc.php" />
+      <api name="WordPress" blogID="1" preferred="true" apiLink="https://codejammies.wordpress.com/xmlrpc.php" />
+      <api name="Movable Type" blogID="1" preferred="false" apiLink="https://codejammies.wordpress.com/xmlrpc.php" />
+      <api name="MetaWeblog" blogID="1" preferred="false" apiLink="https://codejammies.wordpress.com/xmlrpc.php" />
+      <api name="Blogger" blogID="1" preferred="false" apiLink="https://codejammies.wordpress.com/xmlrpc.php" />
       <api name="Twitter" blogID="" preferred="false" apiLink="https://twitter-api.wordpress.com/" />
     </apis>
   </service>
