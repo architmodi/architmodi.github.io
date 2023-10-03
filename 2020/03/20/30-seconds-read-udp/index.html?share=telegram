@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Telegram: Share Web Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>try{if(window.parent!=null&&window!=window.parent){window.parent.postMessage(JSON.stringify({eventType:'web_app_open_tg_link',eventData:{path_full:"\/share\/url?url=https%3A%2F%2Fcodejammies.com%2F2020%2F03%2F20%2F30-seconds-read-udp%2F&text=30%20Seconds%20Read%3A%20UDP"}}),'https://web.telegram.org');}}catch(e){}</script>
+    <script>try{if(window.parent!=null&&window!=window.parent){window.parent.postMessage(JSON.stringify({eventType:'web_app_open_tg_link',eventData:{path_full:"\/share\/url?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F03%2F20%2F30-seconds-read-udp%2F&text=30%20Seconds%20Read%3A%20UDP"}}),'https://web.telegram.org');}}catch(e){}</script>
     <meta name="robots" content="noindex, nofollow">
 <meta property="og:title" content="">
 <meta property="og:image" content="https://telegram.org/img/t_logo.png">
@@ -17,9 +17,9 @@
 
 <meta property="al:ios:app_store_id" content="686449807">
 <meta property="al:ios:app_name" content="Telegram Messenger">
-<meta property="al:ios:url" content="tg://msg_url?url=https%3A%2F%2Fcodejammies.com%2F2020%2F03%2F20%2F30-seconds-read-udp%2F&amp;text=30%20Seconds%20Read%3A%20UDP">
+<meta property="al:ios:url" content="tg://msg_url?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F03%2F20%2F30-seconds-read-udp%2F&amp;text=30%20Seconds%20Read%3A%20UDP">
 
-<meta property="al:android:url" content="tg://msg_url?url=https%3A%2F%2Fcodejammies.com%2F2020%2F03%2F20%2F30-seconds-read-udp%2F&amp;text=30%20Seconds%20Read%3A%20UDP">
+<meta property="al:android:url" content="tg://msg_url?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F03%2F20%2F30-seconds-read-udp%2F&amp;text=30%20Seconds%20Read%3A%20UDP">
 <meta property="al:android:app_name" content="Telegram">
 <meta property="al:android:package" content="org.telegram.messenger">
 
@@ -29,15 +29,15 @@
 ">
 <meta name="twitter:app:name:iphone" content="Telegram Messenger">
 <meta name="twitter:app:id:iphone" content="686449807">
-<meta name="twitter:app:url:iphone" content="tg://msg_url?url=https%3A%2F%2Fcodejammies.com%2F2020%2F03%2F20%2F30-seconds-read-udp%2F&amp;text=30%20Seconds%20Read%3A%20UDP">
+<meta name="twitter:app:url:iphone" content="tg://msg_url?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F03%2F20%2F30-seconds-read-udp%2F&amp;text=30%20Seconds%20Read%3A%20UDP">
 <meta name="twitter:app:name:ipad" content="Telegram Messenger">
 <meta name="twitter:app:id:ipad" content="686449807">
-<meta name="twitter:app:url:ipad" content="tg://msg_url?url=https%3A%2F%2Fcodejammies.com%2F2020%2F03%2F20%2F30-seconds-read-udp%2F&amp;text=30%20Seconds%20Read%3A%20UDP">
+<meta name="twitter:app:url:ipad" content="tg://msg_url?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F03%2F20%2F30-seconds-read-udp%2F&amp;text=30%20Seconds%20Read%3A%20UDP">
 <meta name="twitter:app:name:googleplay" content="Telegram">
 <meta name="twitter:app:id:googleplay" content="org.telegram.messenger">
 <meta name="twitter:app:url:googleplay" content="https://t.me/share/url">
 
-<meta name="apple-itunes-app" content="app-id=686449807, app-argument: tg://msg_url?url=https%3A%2F%2Fcodejammies.com%2F2020%2F03%2F20%2F30-seconds-read-udp%2F&text=30%20Seconds%20Read%3A%20UDP">
+<meta name="apple-itunes-app" content="app-id=686449807, app-argument: tg://msg_url?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F03%2F20%2F30-seconds-read-udp%2F&text=30%20Seconds%20Read%3A%20UDP">
     <script>window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches&&document.documentElement&&document.documentElement.classList&&document.documentElement.classList.add('theme_dark');</script>
     <link rel="icon" type="image/svg+xml" href="https://telegram.org/img/website_icon.svg?4">
 <link rel="apple-touch-icon" sizes="180x180" href="https://telegram.org/img/apple-touch-icon.png">
@@ -64,7 +64,7 @@
               </g>
             </svg>
           </a>
-          <a class="tgme_head_right_btn" href="https://telegram.org/dl?tme=49e001bc3ec3ca8ef2_14675214377427930688">
+          <a class="tgme_head_right_btn" href="https://telegram.org/dl?tme=f853821c96af103b69_1850681417034744832">
             Download
           </a>
         </div>
@@ -75,13 +75,13 @@
   <i class="tgme_icon_share"></i>
 </div>
 <div class="tgme_page_desc_header">
-  https://codejammies.com/2020/03/20/30-seconds-read-udp/
+  https://codejammies.wordpress.com/2020/03/20/30-seconds-read-udp/
 </div>
 <div class="tgme_page_description">
   30 Seconds Read: UDP
 </div>
 <div class="tgme_page_action">
-  <a class="tgme_action_button_new shine" href="tg://msg_url?url=https%3A%2F%2Fcodejammies.com%2F2020%2F03%2F20%2F30-seconds-read-udp%2F&text=30%20Seconds%20Read%3A%20UDP">Share</a>
+  <a class="tgme_action_button_new shine" href="tg://msg_url?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F03%2F20%2F30-seconds-read-udp%2F&text=30%20Seconds%20Read%3A%20UDP">Share</a>
 </div>
 <!-- WEBOGRAM_BTN -->
         </div>
@@ -95,7 +95,7 @@
 
     <script type="text/javascript">
 
-var protoUrl = "tg:\/\/msg_url?url=https%3A%2F%2Fcodejammies.com%2F2020%2F03%2F20%2F30-seconds-read-udp%2F&text=30%20Seconds%20Read%3A%20UDP";
+var protoUrl = "tg:\/\/msg_url?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F03%2F20%2F30-seconds-read-udp%2F&text=30%20Seconds%20Read%3A%20UDP";
 if (false) {
   var iframeContEl = document.getElementById('tgme_frame_cont') || document.body;
   var iframeEl = document.createElement('iframe');
@@ -146,4 +146,4 @@ if (window.matchMedia) {
     </script>
   </body>
 </html>
-<!-- page generated in 92.39ms -->
+<!-- page generated in 3.98ms -->

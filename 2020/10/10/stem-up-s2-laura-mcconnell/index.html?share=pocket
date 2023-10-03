@@ -49,11 +49,11 @@
         <div class="small-12 large-9 columns header-menu">
           <nav>
             <ul>
-                <li><a class="signup" href="https://getpocket.com/signup/?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F10%252F10%252Fstem-up-s2-laura-mcconnell%252F%26url%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F10%252F10%252Fstem-up-s2-laura-mcconnell%252F%26title%3DSTEM%2520Up%2520%2528S2%2529%253A%2520Laura%2520McConnell&amp;ep=1">Sign Up</a></li>
+                <li><a class="signup" href="https://getpocket.com/signup/?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F10%252F10%252Fstem-up-s2-laura-mcconnell%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F10%252F10%252Fstem-up-s2-laura-mcconnell%252F%26title%3DSTEM%2520Up%2520%2528S2%2529%253A%2520Laura%2520McConnell&amp;ep=1">Sign Up</a></li>
                 <li><a href="https://getpocket.com/add/?ep=1">How to Save</a></li>
                 <li><a href="https://getpocket.com/premium?ep=1">Go Premium</a></li>
                 <li><a href="https://help.getpocket.com" target="_block">Support</a></li>
-                <li class="login"><span><a class="mktg-homepage-signin" href="https://getpocket.com/login/?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F10%252F10%252Fstem-up-s2-laura-mcconnell%252F%26url%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F10%252F10%252Fstem-up-s2-laura-mcconnell%252F%26title%3DSTEM%2520Up%2520%2528S2%2529%253A%2520Laura%2520McConnell&amp;ep=1">Log In</a></span></li>
+                <li class="login"><span><a class="mktg-homepage-signin" href="https://getpocket.com/login/?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F10%252F10%252Fstem-up-s2-laura-mcconnell%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F10%252F10%252Fstem-up-s2-laura-mcconnell%252F%26title%3DSTEM%2520Up%2520%2528S2%2529%253A%2520Laura%2520McConnell&amp;ep=1">Log In</a></span></li>
   
             </ul>
           </nav>
@@ -120,8 +120,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   </div>
 
-  <input type="hidden" class="field-form-route" name="route" value="/edit.php?url=https%3A%2F%2Fcodejammies.com%2F2020%2F10%2F10%2Fstem-up-s2-laura-mcconnell%2F&amp;url=https%3A%2F%2Fcodejammies.com%2F2020%2F10%2F10%2Fstem-up-s2-laura-mcconnell%2F&amp;title=STEM%20Up%20%28S2%29%3A%20Laura%20McConnell">
-  <input type="hidden" class="field-form-check" name="form_check" value="199df42056ca5d6e4c861e57bc5e26572a1aa597ed3ae12b8aebe01d747e127a">
+  <input type="hidden" class="field-form-route" name="route" value="/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F10%2F10%2Fstem-up-s2-laura-mcconnell%2F&amp;url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F10%2F10%2Fstem-up-s2-laura-mcconnell%2F&amp;title=STEM%20Up%20%28S2%29%3A%20Laura%20McConnell">
+  <input type="hidden" class="field-form-check" name="form_check" value="fd13d589109e154c52a8f73c3f8346f9ce001237db70d9c0eb0d641a49f5f020">
   <input type="hidden" class="field-form-src" name="src" value="">
 
   <div class="login-processing"></div>
@@ -132,7 +132,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             class="login-btn-email btn-disabled" disabled>
 
   <p class="forgot-p">
-    <a class="forgot" href="https://getpocket.com/forgot?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F10%252F10%252Fstem-up-s2-laura-mcconnell%252F%26url%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F10%252F10%252Fstem-up-s2-laura-mcconnell%252F%26title%3DSTEM%2520Up%2520%2528S2%2529%253A%2520Laura%2520McConnell"
+    <a class="forgot" href="https://getpocket.com/forgot?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F10%252F10%252Fstem-up-s2-laura-mcconnell%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F10%252F10%252Fstem-up-s2-laura-mcconnell%252F%26title%3DSTEM%2520Up%2520%2528S2%2529%253A%2520Laura%2520McConnell"
        target="">
       Forgot your username or password
     </a>
@@ -155,7 +155,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <p class="login-footer">
-      <a class="signup" href="https://getpocket.com/signup?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F10%252F10%252Fstem-up-s2-laura-mcconnell%252F%26url%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F10%252F10%252Fstem-up-s2-laura-mcconnell%252F%26title%3DSTEM%2520Up%2520%2528S2%2529%253A%2520Laura%2520McConnell"
+      <a class="signup" href="https://getpocket.com/signup?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F10%252F10%252Fstem-up-s2-laura-mcconnell%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F10%252F10%252Fstem-up-s2-laura-mcconnell%252F%26title%3DSTEM%2520Up%2520%2528S2%2529%253A%2520Laura%2520McConnell"
       target="">
       Sign up now
       </a> <span class="rarrow">&rsaquo;</span>
@@ -227,7 +227,7 @@ ga('send', 'pageview');
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-P4LPJ42');</script>
 <!-- End Google Tag Manager -->
-<script>window.__STATE__ = {"api":{"baseUrl":"\/v3","consumerKey":"86291-f8d3e654be359e75b7625e79"},"csrf":{"token":"b1cbf9f3f1a206734ba6a1e44d65d6ff762ed35d44c03ae79e9b46057c2ada11"},"captcha":{"isRequired":true,"siteKey":"6LfIpyYUAAAAAPtNSKafudr16odFL1eQte0vR0Py"},"csrfSymfony":{"token":"zKR11xcHtHWcitjb31HKXdRjuvzqHhnEdpTQ0L20qDs"},"env":"prod","localization":{"locale":"en-US"},"sentry":{"dsn":"https:\/\/15c50c1db6cf425594a1d4d779dc0792@sentry.io\/285989","version":"4ad074af5f8c92dabf387c7bf9ec0041a44dc9e2","environment":"prod"},"stripe":{"publicKey":"pk_live_bh3nfDMzSI1Z9MvuwRWg8vWh"},"login":{"errorHtml":"Please log into your Pocket account.","messageHtml":null,"userDefaults":{"route":"\/edit.php?url=https%3A%2F%2Fcodejammies.com%2F2020%2F10%2F10%2Fstem-up-s2-laura-mcconnell%2F&url=https%3A%2F%2Fcodejammies.com%2F2020%2F10%2F10%2Fstem-up-s2-laura-mcconnell%2F&title=STEM%20Up%20%28S2%29%3A%20Laura%20McConnell","form_check":"3783b132570ee289d36f3d34c75e4f7d5cfc7e3ea108c82a9dd05a3e335b6642"}}};</script><script src="https://assets.getpocket.com/web/main.35001086667676d19d24.js" ></script>
+<script>window.__STATE__ = {"api":{"baseUrl":"\/v3","consumerKey":"86291-f8d3e654be359e75b7625e79"},"csrf":{"token":"a52a84984a389eefd92030d7bf54cfdd9d907928df4d55a8013995e4a16e401d"},"captcha":{"isRequired":true,"siteKey":"6LfIpyYUAAAAAPtNSKafudr16odFL1eQte0vR0Py"},"csrfSymfony":{"token":"B18JQKxCCSFeAJi1CTBQxviulW4eEaa5vW3KbiDEUbw"},"env":"prod","localization":{"locale":"en-US"},"sentry":{"dsn":"https:\/\/15c50c1db6cf425594a1d4d779dc0792@sentry.io\/285989","version":"4ad074af5f8c92dabf387c7bf9ec0041a44dc9e2","environment":"prod"},"stripe":{"publicKey":"pk_live_bh3nfDMzSI1Z9MvuwRWg8vWh"},"login":{"errorHtml":"Please log into your Pocket account.","messageHtml":null,"userDefaults":{"route":"\/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F10%2F10%2Fstem-up-s2-laura-mcconnell%2F&url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F10%2F10%2Fstem-up-s2-laura-mcconnell%2F&title=STEM%20Up%20%28S2%29%3A%20Laura%20McConnell","form_check":"fc2286dc6163118e967ba0369d8003052065393143dc2474dc1ed4164cb008e1"}}};</script><script src="https://assets.getpocket.com/web/main.35001086667676d19d24.js" ></script>
 
 
 <script src="https://getpocket.com/j/v4/global.min.js?v=221"></script>
@@ -270,7 +270,7 @@ ga('send', 'pageview');
       snowplow('addGlobalContexts', [{
         schema: 'iglu:com.pocket/user/jsonschema/1-0-0',
         data: {
-          hashed_guid: "90lTbA51gd6f5iXz61dp9bdha6p0ycqX6c4c2dNWN9K6f3RX1fR5daf5e05Ezk54"
+          hashed_guid: "192gad17p4d5ct15a5T250Gf65A4Za0414dp3ca5c0COuQE13a94dLW9k6fXW267"
         }
       }])
 

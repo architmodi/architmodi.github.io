@@ -49,11 +49,11 @@
         <div class="small-12 large-9 columns header-menu">
           <nav>
             <ul>
-                <li><a class="signup" href="https://getpocket.com/signup/?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F08%252F23%252Fstem-up-ami-gandhi%252F%26url%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F08%252F23%252Fstem-up-ami-gandhi%252F%26title%3DSTEM%2520Up%253A%2520Ami%2520Gandhi&amp;ep=1">Sign Up</a></li>
+                <li><a class="signup" href="https://getpocket.com/signup/?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F08%252F23%252Fstem-up-ami-gandhi%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F08%252F23%252Fstem-up-ami-gandhi%252F%26title%3DSTEM%2520Up%253A%2520Ami%2520Gandhi&amp;ep=1">Sign Up</a></li>
                 <li><a href="https://getpocket.com/add/?ep=1">How to Save</a></li>
                 <li><a href="https://getpocket.com/premium?ep=1">Go Premium</a></li>
                 <li><a href="https://help.getpocket.com" target="_block">Support</a></li>
-                <li class="login"><span><a class="mktg-homepage-signin" href="https://getpocket.com/login/?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F08%252F23%252Fstem-up-ami-gandhi%252F%26url%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F08%252F23%252Fstem-up-ami-gandhi%252F%26title%3DSTEM%2520Up%253A%2520Ami%2520Gandhi&amp;ep=1">Log In</a></span></li>
+                <li class="login"><span><a class="mktg-homepage-signin" href="https://getpocket.com/login/?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F08%252F23%252Fstem-up-ami-gandhi%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F08%252F23%252Fstem-up-ami-gandhi%252F%26title%3DSTEM%2520Up%253A%2520Ami%2520Gandhi&amp;ep=1">Log In</a></span></li>
   
             </ul>
           </nav>
@@ -120,8 +120,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   </div>
 
-  <input type="hidden" class="field-form-route" name="route" value="/edit.php?url=https%3A%2F%2Fcodejammies.com%2F2020%2F08%2F23%2Fstem-up-ami-gandhi%2F&amp;url=https%3A%2F%2Fcodejammies.com%2F2020%2F08%2F23%2Fstem-up-ami-gandhi%2F&amp;title=STEM%20Up%3A%20Ami%20Gandhi">
-  <input type="hidden" class="field-form-check" name="form_check" value="4e761f3ec93f3d0930be9de6d6aabdfff5837672142998acbfa6321e869cad6d">
+  <input type="hidden" class="field-form-route" name="route" value="/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F08%2F23%2Fstem-up-ami-gandhi%2F&amp;url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F08%2F23%2Fstem-up-ami-gandhi%2F&amp;title=STEM%20Up%3A%20Ami%20Gandhi">
+  <input type="hidden" class="field-form-check" name="form_check" value="460060a9bea8c8fb730cdb033f10d88a38d593918193ae33fc96ab84ae31f363">
   <input type="hidden" class="field-form-src" name="src" value="">
 
   <div class="login-processing"></div>
@@ -132,7 +132,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             class="login-btn-email btn-disabled" disabled>
 
   <p class="forgot-p">
-    <a class="forgot" href="https://getpocket.com/forgot?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F08%252F23%252Fstem-up-ami-gandhi%252F%26url%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F08%252F23%252Fstem-up-ami-gandhi%252F%26title%3DSTEM%2520Up%253A%2520Ami%2520Gandhi"
+    <a class="forgot" href="https://getpocket.com/forgot?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F08%252F23%252Fstem-up-ami-gandhi%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F08%252F23%252Fstem-up-ami-gandhi%252F%26title%3DSTEM%2520Up%253A%2520Ami%2520Gandhi"
        target="">
       Forgot your username or password
     </a>
@@ -155,7 +155,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <p class="login-footer">
-      <a class="signup" href="https://getpocket.com/signup?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F08%252F23%252Fstem-up-ami-gandhi%252F%26url%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F08%252F23%252Fstem-up-ami-gandhi%252F%26title%3DSTEM%2520Up%253A%2520Ami%2520Gandhi"
+      <a class="signup" href="https://getpocket.com/signup?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F08%252F23%252Fstem-up-ami-gandhi%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F08%252F23%252Fstem-up-ami-gandhi%252F%26title%3DSTEM%2520Up%253A%2520Ami%2520Gandhi"
       target="">
       Sign up now
       </a> <span class="rarrow">&rsaquo;</span>
@@ -227,7 +227,7 @@ ga('send', 'pageview');
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-P4LPJ42');</script>
 <!-- End Google Tag Manager -->
-<script>window.__STATE__ = {"api":{"baseUrl":"\/v3","consumerKey":"86291-f8d3e654be359e75b7625e79"},"csrf":{"token":"4c1212d680bab5a13e96ba021703c2953e5c79c089b6ca6f6662f677b3cf1a1c"},"captcha":{"isRequired":true,"siteKey":"6LfIpyYUAAAAAPtNSKafudr16odFL1eQte0vR0Py"},"csrfSymfony":{"token":"zKR11xcHtHWcitjb31HKXdRjuvzqHhnEdpTQ0L20qDs"},"env":"prod","localization":{"locale":"en-US"},"sentry":{"dsn":"https:\/\/15c50c1db6cf425594a1d4d779dc0792@sentry.io\/285989","version":"4ad074af5f8c92dabf387c7bf9ec0041a44dc9e2","environment":"prod"},"stripe":{"publicKey":"pk_live_bh3nfDMzSI1Z9MvuwRWg8vWh"},"login":{"errorHtml":"Please log into your Pocket account.","messageHtml":null,"userDefaults":{"route":"\/edit.php?url=https%3A%2F%2Fcodejammies.com%2F2020%2F08%2F23%2Fstem-up-ami-gandhi%2F&url=https%3A%2F%2Fcodejammies.com%2F2020%2F08%2F23%2Fstem-up-ami-gandhi%2F&title=STEM%20Up%3A%20Ami%20Gandhi","form_check":"8bc34e8e264a4a4280dc3febfc9a8a68775b66364917c4ec45b10f35599bd129"}}};</script><script src="https://assets.getpocket.com/web/main.35001086667676d19d24.js" ></script>
+<script>window.__STATE__ = {"api":{"baseUrl":"\/v3","consumerKey":"86291-f8d3e654be359e75b7625e79"},"csrf":{"token":"fcd9f757039f9323b5a847bb5dd997b57ee05bfd10174f69cbc3dde3171092cb"},"captcha":{"isRequired":true,"siteKey":"6LfIpyYUAAAAAPtNSKafudr16odFL1eQte0vR0Py"},"csrfSymfony":{"token":"B18JQKxCCSFeAJi1CTBQxviulW4eEaa5vW3KbiDEUbw"},"env":"prod","localization":{"locale":"en-US"},"sentry":{"dsn":"https:\/\/15c50c1db6cf425594a1d4d779dc0792@sentry.io\/285989","version":"4ad074af5f8c92dabf387c7bf9ec0041a44dc9e2","environment":"prod"},"stripe":{"publicKey":"pk_live_bh3nfDMzSI1Z9MvuwRWg8vWh"},"login":{"errorHtml":"Please log into your Pocket account.","messageHtml":null,"userDefaults":{"route":"\/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F08%2F23%2Fstem-up-ami-gandhi%2F&url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F08%2F23%2Fstem-up-ami-gandhi%2F&title=STEM%20Up%3A%20Ami%20Gandhi","form_check":"928be3d838eafd223884044147bc303058eaf985bcd9b11bcc149e2bc839ba11"}}};</script><script src="https://assets.getpocket.com/web/main.35001086667676d19d24.js" ></script>
 
 
 <script src="https://getpocket.com/j/v4/global.min.js?v=221"></script>
@@ -270,7 +270,7 @@ ga('send', 'pageview');
       snowplow('addGlobalContexts', [{
         schema: 'iglu:com.pocket/user/jsonschema/1-0-0',
         data: {
-          hashed_guid: "90lTbA51gd6f5iXz61dp9bdha6p0ycqX6c4c2dNWN9K6f3RX1fR5daf5e05Ezk54"
+          hashed_guid: "192gad17p4d5ct15a5T250Gf65A4Za0414dp3ca5c0COuQE13a94dLW9k6fXW267"
         }
       }])
 

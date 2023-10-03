@@ -49,11 +49,11 @@
         <div class="small-12 large-9 columns header-menu">
           <nav>
             <ul>
-                <li><a class="signup" href="https://getpocket.com/signup/?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F06%252F13%252Fstem-up-sukanya-tiwatne%252F%26url%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F06%252F13%252Fstem-up-sukanya-tiwatne%252F%26title%3DSTEM%2520Up%253A%2520Sukanya%2520Tiwatne&amp;ep=1">Sign Up</a></li>
+                <li><a class="signup" href="https://getpocket.com/signup/?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F06%252F13%252Fstem-up-sukanya-tiwatne%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F06%252F13%252Fstem-up-sukanya-tiwatne%252F%26title%3DSTEM%2520Up%253A%2520Sukanya%2520Tiwatne&amp;ep=1">Sign Up</a></li>
                 <li><a href="https://getpocket.com/add/?ep=1">How to Save</a></li>
                 <li><a href="https://getpocket.com/premium?ep=1">Go Premium</a></li>
                 <li><a href="https://help.getpocket.com" target="_block">Support</a></li>
-                <li class="login"><span><a class="mktg-homepage-signin" href="https://getpocket.com/login/?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F06%252F13%252Fstem-up-sukanya-tiwatne%252F%26url%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F06%252F13%252Fstem-up-sukanya-tiwatne%252F%26title%3DSTEM%2520Up%253A%2520Sukanya%2520Tiwatne&amp;ep=1">Log In</a></span></li>
+                <li class="login"><span><a class="mktg-homepage-signin" href="https://getpocket.com/login/?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F06%252F13%252Fstem-up-sukanya-tiwatne%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F06%252F13%252Fstem-up-sukanya-tiwatne%252F%26title%3DSTEM%2520Up%253A%2520Sukanya%2520Tiwatne&amp;ep=1">Log In</a></span></li>
   
             </ul>
           </nav>
@@ -120,8 +120,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   </div>
 
-  <input type="hidden" class="field-form-route" name="route" value="/edit.php?url=https%3A%2F%2Fcodejammies.com%2F2020%2F06%2F13%2Fstem-up-sukanya-tiwatne%2F&amp;url=https%3A%2F%2Fcodejammies.com%2F2020%2F06%2F13%2Fstem-up-sukanya-tiwatne%2F&amp;title=STEM%20Up%3A%20Sukanya%20Tiwatne">
-  <input type="hidden" class="field-form-check" name="form_check" value="f9a1cde53c9a15d720adccf63798b9d76ffd97b51c2b645c14368bdaf997e64c">
+  <input type="hidden" class="field-form-route" name="route" value="/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F06%2F13%2Fstem-up-sukanya-tiwatne%2F&amp;url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F06%2F13%2Fstem-up-sukanya-tiwatne%2F&amp;title=STEM%20Up%3A%20Sukanya%20Tiwatne">
+  <input type="hidden" class="field-form-check" name="form_check" value="73650207aac91befe6584a5cf59815f0829009320ddb0de58ce28bafe0541004">
   <input type="hidden" class="field-form-src" name="src" value="">
 
   <div class="login-processing"></div>
@@ -132,7 +132,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             class="login-btn-email btn-disabled" disabled>
 
   <p class="forgot-p">
-    <a class="forgot" href="https://getpocket.com/forgot?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F06%252F13%252Fstem-up-sukanya-tiwatne%252F%26url%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F06%252F13%252Fstem-up-sukanya-tiwatne%252F%26title%3DSTEM%2520Up%253A%2520Sukanya%2520Tiwatne"
+    <a class="forgot" href="https://getpocket.com/forgot?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F06%252F13%252Fstem-up-sukanya-tiwatne%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F06%252F13%252Fstem-up-sukanya-tiwatne%252F%26title%3DSTEM%2520Up%253A%2520Sukanya%2520Tiwatne"
        target="">
       Forgot your username or password
     </a>
@@ -155,7 +155,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <p class="login-footer">
-      <a class="signup" href="https://getpocket.com/signup?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F06%252F13%252Fstem-up-sukanya-tiwatne%252F%26url%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F06%252F13%252Fstem-up-sukanya-tiwatne%252F%26title%3DSTEM%2520Up%253A%2520Sukanya%2520Tiwatne"
+      <a class="signup" href="https://getpocket.com/signup?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F06%252F13%252Fstem-up-sukanya-tiwatne%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F06%252F13%252Fstem-up-sukanya-tiwatne%252F%26title%3DSTEM%2520Up%253A%2520Sukanya%2520Tiwatne"
       target="">
       Sign up now
       </a> <span class="rarrow">&rsaquo;</span>
@@ -227,7 +227,7 @@ ga('send', 'pageview');
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-P4LPJ42');</script>
 <!-- End Google Tag Manager -->
-<script>window.__STATE__ = {"api":{"baseUrl":"\/v3","consumerKey":"86291-f8d3e654be359e75b7625e79"},"csrf":{"token":"71e4b74c7cecea5fdc141b486916ffca8629fc1a9f040a1de8716b15fe1b4dca"},"captcha":{"isRequired":true,"siteKey":"6LfIpyYUAAAAAPtNSKafudr16odFL1eQte0vR0Py"},"csrfSymfony":{"token":"zKR11xcHtHWcitjb31HKXdRjuvzqHhnEdpTQ0L20qDs"},"env":"prod","localization":{"locale":"en-US"},"sentry":{"dsn":"https:\/\/15c50c1db6cf425594a1d4d779dc0792@sentry.io\/285989","version":"4ad074af5f8c92dabf387c7bf9ec0041a44dc9e2","environment":"prod"},"stripe":{"publicKey":"pk_live_bh3nfDMzSI1Z9MvuwRWg8vWh"},"login":{"errorHtml":"Please log into your Pocket account.","messageHtml":null,"userDefaults":{"route":"\/edit.php?url=https%3A%2F%2Fcodejammies.com%2F2020%2F06%2F13%2Fstem-up-sukanya-tiwatne%2F&url=https%3A%2F%2Fcodejammies.com%2F2020%2F06%2F13%2Fstem-up-sukanya-tiwatne%2F&title=STEM%20Up%3A%20Sukanya%20Tiwatne","form_check":"acf33a15db2b71e38887798a7693743c09eff8be272e05e470a451992bdd8dc8"}}};</script><script src="https://assets.getpocket.com/web/main.35001086667676d19d24.js" ></script>
+<script>window.__STATE__ = {"api":{"baseUrl":"\/v3","consumerKey":"86291-f8d3e654be359e75b7625e79"},"csrf":{"token":"51f4efad7b2b6c5cd6bec1cc601d06d900f3db3a3a940ed5dc3179bed471b0fe"},"captcha":{"isRequired":true,"siteKey":"6LfIpyYUAAAAAPtNSKafudr16odFL1eQte0vR0Py"},"csrfSymfony":{"token":"B18JQKxCCSFeAJi1CTBQxviulW4eEaa5vW3KbiDEUbw"},"env":"prod","localization":{"locale":"en-US"},"sentry":{"dsn":"https:\/\/15c50c1db6cf425594a1d4d779dc0792@sentry.io\/285989","version":"4ad074af5f8c92dabf387c7bf9ec0041a44dc9e2","environment":"prod"},"stripe":{"publicKey":"pk_live_bh3nfDMzSI1Z9MvuwRWg8vWh"},"login":{"errorHtml":"Please log into your Pocket account.","messageHtml":null,"userDefaults":{"route":"\/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F06%2F13%2Fstem-up-sukanya-tiwatne%2F&url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F06%2F13%2Fstem-up-sukanya-tiwatne%2F&title=STEM%20Up%3A%20Sukanya%20Tiwatne","form_check":"81ee93bb08d95e6417a82a11c6765f8cd6b276c11d623c56d60497a8b4fefe5e"}}};</script><script src="https://assets.getpocket.com/web/main.35001086667676d19d24.js" ></script>
 
 
 <script src="https://getpocket.com/j/v4/global.min.js?v=221"></script>
@@ -270,7 +270,7 @@ ga('send', 'pageview');
       snowplow('addGlobalContexts', [{
         schema: 'iglu:com.pocket/user/jsonschema/1-0-0',
         data: {
-          hashed_guid: "90lTbA51gd6f5iXz61dp9bdha6p0ycqX6c4c2dNWN9K6f3RX1fR5daf5e05Ezk54"
+          hashed_guid: "192gad17p4d5ct15a5T250Gf65A4Za0414dp3ca5c0COuQE13a94dLW9k6fXW267"
         }
       }])
 

@@ -49,11 +49,11 @@
         <div class="small-12 large-9 columns header-menu">
           <nav>
             <ul>
-                <li><a class="signup" href="https://getpocket.com/signup/?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F03%252F15%252F30-seconds-read-ssh%252F%26url%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F03%252F15%252F30-seconds-read-ssh%252F%26title%3D30%2520Seconds%2520Read%253A%2520SSH&amp;ep=1">Sign Up</a></li>
+                <li><a class="signup" href="https://getpocket.com/signup/?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F03%252F15%252F30-seconds-read-ssh%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F03%252F15%252F30-seconds-read-ssh%252F%26title%3D30%2520Seconds%2520Read%253A%2520SSH&amp;ep=1">Sign Up</a></li>
                 <li><a href="https://getpocket.com/add/?ep=1">How to Save</a></li>
                 <li><a href="https://getpocket.com/premium?ep=1">Go Premium</a></li>
                 <li><a href="https://help.getpocket.com" target="_block">Support</a></li>
-                <li class="login"><span><a class="mktg-homepage-signin" href="https://getpocket.com/login/?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F03%252F15%252F30-seconds-read-ssh%252F%26url%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F03%252F15%252F30-seconds-read-ssh%252F%26title%3D30%2520Seconds%2520Read%253A%2520SSH&amp;ep=1">Log In</a></span></li>
+                <li class="login"><span><a class="mktg-homepage-signin" href="https://getpocket.com/login/?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F03%252F15%252F30-seconds-read-ssh%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F03%252F15%252F30-seconds-read-ssh%252F%26title%3D30%2520Seconds%2520Read%253A%2520SSH&amp;ep=1">Log In</a></span></li>
   
             </ul>
           </nav>
@@ -120,8 +120,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   </div>
 
-  <input type="hidden" class="field-form-route" name="route" value="/edit.php?url=https%3A%2F%2Fcodejammies.com%2F2020%2F03%2F15%2F30-seconds-read-ssh%2F&amp;url=https%3A%2F%2Fcodejammies.com%2F2020%2F03%2F15%2F30-seconds-read-ssh%2F&amp;title=30%20Seconds%20Read%3A%20SSH">
-  <input type="hidden" class="field-form-check" name="form_check" value="8106b594fc21629a2fb0313a195d3b619825b9d6af476f231da0ad9753946f35">
+  <input type="hidden" class="field-form-route" name="route" value="/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F03%2F15%2F30-seconds-read-ssh%2F&amp;url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F03%2F15%2F30-seconds-read-ssh%2F&amp;title=30%20Seconds%20Read%3A%20SSH">
+  <input type="hidden" class="field-form-check" name="form_check" value="9a0380c482a878d04d601e27b4d12c8fa71754951d8f50706e2c71c9787bb2ca">
   <input type="hidden" class="field-form-src" name="src" value="">
 
   <div class="login-processing"></div>
@@ -132,7 +132,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             class="login-btn-email btn-disabled" disabled>
 
   <p class="forgot-p">
-    <a class="forgot" href="https://getpocket.com/forgot?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F03%252F15%252F30-seconds-read-ssh%252F%26url%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F03%252F15%252F30-seconds-read-ssh%252F%26title%3D30%2520Seconds%2520Read%253A%2520SSH"
+    <a class="forgot" href="https://getpocket.com/forgot?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F03%252F15%252F30-seconds-read-ssh%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F03%252F15%252F30-seconds-read-ssh%252F%26title%3D30%2520Seconds%2520Read%253A%2520SSH"
        target="">
       Forgot your username or password
     </a>
@@ -155,7 +155,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <p class="login-footer">
-      <a class="signup" href="https://getpocket.com/signup?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F03%252F15%252F30-seconds-read-ssh%252F%26url%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F03%252F15%252F30-seconds-read-ssh%252F%26title%3D30%2520Seconds%2520Read%253A%2520SSH"
+      <a class="signup" href="https://getpocket.com/signup?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F03%252F15%252F30-seconds-read-ssh%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F03%252F15%252F30-seconds-read-ssh%252F%26title%3D30%2520Seconds%2520Read%253A%2520SSH"
       target="">
       Sign up now
       </a> <span class="rarrow">&rsaquo;</span>
@@ -227,7 +227,7 @@ ga('send', 'pageview');
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-P4LPJ42');</script>
 <!-- End Google Tag Manager -->
-<script>window.__STATE__ = {"api":{"baseUrl":"\/v3","consumerKey":"86291-f8d3e654be359e75b7625e79"},"csrf":{"token":"ce60c9d8e0f490f00a054b830879db970fb033462e25d2201fe8e8a8cfa34aa3"},"captcha":{"isRequired":true,"siteKey":"6LfIpyYUAAAAAPtNSKafudr16odFL1eQte0vR0Py"},"csrfSymfony":{"token":"zKR11xcHtHWcitjb31HKXdRjuvzqHhnEdpTQ0L20qDs"},"env":"prod","localization":{"locale":"en-US"},"sentry":{"dsn":"https:\/\/15c50c1db6cf425594a1d4d779dc0792@sentry.io\/285989","version":"4ad074af5f8c92dabf387c7bf9ec0041a44dc9e2","environment":"prod"},"stripe":{"publicKey":"pk_live_bh3nfDMzSI1Z9MvuwRWg8vWh"},"login":{"errorHtml":"Please log into your Pocket account.","messageHtml":null,"userDefaults":{"route":"\/edit.php?url=https%3A%2F%2Fcodejammies.com%2F2020%2F03%2F15%2F30-seconds-read-ssh%2F&url=https%3A%2F%2Fcodejammies.com%2F2020%2F03%2F15%2F30-seconds-read-ssh%2F&title=30%20Seconds%20Read%3A%20SSH","form_check":"2a59e3ab85d2913c52e67f3570e0b2e842ae0d3f648b0c0d5cca73f8e357ac9c"}}};</script><script src="https://assets.getpocket.com/web/main.35001086667676d19d24.js" ></script>
+<script>window.__STATE__ = {"api":{"baseUrl":"\/v3","consumerKey":"86291-f8d3e654be359e75b7625e79"},"csrf":{"token":"c56a2a2447b1f13409c32f128688e10e2d8fc60e40e926092b49edaa97174cfd"},"captcha":{"isRequired":true,"siteKey":"6LfIpyYUAAAAAPtNSKafudr16odFL1eQte0vR0Py"},"csrfSymfony":{"token":"B18JQKxCCSFeAJi1CTBQxviulW4eEaa5vW3KbiDEUbw"},"env":"prod","localization":{"locale":"en-US"},"sentry":{"dsn":"https:\/\/15c50c1db6cf425594a1d4d779dc0792@sentry.io\/285989","version":"4ad074af5f8c92dabf387c7bf9ec0041a44dc9e2","environment":"prod"},"stripe":{"publicKey":"pk_live_bh3nfDMzSI1Z9MvuwRWg8vWh"},"login":{"errorHtml":"Please log into your Pocket account.","messageHtml":null,"userDefaults":{"route":"\/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F03%2F15%2F30-seconds-read-ssh%2F&url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F03%2F15%2F30-seconds-read-ssh%2F&title=30%20Seconds%20Read%3A%20SSH","form_check":"8910a262754a0674fdcc9da0994d5748328752b7d6d2dbd1bdf10e42bdce8eb6"}}};</script><script src="https://assets.getpocket.com/web/main.35001086667676d19d24.js" ></script>
 
 
 <script src="https://getpocket.com/j/v4/global.min.js?v=221"></script>
@@ -270,7 +270,7 @@ ga('send', 'pageview');
       snowplow('addGlobalContexts', [{
         schema: 'iglu:com.pocket/user/jsonschema/1-0-0',
         data: {
-          hashed_guid: "90lTbA51gd6f5iXz61dp9bdha6p0ycqX6c4c2dNWN9K6f3RX1fR5daf5e05Ezk54"
+          hashed_guid: "192gad17p4d5ct15a5T250Gf65A4Za0414dp3ca5c0COuQE13a94dLW9k6fXW267"
         }
       }])
 

@@ -49,11 +49,11 @@
         <div class="small-12 large-9 columns header-menu">
           <nav>
             <ul>
-                <li><a class="signup" href="https://getpocket.com/signup/?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F11%252F01%252Fstem-up-s2-ademusoyo%252F%26url%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F11%252F01%252Fstem-up-s2-ademusoyo%252F%26title%3DSTEM%2520Up%2520%2528S2%2529%253A%2520Ademusoyo&amp;ep=1">Sign Up</a></li>
+                <li><a class="signup" href="https://getpocket.com/signup/?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F11%252F01%252Fstem-up-s2-ademusoyo%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F11%252F01%252Fstem-up-s2-ademusoyo%252F%26title%3DSTEM%2520Up%2520%2528S2%2529%253A%2520Ademusoyo&amp;ep=1">Sign Up</a></li>
                 <li><a href="https://getpocket.com/add/?ep=1">How to Save</a></li>
                 <li><a href="https://getpocket.com/premium?ep=1">Go Premium</a></li>
                 <li><a href="https://help.getpocket.com" target="_block">Support</a></li>
-                <li class="login"><span><a class="mktg-homepage-signin" href="https://getpocket.com/login/?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F11%252F01%252Fstem-up-s2-ademusoyo%252F%26url%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F11%252F01%252Fstem-up-s2-ademusoyo%252F%26title%3DSTEM%2520Up%2520%2528S2%2529%253A%2520Ademusoyo&amp;ep=1">Log In</a></span></li>
+                <li class="login"><span><a class="mktg-homepage-signin" href="https://getpocket.com/login/?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F11%252F01%252Fstem-up-s2-ademusoyo%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F11%252F01%252Fstem-up-s2-ademusoyo%252F%26title%3DSTEM%2520Up%2520%2528S2%2529%253A%2520Ademusoyo&amp;ep=1">Log In</a></span></li>
   
             </ul>
           </nav>
@@ -120,8 +120,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   </div>
 
-  <input type="hidden" class="field-form-route" name="route" value="/edit.php?url=https%3A%2F%2Fcodejammies.com%2F2020%2F11%2F01%2Fstem-up-s2-ademusoyo%2F&amp;url=https%3A%2F%2Fcodejammies.com%2F2020%2F11%2F01%2Fstem-up-s2-ademusoyo%2F&amp;title=STEM%20Up%20%28S2%29%3A%20Ademusoyo">
-  <input type="hidden" class="field-form-check" name="form_check" value="8c81e0b617bd94444840c115234bca3dd6b92cc13964399f41b07a2e2b1a9f9a">
+  <input type="hidden" class="field-form-route" name="route" value="/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F11%2F01%2Fstem-up-s2-ademusoyo%2F&amp;url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F11%2F01%2Fstem-up-s2-ademusoyo%2F&amp;title=STEM%20Up%20%28S2%29%3A%20Ademusoyo">
+  <input type="hidden" class="field-form-check" name="form_check" value="7eb25c869b241891cc97a2fb2649e0a0e332da65d2a1eedc9e4f84774415db1e">
   <input type="hidden" class="field-form-src" name="src" value="">
 
   <div class="login-processing"></div>
@@ -132,7 +132,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             class="login-btn-email btn-disabled" disabled>
 
   <p class="forgot-p">
-    <a class="forgot" href="https://getpocket.com/forgot?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F11%252F01%252Fstem-up-s2-ademusoyo%252F%26url%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F11%252F01%252Fstem-up-s2-ademusoyo%252F%26title%3DSTEM%2520Up%2520%2528S2%2529%253A%2520Ademusoyo"
+    <a class="forgot" href="https://getpocket.com/forgot?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F11%252F01%252Fstem-up-s2-ademusoyo%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F11%252F01%252Fstem-up-s2-ademusoyo%252F%26title%3DSTEM%2520Up%2520%2528S2%2529%253A%2520Ademusoyo"
        target="">
       Forgot your username or password
     </a>
@@ -155,7 +155,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <p class="login-footer">
-      <a class="signup" href="https://getpocket.com/signup?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F11%252F01%252Fstem-up-s2-ademusoyo%252F%26url%3Dhttps%253A%252F%252Fcodejammies.com%252F2020%252F11%252F01%252Fstem-up-s2-ademusoyo%252F%26title%3DSTEM%2520Up%2520%2528S2%2529%253A%2520Ademusoyo"
+      <a class="signup" href="https://getpocket.com/signup?route=%2Fedit.php%3Furl%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F11%252F01%252Fstem-up-s2-ademusoyo%252F%26url%3Dhttps%253A%252F%252Fcodejammies.wordpress.com%252F2020%252F11%252F01%252Fstem-up-s2-ademusoyo%252F%26title%3DSTEM%2520Up%2520%2528S2%2529%253A%2520Ademusoyo"
       target="">
       Sign up now
       </a> <span class="rarrow">&rsaquo;</span>
@@ -227,7 +227,7 @@ ga('send', 'pageview');
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-P4LPJ42');</script>
 <!-- End Google Tag Manager -->
-<script>window.__STATE__ = {"api":{"baseUrl":"\/v3","consumerKey":"86291-f8d3e654be359e75b7625e79"},"csrf":{"token":"fc70b919a7732139618ab83a926712227872ed547d6fc094364eb18b9f5fa75e"},"captcha":{"isRequired":true,"siteKey":"6LfIpyYUAAAAAPtNSKafudr16odFL1eQte0vR0Py"},"csrfSymfony":{"token":"zKR11xcHtHWcitjb31HKXdRjuvzqHhnEdpTQ0L20qDs"},"env":"prod","localization":{"locale":"en-US"},"sentry":{"dsn":"https:\/\/15c50c1db6cf425594a1d4d779dc0792@sentry.io\/285989","version":"4ad074af5f8c92dabf387c7bf9ec0041a44dc9e2","environment":"prod"},"stripe":{"publicKey":"pk_live_bh3nfDMzSI1Z9MvuwRWg8vWh"},"login":{"errorHtml":"Please log into your Pocket account.","messageHtml":null,"userDefaults":{"route":"\/edit.php?url=https%3A%2F%2Fcodejammies.com%2F2020%2F11%2F01%2Fstem-up-s2-ademusoyo%2F&url=https%3A%2F%2Fcodejammies.com%2F2020%2F11%2F01%2Fstem-up-s2-ademusoyo%2F&title=STEM%20Up%20%28S2%29%3A%20Ademusoyo","form_check":"58160dd7da5ed926cb89bfde9622af9a43f5da3199faf682cc6cbdd2586330ec"}}};</script><script src="https://assets.getpocket.com/web/main.35001086667676d19d24.js" ></script>
+<script>window.__STATE__ = {"api":{"baseUrl":"\/v3","consumerKey":"86291-f8d3e654be359e75b7625e79"},"csrf":{"token":"ac3d22833042cd804d2bda0eadd91f106a624110bb5968da99e9d37b5fa45c9e"},"captcha":{"isRequired":true,"siteKey":"6LfIpyYUAAAAAPtNSKafudr16odFL1eQte0vR0Py"},"csrfSymfony":{"token":"B18JQKxCCSFeAJi1CTBQxviulW4eEaa5vW3KbiDEUbw"},"env":"prod","localization":{"locale":"en-US"},"sentry":{"dsn":"https:\/\/15c50c1db6cf425594a1d4d779dc0792@sentry.io\/285989","version":"4ad074af5f8c92dabf387c7bf9ec0041a44dc9e2","environment":"prod"},"stripe":{"publicKey":"pk_live_bh3nfDMzSI1Z9MvuwRWg8vWh"},"login":{"errorHtml":"Please log into your Pocket account.","messageHtml":null,"userDefaults":{"route":"\/edit.php?url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F11%2F01%2Fstem-up-s2-ademusoyo%2F&url=https%3A%2F%2Fcodejammies.wordpress.com%2F2020%2F11%2F01%2Fstem-up-s2-ademusoyo%2F&title=STEM%20Up%20%28S2%29%3A%20Ademusoyo","form_check":"3189f1224d021ed531ef79fe282f8b9c31c284b4b4db6205dc914e915aaec3ea"}}};</script><script src="https://assets.getpocket.com/web/main.35001086667676d19d24.js" ></script>
 
 
 <script src="https://getpocket.com/j/v4/global.min.js?v=221"></script>
@@ -270,7 +270,7 @@ ga('send', 'pageview');
       snowplow('addGlobalContexts', [{
         schema: 'iglu:com.pocket/user/jsonschema/1-0-0',
         data: {
-          hashed_guid: "90lTbA51gd6f5iXz61dp9bdha6p0ycqX6c4c2dNWN9K6f3RX1fR5daf5e05Ezk54"
+          hashed_guid: "192gad17p4d5ct15a5T250Gf65A4Za0414dp3ca5c0COuQE13a94dLW9k6fXW267"
         }
       }])
 
